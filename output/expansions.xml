@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="03d37ff2-2c2e-446d-95ce-2ea768781a57"/>
+  <meta>
+    <lastUpdated value="2021-04-23T16:59:19.410+02:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="role-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-106289002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002">106289002</a>
+                </td>
+                <td>tandläkare</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-26042002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002">26042002</a>
+                </td>
+                <td>tandhygienist</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
+        <version value="0.1.0"/>
+        <name value="ITBRoleCodes"/>
+        <title value="ITB Role Codes"/>
+        <status value="active"/>
+        <date value="2021-04-23T16:59:19+02:00"/>
+        <description value="This value set defines role codes"/>
+        <expansion>
+          <identifier value="urn:uuid:6836a26d-394c-4661-b317-64e30c78b401"/>
+          <timestamp value="2021-04-23T16:59:45+02:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106289002"/>
+            <display value="tandl&#xE4;kare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="26042002"/>
+            <display value="tandhygienist"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://portal.wof.purified.link/fhir/ValueSet/service-types"/>
+    <resource>
+      <ValueSet>
+        <id value="service-types"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on http://terminology.hl7.org/CodeSystem/service-type version 4.0.1</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.0.0/CodeSystem-service-type.html">
+                <code>http://terminology.hl7.org/CodeSystem/service-type</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-service-type-88"> </a>88
+                </td>
+                <td>General dental</td>
+                <td>General dental</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://portal.wof.purified.link/fhir/ValueSet/service-types"/>
+        <version value="0.1.0"/>
+        <name value="ITBServiceTypes"/>
+        <title value="ITB Service Types"/>
+        <status value="active"/>
+        <date value="2021-04-23T16:59:19+02:00"/>
+        <description value="This value set defines service types"/>
+        <expansion>
+          <identifier value="urn:uuid:381716e5-f9e0-4d4f-b1c1-48238376b047"/>
+          <timestamp value="2021-04-23T16:59:45+02:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://terminology.hl7.org/CodeSystem/service-type|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+            <code value="88"/>
+            <display value="General dental"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="role-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-106289002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002">106289002</a>
+                </td>
+                <td>tandläkare</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-26042002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002">26042002</a>
+                </td>
+                <td>tandhygienist</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
+        <version value="0.1.0"/>
+        <name value="ITBRoleCodes"/>
+        <title value="ITB Role Codes"/>
+        <status value="active"/>
+        <date value="2021-04-23T16:59:19+02:00"/>
+        <description value="This value set defines role codes"/>
+        <expansion>
+          <identifier value="urn:uuid:6836a26d-394c-4661-b317-64e30c78b401"/>
+          <timestamp value="2021-04-23T16:59:45+02:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106289002"/>
+            <display value="tandl&#xE4;kare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="26042002"/>
+            <display value="tandhygienist"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

@@ -15,7 +15,7 @@ parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
 releaseLabel: Release Label
-publisher: Service Well AB 
+publisher: Service Well AB
 
 # dependencies:
 #  hl7.fhir.no.basis:
