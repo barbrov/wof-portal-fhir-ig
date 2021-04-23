@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="03d37ff2-2c2e-446d-95ce-2ea768781a57"/>
+  <id value="6729213e-0e48-43ba-818a-fac043f0ec74"/>
   <meta>
-    <lastUpdated value="2021-04-23T16:59:19.410+02:00"/>
+    <lastUpdated value="2021-04-23T17:11:57.574+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
     <resource>
       <ValueSet>
-        <id value="role-codes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -52,21 +50,10 @@
             </table>
           </div>
         </text>
-        <url value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
-        <version value="0.1.0"/>
-        <name value="ITBRoleCodes"/>
-        <title value="ITB Role Codes"/>
         <status value="active"/>
-        <date value="2021-04-23T16:59:19+02:00"/>
-        <description value="This value set defines role codes"/>
         <expansion>
-          <identifier value="urn:uuid:6836a26d-394c-4661-b317-64e30c78b401"/>
-          <timestamp value="2021-04-23T16:59:45+02:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
+          <identifier value="urn:uuid:b3d96421-014d-427a-8a53-e848b0f0ab32"/>
+          <timestamp value="2021-04-23T14:59:45.782Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -90,10 +77,8 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://portal.wof.purified.link/fhir/ValueSet/service-types"/>
     <resource>
       <ValueSet>
-        <id value="service-types"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -126,21 +111,10 @@
             </table>
           </div>
         </text>
-        <url value="http://portal.wof.purified.link/fhir/ValueSet/service-types"/>
-        <version value="0.1.0"/>
-        <name value="ITBServiceTypes"/>
-        <title value="ITB Service Types"/>
         <status value="active"/>
-        <date value="2021-04-23T16:59:19+02:00"/>
-        <description value="This value set defines service types"/>
         <expansion>
-          <identifier value="urn:uuid:381716e5-f9e0-4d4f-b1c1-48238376b047"/>
-          <timestamp value="2021-04-23T16:59:45+02:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
+          <identifier value="urn:uuid:cba22a58-b825-435a-9737-ecce5b127d35"/>
+          <timestamp value="2021-04-23T14:59:46.876Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -150,6 +124,9 @@
             <valueString value="http://terminology.hl7.org/CodeSystem/service-type|4.0.1"/>
           </parameter>
           <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
+              <valueString value="General dental"/>
+            </extension>
             <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
             <code value="88"/>
             <display value="General dental"/>
@@ -159,10 +136,8 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
     <resource>
       <ValueSet>
-        <id value="role-codes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -204,21 +179,10 @@
             </table>
           </div>
         </text>
-        <url value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
-        <version value="0.1.0"/>
-        <name value="ITBRoleCodes"/>
-        <title value="ITB Role Codes"/>
         <status value="active"/>
-        <date value="2021-04-23T16:59:19+02:00"/>
-        <description value="This value set defines role codes"/>
         <expansion>
-          <identifier value="urn:uuid:6836a26d-394c-4661-b317-64e30c78b401"/>
-          <timestamp value="2021-04-23T16:59:45+02:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
+          <identifier value="urn:uuid:b3d96421-014d-427a-8a53-e848b0f0ab32"/>
+          <timestamp value="2021-04-23T14:59:45.782Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>

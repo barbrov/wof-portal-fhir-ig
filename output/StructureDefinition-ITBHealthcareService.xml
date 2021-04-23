@@ -43,11 +43,23 @@
     <valueCode value="business"/>
   </extension>
   <url value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="ITBHealthcareService"/>
   <title value="ITB HealthcareService"/>
   <status value="active"/>
-  <date value="2021-04-23T16:59:19+02:00"/>
+  <date value="2021-04-23T17:11:57+02:00"/>
+  <publisher value="Service Well AB"/>
+  <contact>
+    <name value="Service Well AB"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.servicewell.se"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kontakt@servicewell.se"/>
+    </telecom>
+  </contact>
   <description value="ITBHealthcareService..."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

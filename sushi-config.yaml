@@ -5,17 +5,20 @@
 id: portal.wof.purified.link
 canonical: http://portal.wof.purified.link/fhir
 name: ITBImplementationGuide
-title: ITB Implementatoin Guide
+title: ITB Implementation Guide
 description: Implementation Guide for ITB
 status: draft
-version: 0.1.0
+version: 0.1.1
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
 releaseLabel: Release Label
-publisher: Service Well AB
+publisher: 
+  name: Service Well AB
+  url: http://www.servicewell.se
+  email: kontakt@servicewell.se
 
 # dependencies:
 #  hl7.fhir.no.basis:

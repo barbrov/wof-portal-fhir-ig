@@ -13,11 +13,25 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ITBImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link</pre><div><p>Implementation Guide for ITB</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link"];
-  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.1"];
   fhir:ImplementationGuide.name [ fhir:value "ITBImplementationGuide"];
-  fhir:ImplementationGuide.title [ fhir:value "ITB Implementatoin Guide"];
+  fhir:ImplementationGuide.title [ fhir:value "ITB Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-04-23T16:59:19+02:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-04-23T17:11:57+02:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "Service Well AB"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Service Well AB" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.servicewell.se" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "kontakt@servicewell.se" ]
+     ]
+  ];
   fhir:ImplementationGuide.description [ fhir:value "Implementation Guide for ITB"];
   fhir:ImplementationGuide.packageId [ fhir:value "portal.wof.purified.link"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];

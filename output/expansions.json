@@ -1,35 +1,22 @@
 {
   "resourceType" : "Bundle",
-  "id" : "03d37ff2-2c2e-446d-95ce-2ea768781a57",
+  "id" : "6729213e-0e48-43ba-818a-fac043f0ec74",
   "meta" : {
-    "lastUpdated" : "2021-04-23T16:59:19.410+02:00"
+    "lastUpdated" : "2021-04-23T17:11:57.574+02:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://portal.wof.purified.link/fhir/ValueSet/role-codes",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "role-codes",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-106289002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002\">106289002</a></td><td>tandläkare</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26042002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002\">26042002</a></td><td>tandhygienist</td><td/></tr></table></div>"
       },
-      "url" : "http://portal.wof.purified.link/fhir/ValueSet/role-codes",
-      "version" : "0.1.0",
-      "name" : "ITBRoleCodes",
-      "title" : "ITB Role Codes",
       "status" : "active",
-      "date" : "2021-04-23T16:59:19+02:00",
-      "description" : "This value set defines role codes",
       "expansion" : {
-        "identifier" : "urn:uuid:6836a26d-394c-4661-b317-64e30c78b401",
-        "timestamp" : "2021-04-23T16:59:45+02:00",
-        "total" : 2,
+        "identifier" : "urn:uuid:b3d96421-014d-427a-8a53-e848b0f0ab32",
+        "timestamp" : "2021-04-23T14:59:45.782Z",
         "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },
@@ -51,30 +38,17 @@
     }
   },
   {
-    "fullUrl" : "http://portal.wof.purified.link/fhir/ValueSet/service-types",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "service-types",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on http://terminology.hl7.org/CodeSystem/service-type version 4.0.1</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-service-type.html\"><code>http://terminology.hl7.org/CodeSystem/service-type</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-service-type-88\"> </a>88</td><td>General dental</td><td>General dental</td></tr></table></div>"
       },
-      "url" : "http://portal.wof.purified.link/fhir/ValueSet/service-types",
-      "version" : "0.1.0",
-      "name" : "ITBServiceTypes",
-      "title" : "ITB Service Types",
       "status" : "active",
-      "date" : "2021-04-23T16:59:19+02:00",
-      "description" : "This value set defines service types",
       "expansion" : {
-        "identifier" : "urn:uuid:381716e5-f9e0-4d4f-b1c1-48238376b047",
-        "timestamp" : "2021-04-23T16:59:45+02:00",
-        "total" : 1,
+        "identifier" : "urn:uuid:cba22a58-b825-435a-9737-ecce5b127d35",
+        "timestamp" : "2021-04-23T14:59:46.876Z",
         "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },
@@ -83,6 +57,10 @@
           "valueString" : "http://terminology.hl7.org/CodeSystem/service-type|4.0.1"
         }],
         "contains" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+            "valueString" : "General dental"
+          }],
           "system" : "http://terminology.hl7.org/CodeSystem/service-type",
           "code" : "88",
           "display" : "General dental"
@@ -91,30 +69,17 @@
     }
   },
   {
-    "fullUrl" : "http://portal.wof.purified.link/fhir/ValueSet/role-codes",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "role-codes",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-106289002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002\">106289002</a></td><td>tandläkare</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26042002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002\">26042002</a></td><td>tandhygienist</td><td/></tr></table></div>"
       },
-      "url" : "http://portal.wof.purified.link/fhir/ValueSet/role-codes",
-      "version" : "0.1.0",
-      "name" : "ITBRoleCodes",
-      "title" : "ITB Role Codes",
       "status" : "active",
-      "date" : "2021-04-23T16:59:19+02:00",
-      "description" : "This value set defines role codes",
       "expansion" : {
-        "identifier" : "urn:uuid:6836a26d-394c-4661-b317-64e30c78b401",
-        "timestamp" : "2021-04-23T16:59:45+02:00",
-        "total" : 2,
+        "identifier" : "urn:uuid:b3d96421-014d-427a-8a53-e848b0f0ab32",
+        "timestamp" : "2021-04-23T14:59:45.782Z",
         "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },

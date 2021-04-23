@@ -22,11 +22,25 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/NoITBPatient"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.1"];
   fhir:StructureDefinition.name [ fhir:value "NoITBPatient"];
   fhir:StructureDefinition.title [ fhir:value "Norweigan ITB Patient"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-04-23T16:59:19+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-04-23T17:11:57+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "Service Well AB"];
+  fhir:StructureDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Service Well AB" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.servicewell.se" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "kontakt@servicewell.se" ]
+     ]
+  ];
   fhir:StructureDefinition.description [ fhir:value "Patient based on Norweigan basis patient"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [

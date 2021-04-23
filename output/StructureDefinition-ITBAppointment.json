@@ -16,11 +16,27 @@
     }
   ],
   "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "ITBAppointment",
   "title": "ITB Appointment",
   "status": "active",
-  "date": "2021-04-23T16:59:19+02:00",
+  "date": "2021-04-23T17:11:57+02:00",
+  "publisher": "Service Well AB",
+  "contact": [
+    {
+      "name": "Service Well AB",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.servicewell.se"
+        },
+        {
+          "system": "email",
+          "value": "kontakt@servicewell.se"
+        }
+      ]
+    }
+  ],
   "description": "ITBAppointment is used to handle  ..",
   "fhirVersion": "4.0.1",
   "mapping": [

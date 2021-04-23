@@ -6,11 +6,27 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ITBImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link</pre><div><p>Implementation Guide for ITB</p>\n</div></div>"
   },
   "url": "http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "ITBImplementationGuide",
-  "title": "ITB Implementatoin Guide",
+  "title": "ITB Implementation Guide",
   "status": "draft",
-  "date": "2021-04-23T16:59:19+02:00",
+  "date": "2021-04-23T17:11:57+02:00",
+  "publisher": "Service Well AB",
+  "contact": [
+    {
+      "name": "Service Well AB",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.servicewell.se"
+        },
+        {
+          "system": "email",
+          "value": "kontakt@servicewell.se"
+        }
+      ]
+    }
+  ],
   "description": "Implementation Guide for ITB",
   "packageId": "portal.wof.purified.link",
   "license": "CC0-1.0",

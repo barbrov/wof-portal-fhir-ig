@@ -6,11 +6,27 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002\">106289002</a></td><td>tandläkare</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002\">26042002</a></td><td>tandhygienist</td></tr></table></li></ul></div>"
   },
   "url": "http://portal.wof.purified.link/fhir/ValueSet/speciality-codes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "ITBSpecialityCodes",
   "title": "ITB Speciality Codes",
   "status": "active",
-  "date": "2021-04-23T16:59:19+02:00",
+  "date": "2021-04-23T17:11:57+02:00",
+  "publisher": "Service Well AB",
+  "contact": [
+    {
+      "name": "Service Well AB",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.servicewell.se"
+        },
+        {
+          "system": "email",
+          "value": "kontakt@servicewell.se"
+        }
+      ]
+    }
+  ],
   "description": "This value set defines speciality code",
   "compose": {
     "include": [
