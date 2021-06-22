@@ -20,11 +20,11 @@
     <valueCode value="business"/>
   </extension>
   <url value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="ITBOrganization"/>
   <title value="ITB Organization"/>
   <status value="active"/>
-  <date value="2021-06-22T14:11:11+02:00"/>
+  <date value="2021-06-22T14:36:07+02:00"/>
   <description value="TBD"/>
   <fhirVersion value="4.0.1"/>
   <mapping>

@@ -3,7 +3,7 @@
 
 err = 5, warn = 24, info = 0
 IG Publisher Version: 1.1.73 Out of date - current version is 1.1.75
-Generated Tue Jun 22 14:12:19 CEST 2021. FHIR version 4.0.1 for portal.wof.purified.link#0.1.0 (canonical = http://portal.wof.purified.link/fhir)
+Generated Tue Jun 22 14:36:55 CEST 2021. FHIR version 4.0.1 for portal.wof.purified.link#0.1.1 (canonical = http://portal.wof.purified.link/fhir)
 
  Build Errors : 173 / 3 / 0
  C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\ImplementationGuide-portal.wof.purified.link : 0 / 0 / 1

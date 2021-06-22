@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/csServiceType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"csServiceType-1\"> </a></td><td>Profylax</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"csServiceType-2\"> </a></td><td>Undersökning</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"csServiceType-3\"> </a></td><td>Akut</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"csServiceType-0\"> </a></td><td>Revision ospecificerad behandling</td></tr></table></div>"
   },
   "url": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "ITBServiceTypes",
   "title": "ITB Service Types",
   "status": "active",
-  "date": "2021-06-22T14:11:11+02:00",
+  "date": "2021-06-22T14:36:07+02:00",
   "description": "ITB Service Types",
   "content": "complete",
   "count": 4,
