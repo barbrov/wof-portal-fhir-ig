@@ -1,0 +1,179 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/CapabilityStatement/ITBCapabilityStatement> a fhir:CapabilityStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ITBCapabilityStatement"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ITB</h2><div><p>This is the FHIR capability statement for the ITB interface</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Main FHIR endpoint for ITB</p>\n</div></td></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>ActivityDefinition</td><td><a href=\"http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416\">http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416</a></td><td></td><td></td><td></td><td></td></tr></table></div>"
+  ];
+  fhir:CapabilityStatement.url [ fhir:value "http://portal.wof.purified.link/fhir/CapabilityStatement"];
+  fhir:CapabilityStatement.version [ fhir:value "0.1.1"];
+  fhir:CapabilityStatement.name [ fhir:value "ITB"];
+  fhir:CapabilityStatement.title [ fhir:value "ITB capability statement"];
+  fhir:CapabilityStatement.status [ fhir:value "draft"];
+  fhir:CapabilityStatement.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:CapabilityStatement.date [ fhir:value "2021-06-22"^^xsd:date];
+  fhir:CapabilityStatement.publisher [ fhir:value "Service Well"];
+  fhir:CapabilityStatement.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "System Administrator" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "kontakt@servicewell.se" ]
+     ]
+  ];
+  fhir:CapabilityStatement.description [ fhir:value "This is the FHIR capability statement for the ITB interface"];
+  fhir:CapabilityStatement.useContext [
+     fhir:index 0;
+     fhir:UsageContext.code [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/usage-context-type" ];
+       fhir:Coding.code [ fhir:value "focus" ]
+     ];
+     fhir:UsageContext.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/variant-state" ];
+         fhir:Coding.code [ fhir:value "positive" ]
+       ]
+     ]
+  ];
+  fhir:CapabilityStatement.purpose [ fhir:value "ITB capability statement, published for contracting and operational support"];
+  fhir:CapabilityStatement.copyright [ fhir:value "Copyright © Service Well AB"];
+  fhir:CapabilityStatement.kind [ fhir:value "instance"];
+  fhir:CapabilityStatement.instantiates [
+     fhir:value "http://ihe.org/fhir/CapabilityStatement/pixm-client";
+     fhir:index 0;
+     fhir:link <http://ihe.org/fhir/CapabilityStatement/pixm-client>
+  ];
+  fhir:CapabilityStatement.software [
+     fhir:CapabilityStatement.software.name [ fhir:value "ITB" ];
+     fhir:CapabilityStatement.software.version [ fhir:value "0.0.0" ];
+     fhir:CapabilityStatement.software.releaseDate [ fhir:value "2021-09-01"^^xsd:date ]
+  ];
+  fhir:CapabilityStatement.implementation [
+     fhir:CapabilityStatement.implementation.description [ fhir:value "WOF" ]
+  ];
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"];
+  fhir:CapabilityStatement.format [
+     fhir:value "json";
+     fhir:index 0
+  ];
+  fhir:CapabilityStatement.patchFormat [
+     fhir:value "application/json-patch+json";
+     fhir:index 0
+  ];
+  fhir:CapabilityStatement.implementationGuide [
+     fhir:value "https://build.fhir.org/ig/barbrov/wof-portal-fhir-ig/";
+     fhir:index 0;
+     fhir:link <https://build.fhir.org/ig/barbrov/wof-portal-fhir-ig/>
+  ];
+  fhir:CapabilityStatement.rest [
+     fhir:index 0;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
+     fhir:CapabilityStatement.rest.documentation [ fhir:value "Main FHIR endpoint for ITB" ];
+     fhir:CapabilityStatement.rest.security [
+       fhir:CapabilityStatement.rest.security.cors [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.security.service [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/restful-security-service" ];
+           fhir:Coding.code [ fhir:value "SMART-on-FHIR" ]
+         ]
+       ];
+       fhir:CapabilityStatement.rest.security.description [ fhir:value "See Smart on FHIR documentation" ]
+     ];
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index 0;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ActivityDefinition" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416";
+         fhir:link <http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416>
+       ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://registry.fhir.org/r4/StructureDefinition/00ab9e7a-06c7-4f77-9234-4154ca1e3347";
+         fhir:index 0;
+         fhir:link <http://registry.fhir.org/r4/StructureDefinition/00ab9e7a-06c7-4f77-9234-4154ca1e3347>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "This server does not let the clients create identities." ];
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned-update" ];
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.updateCreate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalRead [ fhir:value "full-support" ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ];
+       fhir:CapabilityStatement.rest.resource.searchInclude [
+         fhir:value "Organization";
+         fhir:index 0
+       ];
+       fhir:CapabilityStatement.rest.resource.searchRevInclude [
+         fhir:value "Person";
+         fhir:index 0
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "general-practitioner" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Patient-general-practitioner";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Patient-general-practitioner>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Only supports search by institution MRN" ]
+       ]
+     ];
+     fhir:CapabilityStatement.rest.interaction [
+       fhir:index 0;
+       fhir:CapabilityStatement.rest.interaction.code [ fhir:value "transaction" ]
+     ];
+     fhir:CapabilityStatement.rest.compartment [
+       fhir:value "http://hl7.org/fhir/CompartmentDefinition/patient";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/CompartmentDefinition/patient>
+     ]
+  ];
+  fhir:CapabilityStatement.messaging [
+     fhir:index 0;
+     fhir:CapabilityStatement.messaging.endpoint [
+       fhir:index 0;
+       fhir:CapabilityStatement.messaging.endpoint.protocol [
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/message-transport" ];
+         fhir:Coding.code [ fhir:value "mllp" ]
+       ];
+       fhir:CapabilityStatement.messaging.endpoint.address [ fhir:value "mllp:10.1.1.10:9234" ]
+     ];
+     fhir:CapabilityStatement.messaging.reliableCache [ fhir:value "30"^^xsd:nonNegativeInteger ];
+     fhir:CapabilityStatement.messaging.documentation [ fhir:value "ADT A08 equivalent for external system notifications" ];
+     fhir:CapabilityStatement.messaging.supportedMessage [
+       fhir:index 0;
+       fhir:CapabilityStatement.messaging.supportedMessage.mode [ fhir:value "receiver" ];
+       fhir:CapabilityStatement.messaging.supportedMessage.definition [
+         fhir:value "MessageDefinition/example";
+         fhir:link <http://portal.wof.purified.link/fhir/MessageDefinition/example>
+       ]
+     ]
+  ];
+  fhir:CapabilityStatement.document [
+     fhir:index 0;
+     fhir:CapabilityStatement.document.mode [ fhir:value "consumer" ];
+     fhir:CapabilityStatement.document.documentation [ fhir:value "Basic rules for all documents in the EHR system" ];
+     fhir:CapabilityStatement.document.profile [
+       fhir:value "http://fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796";
+       fhir:link <http://fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796>
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://portal.wof.purified.link/fhir/CapabilityStatement/ITBCapabilityStatement.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

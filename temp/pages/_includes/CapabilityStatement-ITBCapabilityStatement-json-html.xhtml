@@ -1,0 +1,157 @@
+{% raw %}<pre class="json"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement">resourceType</a>" : "CapabilityStatement",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">id</a>" : "ITBCapabilityStatement",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;ITB&lt;/h2&gt;&lt;div&gt;&lt;p&gt;This is the FHIR capability statement for the ITB interface&lt;/p&gt;\n&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Main FHIR endpoint for ITB&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET a resource (read interaction)\&quot;&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET all set of resources of the type (search interaction)\&quot;&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;PUT a new resource version (update interaction)\&quot;&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;POST a new resource (create interaction)\&quot;&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ActivityDefinition&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416\&quot;&gt;http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">url</a>" : "http://portal.wof.purified.link/fhir/CapabilityStatement",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">version</a>" : "0.1.1",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">name</a>" : "ITB",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a>" : "ITB capability statement",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2021-06-22",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">publisher</a>" : "Service Well",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "System Administrator",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "kontakt@servicewell.se"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.description">description</a>" : "This is the FHIR capability statement for the ITB interface",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.useContext">useContext</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "focus"
+      },
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.value[x]">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/variant-state",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "positive"
+          }
+        ]
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.purpose">purpose</a>" : "ITB capability statement, published for contracting and operational support",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.copyright">copyright</a>" : "Copyright © Service Well AB",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.kind">kind</a>" : "instance",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.instantiates">instantiates</a>" : [
+    "http://ihe.org/fhir/CapabilityStatement/pixm-client"
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.software">software</a>" : {
+    "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.software.name">name</a>" : "ITB",
+    "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.software.version">version</a>" : "0.0.0",
+    "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.software.releaseDate">releaseDate</a>" : "2021-09-01"
+  },
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementation">implementation</a>" : {
+    "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementation.description">description</a>" : "WOF"
+  },
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a>" : "4.0.1",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.format">format</a>" : [
+    "json"
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.patchFormat">patchFormat</a>" : [
+    "application/json-patch+json"
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementationGuide">implementationGuide</a>" : [
+    "https://build.fhir.org/ig/barbrov/wof-portal-fhir-ig/"
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest">rest</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a>" : "server",
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.documentation">documentation</a>" : "Main FHIR endpoint for ITB",
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security">security</a>" : {
+        "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.cors">cors</a>" : true,
+        "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.service">service</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/restful-security-service",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "SMART-on-FHIR"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.description">description</a>" : "See Smart on FHIR documentation"
+      },
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "ActivityDefinition",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>" : [
+            "http://registry.fhir.org/r4/StructureDefinition/00ab9e7a-06c7-4f77-9234-4154ca1e3347"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.documentation">documentation</a>" : "This server does not let the clients create identities.",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.versioning">versioning</a>" : "versioned-update",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.readHistory">readHistory</a>" : true,
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.updateCreate">updateCreate</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalCreate">conditionalCreate</a>" : true,
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalRead">conditionalRead</a>" : "full-support",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalUpdate">conditionalUpdate</a>" : false,
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalDelete">conditionalDelete</a>" : "not-supported",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a>" : [
+            "Organization"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a>" : [
+            "Person"
+          ],
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "general-practitioner",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Patient-general-practitioner",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
+              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Only supports search by institution MRN"
+            }
+          ]
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction">interaction</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction.code">code</a>" : "transaction"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.compartment">compartment</a>" : [
+        "http://hl7.org/fhir/CompartmentDefinition/patient"
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging">messaging</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.endpoint">endpoint</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.endpoint.protocol">protocol</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/message-transport",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "mllp"
+          },
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.endpoint.address">address</a>" : "mllp:10.1.1.10:9234"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.reliableCache">reliableCache</a>" : 30,
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.documentation">documentation</a>" : "ADT A08 equivalent for external system notifications",
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.supportedMessage">supportedMessage</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.supportedMessage.mode">mode</a>" : "receiver",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.supportedMessage.definition">definition</a>" : "MessageDefinition/example"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document">document</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.mode">mode</a>" : "consumer",
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.documentation">documentation</a>" : "Basic rules for all documents in the EHR system",
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.profile">profile</a>" : "http://fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796"
+    }
+  ]
+}</code></pre>
+{% endraw %}

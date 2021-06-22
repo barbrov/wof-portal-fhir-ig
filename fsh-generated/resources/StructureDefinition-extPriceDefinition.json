@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extPriceDefinition",
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
+  "version": "0.1.1",
+  "name": "ITBPriceDefinition",
+  "title": "ITB Price Definition Extension",
+  "status": "active",
+  "description": "Extension used to be able to define prices",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Extension.valueString",
+        "path": "Extension.valueString",
+        "short": "Reference to a binary",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

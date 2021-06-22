@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ITBServiceTypes",
+  "id": "itb-servicetypes",
+  "title": "ITB Service Types",
+  "description": "ITB Service Types",
+  "version": "0.1.1",
+  "url": "http://portal.wof.purified.link/fhir/CodeSystem/itb-servicetypes",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Profylax"
+    },
+    {
+      "code": "2",
+      "display": "Undersökning"
+    },
+    {
+      "code": "3",
+      "display": "Akut"
+    },
+    {
+      "code": "0",
+      "display": "Revision ospecificerad behandling"
+    }
+  ],
+  "count": 4
+}

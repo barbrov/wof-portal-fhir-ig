@@ -1,5 +1,5 @@
 CodeSystem: ITBServiceTypes
-Id: itb-servicetypes
+Id: csServiceType
 Title: "ITB Service Types"
 Description: "ITB Service Types"
 * #1 "Profylax"

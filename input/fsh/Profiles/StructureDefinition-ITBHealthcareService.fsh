@@ -4,74 +4,51 @@ Title: "ITB HealthcareService"
 Description: "ITBHealthcareService..."
 
 
-* id 0..1
+* extension contains
+ITBPriceDefinition named ExtPriceDefinition 0..*
+
+* extension contains
+ITBListReference named ExtListReference 0..1
+
+* id 0..1 MS
 * id ^short = "HealthCareService Id"
 
-* identifier 0..*
-* identifier ^short = "Möjlighet till externa identifierare."
+* contained 0..* MS
+* contained only Location or List
+* contained ^short = ""
+//* contained.list.status 1..1 MS
+//* contained.list.status ^short = "current | retired | entered-in-error"
 
-* type 0..*
-* type from ITBServiceTypes
-// * type.coding.value
-// * type.coding.system
-* type ^definition = "The specific type of service that may be delivered or performed"
-* type ^short = "Vilka typer av behandlingar erbjuds? Eventuell koppling till serviceType"
+//* contained.list.entry.item 1..1 MS
+//* contained.list.entry.item Reference(ActivityDefinition)
+//* contained.list.entry.item ^short = "current | retired | entered-in-error"
 
-* location 0..*
+* name 0..1 MS
+* name ^short = "Name or Display name"
+
+* endpoint 0..* MS
+* endpoint ^short = "TBD"
+//* endpoint only Reference(Endpoint)
+* endpoint.display ^short = ""¨
+
+* active 0..1 MS
+* active ^short = ""
+
+// displayName - what is this. Different from name?
+
+* location 0..* MS
 * location only Reference(Location)
-* location ^short = "The location(s) where this healthcare service may be provided. Här kan man använda sig av en s.k contained resource. Alltså en Locations-resurs som endast lever tillsammans med denna HealthcareService. Detta för att enkelt kunna få in information så som adress och liknande."
-//* location.address.text 0..*
-//* location.address.text ^short = "Gatuadress"
-//* location.address.city 0..*
-//* location.address.city ^short = "Stad"
-
-// TODO Only address.text and address.citry?
-
-* name 0..1
-* name ^short = "Namn eller visningsnamn"
-
-* comment  0..1
-* comment ^short = "Möjlighet till ytterligare information som kan användas av ITB vid rendering."
+//* location ^short = "The location(s) where this healthcare service may be provided"
+//* location.address 0..* MS
+//* location.address.text ^short = "Street"
+//* location.address.city 0..* MS
+//* location.address.city ^short = "City"
 
 * telecom 0..*
 * telecom ^short = "List of contacts related to this specific healthcare service."
 * telecom.system 0..1
-* telecom.value 0..1
+* telecom.value 0..1 MS
 
-// TODO Only system phone and work? 
-
-* endpoint 0..*
-* endpoint ^short = "TBD"
-// TODO what is endpoint.display
-
-
-// Elements excluded
-
-* modifierExtension 0..0
-* extension 0..0
-* implicitRules 0..0
-* language 0..0
-* meta 0..0
-* text 0..0
-
-* providedBy 0..0
-* category 0..0
-* specialty 0..0
-* extraDetails 0..0
-* photo 0..0
-* coverageArea 0..0
-* serviceProvisionCode 0..0
-* eligibility 0..0
-* program 0..0
-* characteristic	0..0
-* communication 0..0
-* referralMethod 0..0
-* appointmentRequired 0..0
-* availableTime 0..0
-* notAvailable 0..0
-* availabilityExceptions 0..0
-
-
-
+// What is HealthCareServiceActivityDefinitionList?
 
 

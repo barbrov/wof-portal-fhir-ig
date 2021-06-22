@@ -1,0 +1,32 @@
+{
+  "path": "http://hl7.org/fhir/R4/",
+  "canonical": "http://portal.wof.purified.link/fhir",
+  "igId": "portal.wof.purified.link",
+  "igName": "ITBImplementationGuide",
+  "packageId": "portal.wof.purified.link",
+  "igVer": "0.1.1",
+  "errorCount": 5,
+  "version": "4.0.1",
+  "revision": "a53ec6ee1b",
+  "versionFull": "4.0.1-a53ec6ee1b",
+  "toolingVersion": "4.6.0",
+  "toolingRevision": "3",
+  "toolingVersionFull": "4.6.0 (3)",
+  "totalFiles": 25,
+  "processedFiles": 37,
+  "genDate": "Tue, Jun 22, 2021 14:36+0200",
+  "genDay": "22/06/2021",
+  "ig": {
+    "id": "portal.wof.purified.link",
+    "name": "ITBImplementationGuide",
+    "title": "ITB Implementatoin Guide",
+    "url": "http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link",
+    "version": "0.1.1",
+    "status": "draft",
+    "experimental": false,
+    "gitstatus": "CapabilityStatement",
+    "date": "2021-06-22T14:36:07+02:00",
+    "description": "Implementation Guide for ITB",
+    "fhirVersion": "4.0.1"
+  }
+}

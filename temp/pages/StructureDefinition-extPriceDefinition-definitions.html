@@ -1,0 +1,26 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='extPriceDefinition' %}
+
+{% include fragment-pagebegin.html %}
+<div style="counter-reset: section 4" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='extPriceDefinition' active='definition' %}
+
+<a name="root"> </a>
+<h2 id="root">{{modelType}}: ITBPriceDefinition - Detailed Descriptions</h2>
+
+<p>Definitions for the extPriceDefinition {{modelType | downcase}}.</p>
+
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='StructureDefinition' id='extPriceDefinition' %}
+
+  {%include StructureDefinition-extPriceDefinition-dict.xhtml%}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='StructureDefinition' id='extPriceDefinition' %}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

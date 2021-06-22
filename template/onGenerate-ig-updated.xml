@@ -15,26 +15,18 @@
    <url value="http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link"/>
    <version value="0.1.1"/>
    <name value="ITBImplementationGuide"/>
-   <title value="ITB Implementation Guide"/>
+   <title value="ITB Implementatoin Guide"/>
    <status value="draft"/>
-   <date value="2021-04-23T17:11:57+02:00"/>
-   <publisher value="Service Well AB"/>
-   <contact>
-      <name value="Service Well AB"/>
-      <telecom>
-         <system value="url"/>
-         <value value="http://www.servicewell.se"/>
-      </telecom>
-      <telecom>
-         <system value="email"/>
-         <value value="kontakt@servicewell.se"/>
-      </telecom>
-   </contact>
+   <date value="2021-06-22T14:36:07+02:00"/>
    <description value="Implementation Guide for ITB"/>
    <packageId value="portal.wof.purified.link"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
    <definition>
+      <grouping id="-dyn-capabilitystatement">
+         <name value="Behavior: Capability Statements"/>
+         <description value="The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements."/>
+      </grouping>
 
 
 
@@ -42,20 +34,20 @@
 
 
 
-      <grouping id="_str_profile">
+      <grouping id="-str-profile">
          <name value="Structures: Resource Profiles"/>
          <description value="These define constraints on FHIR resources for systems conforming to this implementation guide"/>
       </grouping>
 
-      <grouping id="_str_extension">
+      <grouping id="-str-extension">
          <name value="Structures: Extension Definitions"/>
          <description value="These define constraints on FHIR data types for systems conforming to this implementation guide"/>
       </grouping>
-      <grouping id="_term_valueset">
+      <grouping id="-term-valueset">
          <name value="Terminology: Value Sets"/>
          <description value="These define sets of codes used by systems conforming to this implementation guide"/>
       </grouping>
-      <grouping id="_term_codesystem">
+      <grouping id="-term-codesystem">
          <name value="Terminology: Code Systems"/>
          <description value="These define new code systems used by systems conforming to this implementation guide"/>
       </grouping>
@@ -74,6 +66,21 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ITBActivityDefinition.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ITBActivityDefinition"/>
+         </reference>
+         <name value="ITB ActivityDefinition"/>
+         <description value="ITBActivityDefinition is used to handle  .."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-ITBAppointment.html"/>
          </extension>
          <reference>
@@ -82,7 +89,37 @@
          <name value="ITB Appointment"/>
          <description value="ITBAppointment is used to handle  .."/>
          <exampleBoolean value="false"/>
-         <groupingId value="_str_profile"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ITBAppointmentResponse.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ITBAppointmentResponse"/>
+         </reference>
+         <name value="ITB AppointmentResponse"/>
+         <description value="ITBAppointmentResponse is used to handle  .."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ITBEndpoint.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ITBEndpoint"/>
+         </reference>
+         <name value="ITB Endpoint"/>
+         <description value="ITB Endpoint is used to handle  .."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -97,7 +134,7 @@
          <name value="ITB HealthcareService"/>
          <description value="ITBHealthcareService..."/>
          <exampleBoolean value="false"/>
-         <groupingId value="_str_profile"/>
+         <groupingId value="-str-profile"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -112,7 +149,7 @@
          <name value="ITB Organization"/>
          <description value="TBD"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_str_profile"/>
+         <groupingId value="-str-profile"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -126,7 +163,7 @@
          </reference>
          <name value="ITB Patient"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_str_profile"/>
+         <groupingId value="-str-profile"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -139,8 +176,9 @@
             <reference value="StructureDefinition/ITBPractitionerRole"/>
          </reference>
          <name value="ITB PractitionerRole"/>
+         <description value="PractitionerRole is an actor in Patient Portal and can become a bookable entity"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_str_profile"/>
+         <groupingId value="-str-profile"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -154,7 +192,7 @@
          </reference>
          <name value="ITB Schedule"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_str_profile"/>
+         <groupingId value="-str-profile"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -168,7 +206,7 @@
          </reference>
          <name value="ITB Slot"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_str_profile"/>
+         <groupingId value="-str-profile"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -183,7 +221,7 @@
          <name value="Norweigan ITB Patient"/>
          <description value="Patient based on Norweigan basis patient"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_str_profile"/>
+         <groupingId value="-str-profile"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -198,7 +236,7 @@
          <name value="Swedish ITB Patient"/>
          <description value="Patient based on Swedish base profile"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_str_profile"/>
+         <groupingId value="-str-profile"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -213,7 +251,67 @@
          <name value="ITB Binary Reference Extension"/>
          <description value="Extension used to be able to inlude binaries in the resource"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_str_extension"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-extListReference.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/extListReference"/>
+         </reference>
+         <name value="ITB List Reference Extension"/>
+         <description value="Extension used to be able to add lists"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-extPriceDefinition.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/extPriceDefinition"/>
+         </reference>
+         <name value="ITB Price Definition Extension"/>
+         <description value="Extension used to be able to define prices"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-extOpusBookingCategory.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/extOpusBookingCategory"/>
+         </reference>
+         <name value="Opus Booking Category Extension"/>
+         <description value="Sets the BookingCategory in OpusDental. Maps to ValuSet vsOpusBookingCategory"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-extOpusCryptobookingText.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/extOpusCryptobookingText"/>
+         </reference>
+         <name value="OpusCryptobookingText Extension"/>
+         <description value="Special cryptated text for OpusDental Booking description. Maps to ValueSet"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -228,7 +326,7 @@
          <name value="ITB Role Codes"/>
          <description value="This value set defines role codes"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_term_valueset"/>
+         <groupingId value="-term-valueset"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -243,7 +341,7 @@
          <name value="ITB Service Types"/>
          <description value="This value set defines service types"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_term_valueset"/>
+         <groupingId value="-term-valueset"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -258,7 +356,7 @@
          <name value="ITB Speciality Codes"/>
          <description value="This value set defines speciality code"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_term_valueset"/>
+         <groupingId value="-term-valueset"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -273,22 +371,22 @@
          <name value="ITB Booking Categories"/>
          <description value="ITB Booking Categories"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_term_codesystem"/>
+         <groupingId value="-term-codesystem"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="CodeSystem"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CodeSystem-itb-servicetypes.html"/>
+            <valueUri value="CodeSystem-csServiceType.html"/>
          </extension>
          <reference>
-            <reference value="CodeSystem/itb-servicetypes"/>
+            <reference value="CodeSystem/csServiceType"/>
          </reference>
          <name value="ITB Service Types"/>
          <description value="ITB Service Types"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_term_codesystem"/>
+         <groupingId value="-term-codesystem"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -303,7 +401,22 @@
          <name value="ITB Booking Categories"/>
          <description value="ITB Booking Categories"/>
          <exampleBoolean value="false"/>
-         <groupingId value="_term_codesystem"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CapabilityStatement"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CapabilityStatement-ITBCapabilityStatement.html"/>
+         </extension>
+         <reference>
+            <reference value="CapabilityStatement/ITBCapabilityStatement"/>
+         </reference>
+         <name value="ITBCapabilityStatement"/>
+         <description value="This is the FHIR capability statement for the ITB interface"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-capabilitystatement"/>
       </resource>
       <page>
          <nameUrl value="toc.html"/>
@@ -339,8 +452,28 @@
             <title value="Artifacts Summary"/>
             <generation value="html"/>
             <page>
+               <nameUrl value="CapabilityStatement-ITBCapabilityStatement.html"/>
+               <title value="ITBCapabilityStatement"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ITBActivityDefinition.html"/>
+               <title value="ITB ActivityDefinition"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-ITBAppointment.html"/>
                <title value="ITB Appointment"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ITBAppointmentResponse.html"/>
+               <title value="ITB AppointmentResponse"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ITBEndpoint.html"/>
+               <title value="ITB Endpoint"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -389,6 +522,26 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-extListReference.html"/>
+               <title value="ITB List Reference Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-extPriceDefinition.html"/>
+               <title value="ITB Price Definition Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-extOpusBookingCategory.html"/>
+               <title value="Opus Booking Category Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-extOpusCryptobookingText.html"/>
+               <title value="OpusCryptobookingText Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-role-codes.html"/>
                <title value="ITB Role Codes"/>
                <generation value="generated"/>
@@ -409,7 +562,7 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="CodeSystem-itb-servicetypes.html"/>
+               <nameUrl value="CodeSystem-csServiceType.html"/>
                <title value="ITB Service Types"/>
                <generation value="generated"/>
             </page>

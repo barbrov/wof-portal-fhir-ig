@@ -1,0 +1,202 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ITBActivityDefinition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Definitional Artifacts"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "anonymous"
+    }
+  ],
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition",
+  "version": "0.1.1",
+  "name": "ITBActivityDefinition",
+  "title": "ITB ActivityDefinition",
+  "status": "active",
+  "description": "ITBActivityDefinition is used to handle  ..",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ActivityDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ActivityDefinition.id",
+        "path": "ActivityDefinition.id",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.extension",
+        "path": "ActivityDefinition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ActivityDefinition.extension:OpusBookingCategoryExtension",
+        "path": "ActivityDefinition.extension",
+        "sliceName": "OpusBookingCategoryExtension",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ActivityDefinition.extension:OpusCryptobookingTextExtension",
+        "path": "ActivityDefinition.extension",
+        "sliceName": "OpusCryptobookingTextExtension",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ActivityDefinition.name",
+        "path": "ActivityDefinition.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.title",
+        "path": "ActivityDefinition.title",
+        "short": "Title for this activity definition (human friendly)",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.subtitle",
+        "path": "ActivityDefinition.subtitle",
+        "short": " Subordinate title of the activity definition",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.status",
+        "path": "ActivityDefinition.status",
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.date",
+        "path": "ActivityDefinition.date",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.description",
+        "path": "ActivityDefinition.description",
+        "short": " Natural language description of the activity definition",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.code",
+        "path": "ActivityDefinition.code",
+        "short": "ServiceTypeCode",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.code.coding",
+        "path": "ActivityDefinition.code.coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://portal.wof.purified.link/fhir/ValueSet/service-types"
+        }
+      },
+      {
+        "id": "ActivityDefinition.code.coding.system",
+        "path": "ActivityDefinition.code.coding.system",
+        "patternUri": "http://portal.wof.purified.link/fhir/CodeSystem/cs-servicetypes"
+      },
+      {
+        "id": "ActivityDefinition.timing[x]",
+        "path": "ActivityDefinition.timing[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "ActivityDefinition.timingDuration",
+        "path": "ActivityDefinition.timingDuration",
+        "short": "Code for the Activity that is to be performed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.participant",
+        "path": "ActivityDefinition.participant",
+        "short": "The role that is requered to perform this activity",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.participant.role",
+        "path": "ActivityDefinition.participant.role",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

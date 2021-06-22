@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ITBServiceTypes",
+  "id": "service-types",
+  "title": "ITB Service Types",
+  "description": "This value set defines service types",
+  "version": "0.1.1",
+  "url": "http://portal.wof.purified.link/fhir/ValueSet/service-types",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/service-type",
+        "concept": [
+          {
+            "code": "88",
+            "display": "General dental"
+          }
+        ]
+      }
+    ]
+  }
+}

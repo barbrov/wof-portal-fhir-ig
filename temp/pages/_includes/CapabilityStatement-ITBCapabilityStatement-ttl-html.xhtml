@@ -1,0 +1,158 @@
+{% raw %}<pre class="rdf"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CapabilityStatement;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ITBCapabilityStatement&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;ITB&lt;/h2&gt;&lt;div&gt;&lt;p&gt;This is the FHIR capability statement for the ITB interface&lt;/p&gt;\n&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Main FHIR endpoint for ITB&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET a resource (read interaction)\&quot;&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET all set of resources of the type (search interaction)\&quot;&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;PUT a new resource version (update interaction)\&quot;&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;POST a new resource (create interaction)\&quot;&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ActivityDefinition&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416\&quot;&gt;http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">fhir:CapabilityStatement.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://portal.wof.purified.link/fhir/CapabilityStatement&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">fhir:CapabilityStatement.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.1&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">fhir:CapabilityStatement.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ITB&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">fhir:CapabilityStatement.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ITB capability statement&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">fhir:CapabilityStatement.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.experimental">fhir:CapabilityStatement.experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">fhir:CapabilityStatement.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-06-22&quot;^^xsd:date];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">fhir:CapabilityStatement.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Service Well&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">fhir:CapabilityStatement.contact</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;System Administrator&quot; ];
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;email&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;kontakt@servicewell.se&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.description">fhir:CapabilityStatement.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;This is the FHIR capability statement for the ITB interface&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.useContext">fhir:CapabilityStatement.useContext</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.code">fhir:UsageContext.code</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/usage-context-type&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;focus&quot; ]     ];
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.value[x]">fhir:UsageContext.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/variant-state&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;positive&quot; ]       ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.purpose">fhir:CapabilityStatement.purpose</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;ITB capability statement, published for contracting and operational support&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.copyright">fhir:CapabilityStatement.copyright</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Copyright © Service Well AB&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.kind">fhir:CapabilityStatement.kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;instance&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.instantiates">fhir:CapabilityStatement.instantiates</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://ihe.org/fhir/CapabilityStatement/pixm-client&quot;;
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://ihe.org/fhir/CapabilityStatement/pixm-client&gt;
+  ];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.software">fhir:CapabilityStatement.software</a> [
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.software.name">fhir:CapabilityStatement.software.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ITB&quot; ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.software.version">fhir:CapabilityStatement.software.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.0.0&quot; ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.software.releaseDate">fhir:CapabilityStatement.software.releaseDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-09-01&quot;^^xsd:date ]
+  ];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementation">fhir:CapabilityStatement.implementation</a> [
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementation.description">fhir:CapabilityStatement.implementation.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WOF&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.fhirVersion">fhir:CapabilityStatement.fhirVersion</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4.0.1&quot;];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.format">fhir:CapabilityStatement.format</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;json&quot;;
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0
+  ];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.patchFormat">fhir:CapabilityStatement.patchFormat</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;application/json-patch+json&quot;;
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0
+  ];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementationGuide">fhir:CapabilityStatement.implementationGuide</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://build.fhir.org/ig/barbrov/wof-portal-fhir-ig/&quot;;
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://build.fhir.org/ig/barbrov/wof-portal-fhir-ig/&gt;
+  ];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest">fhir:CapabilityStatement.rest</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.mode">fhir:CapabilityStatement.rest.mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;server&quot; ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.documentation">fhir:CapabilityStatement.rest.documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Main FHIR endpoint for ITB&quot; ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security">fhir:CapabilityStatement.rest.security</a> [
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.cors">fhir:CapabilityStatement.rest.security.cors</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.service">fhir:CapabilityStatement.rest.security.service</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/restful-security-service&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;SMART-on-FHIR&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.description">fhir:CapabilityStatement.rest.security.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;See Smart on FHIR documentation&quot; ]     ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">fhir:CapabilityStatement.rest.resource</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">fhir:CapabilityStatement.rest.resource.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ActivityDefinition&quot; ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">fhir:CapabilityStatement.rest.resource.profile</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416&quot;;
+         <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416&gt;       ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">fhir:CapabilityStatement.rest.resource.supportedProfile</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://registry.fhir.org/r4/StructureDefinition/00ab9e7a-06c7-4f77-9234-4154ca1e3347&quot;;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://registry.fhir.org/r4/StructureDefinition/00ab9e7a-06c7-4f77-9234-4154ca1e3347&gt;       ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.documentation">fhir:CapabilityStatement.rest.resource.documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;This server does not let the clients create identities.&quot; ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.versioning">fhir:CapabilityStatement.rest.resource.versioning</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;versioned-update&quot; ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.readHistory">fhir:CapabilityStatement.rest.resource.readHistory</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.updateCreate">fhir:CapabilityStatement.rest.resource.updateCreate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalCreate">fhir:CapabilityStatement.rest.resource.conditionalCreate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalRead">fhir:CapabilityStatement.rest.resource.conditionalRead</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;full-support&quot; ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalUpdate">fhir:CapabilityStatement.rest.resource.conditionalUpdate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalDelete">fhir:CapabilityStatement.rest.resource.conditionalDelete</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;not-supported&quot; ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">fhir:CapabilityStatement.rest.resource.searchInclude</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Organization&quot;;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0       ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">fhir:CapabilityStatement.rest.resource.searchRevInclude</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Person&quot;;
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0       ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">fhir:CapabilityStatement.rest.resource.searchParam</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;general-practitioner&quot; ];
+         <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [
+           <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/SearchParameter/Patient-general-practitioner&quot;;
+           <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/SearchParameter/Patient-general-practitioner&gt;         ];
+         <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;reference&quot; ];
+         <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">fhir:CapabilityStatement.rest.resource.searchParam.documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Only supports search by institution MRN&quot; ]       ]     ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction">fhir:CapabilityStatement.rest.interaction</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction.code">fhir:CapabilityStatement.rest.interaction.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;transaction&quot; ]     ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.compartment">fhir:CapabilityStatement.rest.compartment</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/CompartmentDefinition/patient&quot;;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/CompartmentDefinition/patient&gt;     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging">fhir:CapabilityStatement.messaging</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.endpoint">fhir:CapabilityStatement.messaging.endpoint</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.endpoint.protocol">fhir:CapabilityStatement.messaging.endpoint.protocol</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/message-transport&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;mllp&quot; ]       ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.endpoint.address">fhir:CapabilityStatement.messaging.endpoint.address</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:value</a> &quot;mllp:10.1.1.10:9234&quot; ]     ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.reliableCache">fhir:CapabilityStatement.messaging.reliableCache</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;30&quot;^^xsd:nonNegativeInteger ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.documentation">fhir:CapabilityStatement.messaging.documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;ADT A08 equivalent for external system notifications&quot; ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.supportedMessage">fhir:CapabilityStatement.messaging.supportedMessage</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.supportedMessage.mode">fhir:CapabilityStatement.messaging.supportedMessage.mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;receiver&quot; ];
+       <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.messaging.supportedMessage.definition">fhir:CapabilityStatement.messaging.supportedMessage.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;MessageDefinition/example&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document">fhir:CapabilityStatement.document</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.mode">fhir:CapabilityStatement.document.mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;consumer&quot; ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.documentation">fhir:CapabilityStatement.document.documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Basic rules for all documents in the EHR system&quot; ];
+     <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.profile">fhir:CapabilityStatement.document.profile</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796&quot;;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796&gt;     ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</code></pre>
+
+{% endraw %}

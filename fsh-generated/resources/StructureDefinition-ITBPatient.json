@@ -1,0 +1,131 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ITBPatient",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient",
+  "version": "0.1.1",
+  "name": "ITBPatient",
+  "title": "ITB Patient",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "loinc",
+      "uri": "http://loinc.org",
+      "name": "LOINC code for the element"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.extension",
+        "path": "Patient.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.modifierExtension",
+        "path": "Patient.modifierExtension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "short": "Extern identifierare. Svenskt personnumer men även andra identifierare"
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "short": "Här finns möjligheter att signalera om en patient får boka eller inte."
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "short": "A name associated with the individual. Krävs mellannamn? Finns en extension för detta."
+      },
+      {
+        "id": "Patient.deceased[x]",
+        "path": "Patient.deceased[x]",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "max": "0"
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo",
+        "path": "Patient.photo",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "max": "0"
+      },
+      {
+        "id": "Patient.communication",
+        "path": "Patient.communication",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "short": "Referens till PractitionerRole känns rimligt om man vill använda denna. PractitionerRole innehåller mycket information och referenser till andra resurser."
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
+        "short": "Organization that is the custodian of the patient record. Ej viktig men kan bra i ett längre perspektiv."
+      },
+      {
+        "id": "Patient.link",
+        "path": "Patient.link",
+        "max": "0"
+      }
+    ]
+  }
+}
