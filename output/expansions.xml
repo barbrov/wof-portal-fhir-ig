@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="6729213e-0e48-43ba-818a-fac043f0ec74"/>
+  <id value="a56d94c7-0239-44de-8bb5-50d48815aa4f"/>
   <meta>
-    <lastUpdated value="2021-04-23T17:11:57.574+02:00"/>
+    <lastUpdated value="2021-06-22T14:11:11.266+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
@@ -36,7 +37,7 @@
                   <a name="http---snomed.info-sct-106289002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002">106289002</a>
                 </td>
-                <td>tandläkare</td>
+                <td>Dentist</td>
                 <td/>
               </tr>
               <tr>
@@ -44,7 +45,7 @@
                   <a name="http---snomed.info-sct-26042002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002">26042002</a>
                 </td>
-                <td>tandhygienist</td>
+                <td>Dental hygienist</td>
                 <td/>
               </tr>
             </table>
@@ -52,8 +53,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:b3d96421-014d-427a-8a53-e848b0f0ab32"/>
-          <timestamp value="2021-04-23T14:59:45.782Z"/>
+          <identifier value="urn:uuid:89d8500d-72cf-4f9a-b699-646f86fb11c3"/>
+          <timestamp value="2021-06-22T08:53:25.713Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -65,12 +66,12 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="106289002"/>
-            <display value="tandl&#xE4;kare"/>
+            <display value="Dentist"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="26042002"/>
-            <display value="tandhygienist"/>
+            <display value="Dental hygienist"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -79,9 +80,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 1 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on http://terminology.hl7.org/CodeSystem/service-type version 4.0.1</p>
             <p>All codes from system 
@@ -105,7 +107,7 @@
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-service-type-88"> </a>88
                 </td>
-                <td>General dental</td>
+                <td>General Dental</td>
                 <td>General dental</td>
               </tr>
             </table>
@@ -113,8 +115,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:cba22a58-b825-435a-9737-ecce5b127d35"/>
-          <timestamp value="2021-04-23T14:59:46.876Z"/>
+          <identifier value="urn:uuid:2a88d528-b95a-4a1a-af52-015619d8cc2a"/>
+          <timestamp value="2021-06-22T08:53:26.572Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -129,7 +131,7 @@
             </extension>
             <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
             <code value="88"/>
-            <display value="General dental"/>
+            <display value="General Dental"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -138,9 +140,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
@@ -165,7 +168,7 @@
                   <a name="http---snomed.info-sct-106289002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002">106289002</a>
                 </td>
-                <td>tandläkare</td>
+                <td>Dentist</td>
                 <td/>
               </tr>
               <tr>
@@ -173,7 +176,7 @@
                   <a name="http---snomed.info-sct-26042002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002">26042002</a>
                 </td>
-                <td>tandhygienist</td>
+                <td>Dental hygienist</td>
                 <td/>
               </tr>
             </table>
@@ -181,8 +184,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:b3d96421-014d-427a-8a53-e848b0f0ab32"/>
-          <timestamp value="2021-04-23T14:59:45.782Z"/>
+          <identifier value="urn:uuid:89d8500d-72cf-4f9a-b699-646f86fb11c3"/>
+          <timestamp value="2021-06-22T08:53:25.713Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -194,12 +197,12 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="106289002"/>
-            <display value="tandl&#xE4;kare"/>
+            <display value="Dentist"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="26042002"/>
-            <display value="tandhygienist"/>
+            <display value="Dental hygienist"/>
           </contains>
         </expansion>
       </ValueSet>

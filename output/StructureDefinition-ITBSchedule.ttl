@@ -22,25 +22,11 @@
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.1"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "ITBSchedule"];
   fhir:StructureDefinition.title [ fhir:value "ITB Schedule"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-04-23T17:11:57+02:00"^^xsd:dateTime];
-  fhir:StructureDefinition.publisher [ fhir:value "Service Well AB"];
-  fhir:StructureDefinition.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Service Well AB" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.servicewell.se" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "kontakt@servicewell.se" ]
-     ]
-  ];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-22T14:11:11+02:00"^^xsd:dateTime];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

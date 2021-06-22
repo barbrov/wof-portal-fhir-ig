@@ -1,21 +1,22 @@
 {
   "resourceType" : "Bundle",
-  "id" : "6729213e-0e48-43ba-818a-fac043f0ec74",
+  "id" : "a56d94c7-0239-44de-8bb5-50d48815aa4f",
   "meta" : {
-    "lastUpdated" : "2021-04-23T17:11:57.574+02:00"
+    "lastUpdated" : "2021-06-22T14:11:11.266+02:00"
   },
   "type" : "collection",
   "entry" : [{
     "resource" : {
       "resourceType" : "ValueSet",
+      "language" : "en",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-106289002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002\">106289002</a></td><td>tandläkare</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26042002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002\">26042002</a></td><td>tandhygienist</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-106289002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002\">106289002</a></td><td>Dentist</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26042002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002\">26042002</a></td><td>Dental hygienist</td><td/></tr></table></div>"
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:b3d96421-014d-427a-8a53-e848b0f0ab32",
-        "timestamp" : "2021-04-23T14:59:45.782Z",
+        "identifier" : "urn:uuid:89d8500d-72cf-4f9a-b699-646f86fb11c3",
+        "timestamp" : "2021-06-22T08:53:25.713Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -27,12 +28,12 @@
         "contains" : [{
           "system" : "http://snomed.info/sct",
           "code" : "106289002",
-          "display" : "tandläkare"
+          "display" : "Dentist"
         },
         {
           "system" : "http://snomed.info/sct",
           "code" : "26042002",
-          "display" : "tandhygienist"
+          "display" : "Dental hygienist"
         }]
       }
     }
@@ -40,14 +41,15 @@
   {
     "resource" : {
       "resourceType" : "ValueSet",
+      "language" : "en",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on http://terminology.hl7.org/CodeSystem/service-type version 4.0.1</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-service-type.html\"><code>http://terminology.hl7.org/CodeSystem/service-type</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-service-type-88\"> </a>88</td><td>General dental</td><td>General dental</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on http://terminology.hl7.org/CodeSystem/service-type version 4.0.1</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-service-type.html\"><code>http://terminology.hl7.org/CodeSystem/service-type</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-service-type-88\"> </a>88</td><td>General Dental</td><td>General dental</td></tr></table></div>"
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:cba22a58-b825-435a-9737-ecce5b127d35",
-        "timestamp" : "2021-04-23T14:59:46.876Z",
+        "identifier" : "urn:uuid:2a88d528-b95a-4a1a-af52-015619d8cc2a",
+        "timestamp" : "2021-06-22T08:53:26.572Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -63,7 +65,7 @@
           }],
           "system" : "http://terminology.hl7.org/CodeSystem/service-type",
           "code" : "88",
-          "display" : "General dental"
+          "display" : "General Dental"
         }]
       }
     }
@@ -71,14 +73,15 @@
   {
     "resource" : {
       "resourceType" : "ValueSet",
+      "language" : "en",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-106289002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002\">106289002</a></td><td>tandläkare</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26042002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002\">26042002</a></td><td>tandhygienist</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-106289002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002\">106289002</a></td><td>Dentist</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26042002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002\">26042002</a></td><td>Dental hygienist</td><td/></tr></table></div>"
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:b3d96421-014d-427a-8a53-e848b0f0ab32",
-        "timestamp" : "2021-04-23T14:59:45.782Z",
+        "identifier" : "urn:uuid:89d8500d-72cf-4f9a-b699-646f86fb11c3",
+        "timestamp" : "2021-06-22T08:53:25.713Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -90,12 +93,12 @@
         "contains" : [{
           "system" : "http://snomed.info/sct",
           "code" : "106289002",
-          "display" : "tandläkare"
+          "display" : "Dentist"
         },
         {
           "system" : "http://snomed.info/sct",
           "code" : "26042002",
-          "display" : "tandhygienist"
+          "display" : "Dental hygienist"
         }]
       }
     }

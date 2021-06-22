@@ -13,25 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ITBImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link</pre><div><p>Implementation Guide for ITB</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link"];
-  fhir:ImplementationGuide.version [ fhir:value "0.1.1"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "ITBImplementationGuide"];
-  fhir:ImplementationGuide.title [ fhir:value "ITB Implementation Guide"];
+  fhir:ImplementationGuide.title [ fhir:value "ITB Implementatoin Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-04-23T17:11:57+02:00"^^xsd:dateTime];
-  fhir:ImplementationGuide.publisher [ fhir:value "Service Well AB"];
-  fhir:ImplementationGuide.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Service Well AB" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.servicewell.se" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "kontakt@servicewell.se" ]
-     ]
-  ];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-22T14:11:11+02:00"^^xsd:dateTime];
   fhir:ImplementationGuide.description [ fhir:value "Implementation Guide for ITB"];
   fhir:ImplementationGuide.packageId [ fhir:value "portal.wof.purified.link"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
@@ -289,6 +275,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ITBActivityDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITB ActivityDefinition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ITBActivityDefinition is used to handle  .." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ITBAppointment" ]
        ];
@@ -296,7 +296,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ITBAppointment is used to handle  .." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ITBAppointmentResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITB AppointmentResponse" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ITBAppointmentResponse is used to handle  .." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ITBEndpoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITB Endpoint" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ITB Endpoint is used to handle  .." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -310,7 +338,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ITBHealthcareService..." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -324,7 +352,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TBD" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -337,7 +365,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITB Patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -348,9 +376,10 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/ITBPractitionerRole" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITB PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PractitionerRole is an actor in Patient Portal and can become a bookable entity" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -363,7 +392,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITB Schedule" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -376,7 +405,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITB Slot" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -390,7 +419,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient based on Norweigan basis patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -404,7 +433,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient based on Swedish base profile" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -418,7 +447,63 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension used to be able to inlude binaries in the resource" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/extListReference>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/extListReference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITB List Reference Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension used to be able to add lists" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/extPriceDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITB Price Definition Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension used to be able to define prices" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/extOpusBookingCategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Opus Booking Category Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sets the BookingCategory in OpusDental. Maps to ValuSet vsOpusBookingCategory" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/extOpusCryptobookingText" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OpusCryptobookingText Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Special cryptated text for OpusDental Booking description. Maps to ValueSet" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -432,7 +517,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set defines role codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -446,7 +531,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set defines service types" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -460,7 +545,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set defines speciality code" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -474,21 +559,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ITB Booking Categories" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://portal.wof.purified.link/fhir/CodeSystem/itb-servicetypes>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/itb-servicetypes" ]
+         fhir:link <http://portal.wof.purified.link/fhir/CodeSystem/csServiceType>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/csServiceType" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITB Service Types" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ITB Service Types" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -500,6 +585,20 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITB Booking Categories" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ITB Booking Categories" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://portal.wof.purified.link/fhir/CapabilityStatement/ITBCapabilityStatement>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/ITBCapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ITBCapabilityStatement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the FHIR capability statement for the ITB interface" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

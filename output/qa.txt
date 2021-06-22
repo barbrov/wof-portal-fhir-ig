@@ -1,75 +1,287 @@
 ﻿ITBImplementationGuide : Validation Results
 =========================================
 
-err = 0, warn = 14, info = 0
-IG Publisher Version: 1.1.44 Out of date - current version is 1.1.67
-Generated Fri Apr 23 17:12:35 CEST 2021. FHIR version 4.0.1 for portal.wof.purified.link#0.1.1 (canonical = http://portal.wof.purified.link/fhir)
+err = 5, warn = 24, info = 0
+IG Publisher Version: 1.1.73 Out of date - current version is 1.1.75
+Generated Tue Jun 22 14:12:19 CEST 2021. FHIR version 4.0.1 for portal.wof.purified.link#0.1.0 (canonical = http://portal.wof.purified.link/fhir)
 
- Build Errors : 0 / 4 / 0
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\ImplementationGuide-portal.wof.purified.link : 0 / 0 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\codesystem-itb-booking-categories : 0 / 0 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\codesystem-itb-servicetypes : 0 / 0 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\codesystem-practitioner-role-codes : 0 / 0 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\structuredefinition-ITBAppointment : 0 / 1 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\structuredefinition-ITBHealthcareService : 0 / 1 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\structuredefinition-ITBOrganization : 0 / 1 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\structuredefinition-ITBPatient : 0 / 1 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\structuredefinition-ITBPractitionerRole : 0 / 1 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\structuredefinition-ITBSchedule : 0 / 1 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\structuredefinition-ITBSlot : 0 / 1 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\structuredefinition-NoITBPatient : 0 / 1 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\structuredefinition-SEITBPatient : 0 / 1 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\structuredefinition-extBinaryReference : 0 / 1 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\valueset-role-codes : 0 / 0 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\valueset-service-types : 0 / 0 / 1
- C:\repos\wof-portal-fhir-ig\fsh-generated\resources\valueset-speciality-codes : 0 / 0 / 1
+ Build Errors : 173 / 3 / 0
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\ImplementationGuide-portal.wof.purified.link : 0 / 0 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\capabilitystatement-ITBCapabilityStatement : 5 / 0 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\codesystem-csServiceType : 0 / 0 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\codesystem-itb-booking-categories : 0 / 0 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\codesystem-practitioner-role-codes : 0 / 0 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-ITBActivityDefinition : 0 / 5 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-ITBAppointment : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-ITBAppointmentResponse : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-ITBEndpoint : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-ITBHealthcareService : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-ITBOrganization : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-ITBPatient : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-ITBPractitionerRole : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-ITBSchedule : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-ITBSlot : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-NoITBPatient : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-SEITBPatient : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-extBinaryReference : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-extListReference : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-extOpusBookingCategory : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-extOpusCryptobookingText : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\structuredefinition-extPriceDefinition : 0 / 1 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\valueset-role-codes : 0 / 0 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\valueset-service-types : 0 / 0 / 1
+ C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\valueset-speciality-codes : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBPractitionerRole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBSchedule.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBSlot.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\ImplementationGuide-portal.wof.purified.link.json ==
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CapabilityStatement-ITBCapabilityStatement.change.history.html#/html/body/div/div/div/p/a at Line 214, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CapabilityStatement-ITBCapabilityStatement.html#/html/body/div/div/div/p/a at Line 207, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CapabilityStatement-ITBCapabilityStatement.json.html#/html/body/div/div/div/p/a at Line 356, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CapabilityStatement-ITBCapabilityStatement.ttl.html#/html/body/div/div/div/p/a at Line 357, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CapabilityStatement-ITBCapabilityStatement.xml.html#/html/body/div/div/div/p/a at Line 323, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-csServiceType.change.history.html#/html/body/div/div/div/p/a at Line 214, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-csServiceType.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-csServiceType.json.html#/html/body/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-csServiceType.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-csServiceType.xml.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-itb-booking-categories.change.history.html#/html/body/div/div/div/p/a at Line 214, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-itb-booking-categories.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-itb-booking-categories.json.html#/html/body/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-itb-booking-categories.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-itb-booking-categories.xml.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-practitioner-role-codes.change.history.html#/html/body/div/div/div/p/a at Line 214, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-practitioner-role-codes.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-practitioner-role-codes.json.html#/html/body/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-practitioner-role-codes.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\CodeSystem-practitioner-role-codes.xml.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBActivityDefinition-definitions.html#/html/body/div/div/div/p/a at Line 1024, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBActivityDefinition-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBActivityDefinition-mappings.html#/html/body/div/div/div/p/a at Line 356, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBActivityDefinition.html#/html/body/div/div/div/p/a at Line 916, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBActivityDefinition.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBActivityDefinition.profile.json.html#/html/body/div/div/div/p/a at Line 3944, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBActivityDefinition.profile.ttl.html#/html/body/div/div/div/p/a at Line 3436, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBActivityDefinition.profile.xml.html#/html/body/div/div/div/p/a at Line 3518, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointment-definitions.html#/html/body/div/div/div/p/a at Line 586, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointment-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointment-mappings.html#/html/body/div/div/div/p/a at Line 320, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointment.html#/html/body/div/div/div/p/a at Line 617, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointment.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointment.profile.json.html#/html/body/div/div/div/p/a at Line 2313, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointment.profile.ttl.html#/html/body/div/div/div/p/a at Line 2050, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointment.profile.xml.html#/html/body/div/div/div/p/a at Line 2121, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointmentResponse-definitions.html#/html/body/div/div/div/p/a at Line 470, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointmentResponse-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointmentResponse-mappings.html#/html/body/div/div/div/p/a at Line 301, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointmentResponse.html#/html/body/div/div/div/p/a at Line 586, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointmentResponse.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointmentResponse.profile.json.html#/html/body/div/div/div/p/a at Line 1425, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointmentResponse.profile.ttl.html#/html/body/div/div/div/p/a at Line 1284, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBAppointmentResponse.profile.xml.html#/html/body/div/div/div/p/a at Line 1311, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBEndpoint-definitions.html#/html/body/div/div/div/p/a at Line 443, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBEndpoint-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBEndpoint-mappings.html#/html/body/div/div/div/p/a at Line 272, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBEndpoint.html#/html/body/div/div/div/p/a at Line 574, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBEndpoint.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBEndpoint.profile.json.html#/html/body/div/div/div/p/a at Line 1219, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBEndpoint.profile.ttl.html#/html/body/div/div/div/p/a at Line 1112, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBEndpoint.profile.xml.html#/html/body/div/div/div/p/a at Line 1126, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBHealthcareService-definitions.html#/html/body/div/div/div/p/a at Line 853, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBHealthcareService-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBHealthcareService-mappings.html#/html/body/div/div/div/p/a at Line 315, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBHealthcareService.html#/html/body/div/div/div/p/a at Line 837, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBHealthcareService.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBHealthcareService.profile.json.html#/html/body/div/div/div/p/a at Line 3232, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBHealthcareService.profile.ttl.html#/html/body/div/div/div/p/a at Line 2828, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBHealthcareService.profile.xml.html#/html/body/div/div/div/p/a at Line 2855, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBOrganization-definitions.html#/html/body/div/div/div/p/a at Line 504, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBOrganization-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBOrganization-mappings.html#/html/body/div/div/div/p/a at Line 281, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBOrganization.html#/html/body/div/div/div/p/a at Line 535, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBOrganization.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBOrganization.profile.json.html#/html/body/div/div/div/p/a at Line 1540, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBOrganization.profile.ttl.html#/html/body/div/div/div/p/a at Line 1387, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBOrganization.profile.xml.html#/html/body/div/div/div/p/a at Line 1415, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPatient-definitions.html#/html/body/div/div/div/p/a at Line 722, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPatient-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPatient-mappings.html#/html/body/div/div/div/p/a at Line 292, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPatient.html#/html/body/div/div/div/p/a at Line 575, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPatient.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2529, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2228, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2338, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPractitionerRole-definitions.html#/html/body/div/div/div/p/a at Line 854, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPractitionerRole-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPractitionerRole-mappings.html#/html/body/div/div/div/p/a at Line 336, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPractitionerRole.html#/html/body/div/div/div/p/a at Line 849, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPractitionerRole.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPractitionerRole.profile.json.html#/html/body/div/div/div/p/a at Line 3262, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPractitionerRole.profile.ttl.html#/html/body/div/div/div/p/a at Line 2845, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBPractitionerRole.profile.xml.html#/html/body/div/div/div/p/a at Line 2921, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSchedule-definitions.html#/html/body/div/div/div/p/a at Line 391, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSchedule-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSchedule-mappings.html#/html/body/div/div/div/p/a at Line 267, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSchedule.html#/html/body/div/div/div/p/a at Line 525, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSchedule.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSchedule.profile.json.html#/html/body/div/div/div/p/a at Line 1088, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSchedule.profile.ttl.html#/html/body/div/div/div/p/a at Line 1010, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSchedule.profile.xml.html#/html/body/div/div/div/p/a at Line 1006, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSlot-definitions.html#/html/body/div/div/div/p/a at Line 412, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSlot-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSlot-mappings.html#/html/body/div/div/div/p/a at Line 266, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSlot.html#/html/body/div/div/div/p/a at Line 542, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSlot.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSlot.profile.json.html#/html/body/div/div/div/p/a at Line 1194, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSlot.profile.ttl.html#/html/body/div/div/div/p/a at Line 1090, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-ITBSlot.profile.xml.html#/html/body/div/div/div/p/a at Line 1096, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-NoITBPatient-definitions.html#/html/body/div/div/div/p/a at Line 731, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-NoITBPatient-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-NoITBPatient-mappings.html#/html/body/div/div/div/p/a at Line 358, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-NoITBPatient.html#/html/body/div/div/div/p/a at Line 709, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-NoITBPatient.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-NoITBPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2477, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-NoITBPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2187, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-NoITBPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2275, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-SEITBPatient-definitions.html#/html/body/div/div/div/p/a at Line 731, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-SEITBPatient-examples.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-SEITBPatient-mappings.html#/html/body/div/div/div/p/a at Line 358, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-SEITBPatient.html#/html/body/div/div/div/p/a at Line 709, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-SEITBPatient.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-SEITBPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2477, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-SEITBPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2187, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-SEITBPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2275, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extBinaryReference-definitions.html#/html/body/div/div/div/p/a at Line 284, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extBinaryReference-mappings.html#/html/body/div/div/div/p/a at Line 252, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extBinaryReference.html#/html/body/div/div/div/p/a at Line 466, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extBinaryReference.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extBinaryReference.profile.json.html#/html/body/div/div/div/p/a at Line 520, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extBinaryReference.profile.ttl.html#/html/body/div/div/div/p/a at Line 500, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extBinaryReference.profile.xml.html#/html/body/div/div/div/p/a at Line 479, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extListReference-definitions.html#/html/body/div/div/div/p/a at Line 283, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extListReference-mappings.html#/html/body/div/div/div/p/a at Line 252, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extListReference.html#/html/body/div/div/div/p/a at Line 466, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extListReference.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extListReference.profile.json.html#/html/body/div/div/div/p/a at Line 517, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extListReference.profile.ttl.html#/html/body/div/div/div/p/a at Line 497, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extListReference.profile.xml.html#/html/body/div/div/div/p/a at Line 475, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusBookingCategory-definitions.html#/html/body/div/div/div/p/a at Line 294, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusBookingCategory-mappings.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusBookingCategory.html#/html/body/div/div/div/p/a at Line 492, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusBookingCategory.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusBookingCategory.profile.json.html#/html/body/div/div/div/p/a at Line 577, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusBookingCategory.profile.ttl.html#/html/body/div/div/div/p/a at Line 542, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusBookingCategory.profile.xml.html#/html/body/div/div/div/p/a at Line 530, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusCryptobookingText-definitions.html#/html/body/div/div/div/p/a at Line 294, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusCryptobookingText-mappings.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusCryptobookingText.html#/html/body/div/div/div/p/a at Line 492, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusCryptobookingText.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusCryptobookingText.profile.json.html#/html/body/div/div/div/p/a at Line 577, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusCryptobookingText.profile.ttl.html#/html/body/div/div/div/p/a at Line 542, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extOpusCryptobookingText.profile.xml.html#/html/body/div/div/div/p/a at Line 530, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extPriceDefinition-definitions.html#/html/body/div/div/div/p/a at Line 294, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extPriceDefinition-mappings.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extPriceDefinition.html#/html/body/div/div/div/p/a at Line 492, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extPriceDefinition.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extPriceDefinition.profile.json.html#/html/body/div/div/div/p/a at Line 577, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extPriceDefinition.profile.ttl.html#/html/body/div/div/div/p/a at Line 542, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\StructureDefinition-extPriceDefinition.profile.xml.html#/html/body/div/div/div/p/a at Line 529, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-role-codes.change.history.html#/html/body/div/div/div/p/a at Line 214, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-role-codes.html#/html/body/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-role-codes.json.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-role-codes.ttl.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-role-codes.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-service-types.change.history.html#/html/body/div/div/div/p/a at Line 214, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-service-types.html#/html/body/div/div/div/p/a at Line 261, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-service-types.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-service-types.ttl.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-service-types.xml.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-speciality-codes.change.history.html#/html/body/div/div/div/p/a at Line 214, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-speciality-codes.html#/html/body/div/div/div/p/a at Line 261, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-speciality-codes.json.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-speciality-codes.ttl.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\ValueSet-speciality-codes.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\artifacts.html#/html/body/div/div/div/p/a at Line 450, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\codesystems.html#/html/body/div/div/div/p/a at Line 175, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\extensions.html#/html/body/div/div/div/p/a at Line 179, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\index.html#/html/body/div/div/div/p/a at Line 192, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\profiles.html#/html/body/div/div/div/p/a at Line 187, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\toc.html#/html/body/div/div/div/p/a at Line 150, column 28: The link '' for "" cannot be resolved
+ERROR: C:\repos\devops\wof-portal-fhir-implementation-guide\output\valuesets.html#/html/body/div/div/div/p/a at Line 175, column 28: The link '' for "" cannot be resolved
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\ImplementationGuide-portal.wof.purified.link.json ==
 INFORMATION: ImplementationGuide/portal.wof.purified.link: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\CodeSystem-itb-booking-categories.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\CapabilityStatement-ITBCapabilityStatement.json ==
+ERROR: CapabilityStatement.url: Resource id/url mismatch: ITBCapabilityStatement/http://portal.wof.purified.link/fhir/CapabilityStatement
+INFORMATION: CapabilityStatement/ITBCapabilityStatement: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+ERROR: CapabilityStatement/ITBCapabilityStatement: CapabilityStatement.format[0]: The value provided ('json') is not in the value set http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 (http://hl7.org/fhir/ValueSet/mimetypes), and a code is required from this value set) (error message = Attempt to use Terminology server when no Terminology server is available)
+ERROR: CapabilityStatement/ITBCapabilityStatement: CapabilityStatement.patchFormat[0]: The value provided ('application/json-patch+json') is not in the value set http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 (http://hl7.org/fhir/ValueSet/mimetypes), and a code is required from this value set) (error message = Attempt to use Terminology server when no Terminology server is available)
+ERROR: CapabilityStatement/ITBCapabilityStatement: CapabilityStatement.rest[0].compartment[0]: Canonical URL 'http://hl7.org/fhir/CompartmentDefinition/patient' does not resolve
+ERROR: CapabilityStatement/ITBCapabilityStatement: CapabilityStatement.messaging[0].supportedMessage[0].definition: Canonical URLs must be absolute URLs if they are not fragment references (MessageDefinition/example) 
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\CodeSystem-csServiceType.json ==
+INFORMATION: CodeSystem/csServiceType: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\CodeSystem-itb-booking-categories.json ==
 INFORMATION: CodeSystem/itb-booking-categories: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\CodeSystem-itb-servicetypes.json ==
-INFORMATION: CodeSystem/itb-servicetypes: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\CodeSystem-practitioner-role-codes.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\CodeSystem-practitioner-role-codes.json ==
 INFORMATION: CodeSystem/practitioner-role-codes: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\StructureDefinition-ITBAppointment.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-ITBActivityDefinition.json ==
+INFORMATION: StructureDefinition/ITBActivityDefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/ITBActivityDefinition: StructureDefinition.snapshot.element[16].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/ITBActivityDefinition: StructureDefinition.snapshot.element[23].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/ITBActivityDefinition: StructureDefinition.differential.element[7].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/ITBActivityDefinition: StructureDefinition.differential.element[10].short: value should not start or finish with whitespace
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition'): The Implementation Guide contains no examples for this profile
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-ITBAppointment.json ==
 INFORMATION: StructureDefinition/ITBAppointment: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment'): The Implementation Guide contains no examples for this profile
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\StructureDefinition-ITBHealthcareService.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-ITBAppointmentResponse.json ==
+INFORMATION: StructureDefinition/ITBAppointmentResponse: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse'): The Implementation Guide contains no examples for this profile
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-ITBEndpoint.json ==
+INFORMATION: StructureDefinition/ITBEndpoint: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint'): The Implementation Guide contains no examples for this profile
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-ITBHealthcareService.json ==
 INFORMATION: StructureDefinition/ITBHealthcareService: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService'): The Implementation Guide contains no examples for this profile
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\StructureDefinition-ITBOrganization.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-ITBOrganization.json ==
 INFORMATION: StructureDefinition/ITBOrganization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization'): The Implementation Guide contains no examples for this profile
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\StructureDefinition-ITBPatient.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-ITBPatient.json ==
 INFORMATION: StructureDefinition/ITBPatient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient'): The Implementation Guide contains no examples for this profile
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\StructureDefinition-ITBPractitionerRole.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-ITBPractitionerRole.json ==
 INFORMATION: StructureDefinition/ITBPractitionerRole: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitionerRole'): The Implementation Guide contains no examples for this profile
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\StructureDefinition-ITBSchedule.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-ITBSchedule.json ==
 INFORMATION: StructureDefinition/ITBSchedule: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule'): The Implementation Guide contains no examples for this profile
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\StructureDefinition-ITBSlot.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-ITBSlot.json ==
 INFORMATION: StructureDefinition/ITBSlot: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot'): The Implementation Guide contains no examples for this profile
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\StructureDefinition-NoITBPatient.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-NoITBPatient.json ==
 INFORMATION: StructureDefinition/NoITBPatient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/NoITBPatient'): The Implementation Guide contains no examples for this profile
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\StructureDefinition-SEITBPatient.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-SEITBPatient.json ==
 INFORMATION: StructureDefinition/SEITBPatient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/SEITBPatient'): The Implementation Guide contains no examples for this profile
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\StructureDefinition-extBinaryReference.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-extBinaryReference.json ==
 INFORMATION: StructureDefinition/extBinaryReference: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference'): The Implementation Guide contains no examples for this extension
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\ValueSet-role-codes.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-extListReference.json ==
+INFORMATION: StructureDefinition/extListReference: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/extListReference'): The Implementation Guide contains no examples for this extension
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-extOpusBookingCategory.json ==
+INFORMATION: StructureDefinition/extOpusBookingCategory: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory'): The Implementation Guide contains no examples for this extension
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-extOpusCryptobookingText.json ==
+INFORMATION: StructureDefinition/extOpusCryptobookingText: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText'): The Implementation Guide contains no examples for this extension
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\StructureDefinition-extPriceDefinition.json ==
+INFORMATION: StructureDefinition/extPriceDefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition'): The Implementation Guide contains no examples for this extension
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\ValueSet-role-codes.json ==
 INFORMATION: ValueSet/role-codes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\ValueSet-service-types.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\ValueSet-service-types.json ==
 INFORMATION: ValueSet/service-types: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== C:\repos\wof-portal-fhir-ig\fsh-generated\resources\ValueSet-speciality-codes.json ==
+== C:\repos\devops\wof-portal-fhir-implementation-guide\fsh-generated\resources\ValueSet-speciality-codes.json ==
 INFORMATION: ValueSet/speciality-codes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

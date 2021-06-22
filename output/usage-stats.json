@@ -1,6 +1,6 @@
 {
   "package": "portal.wof.purified.link",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -9,13 +9,62 @@
       "types": [
         "Reference"
       ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference",
+      "title": "ITB List Reference Extension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory",
+      "title": "Opus Booking Category Extension",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText",
+      "title": "OpusCryptobookingText Extension",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
+      "title": "ITB Price Definition Extension",
+      "types": [
+        "string",
+        "string"
+      ]
     }
   ],
   "profiles": {
+    "ActivityDefinition": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition",
+        "title": "ITB ActivityDefinition"
+      }
+    ],
     "Appointment": [
       {
         "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment",
         "title": "ITB Appointment"
+      }
+    ],
+    "AppointmentResponse": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse",
+        "title": "ITB AppointmentResponse"
+      }
+    ],
+    "Endpoint": [
+      {
+        "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint",
+        "title": "ITB Endpoint"
       }
     ],
     "HealthcareService": [
@@ -75,6 +124,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -98,6 +150,18 @@
     ],
     "http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference": [
       "PractitionerRole"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference": [
+      "HealthcareService"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory": [
+      "ActivityDefinition"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText": [
+      "ActivityDefinition"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition": [
+      "HealthcareService"
     ]
   }
 }

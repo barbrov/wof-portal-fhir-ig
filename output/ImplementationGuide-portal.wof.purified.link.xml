@@ -7,23 +7,11 @@
 </div></div>
   </text>
   <url value="http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link"/>
-  <version value="0.1.1"/>
+  <version value="0.1.0"/>
   <name value="ITBImplementationGuide"/>
-  <title value="ITB Implementation Guide"/>
+  <title value="ITB Implementatoin Guide"/>
   <status value="draft"/>
-  <date value="2021-04-23T17:11:57+02:00"/>
-  <publisher value="Service Well AB"/>
-  <contact>
-    <name value="Service Well AB"/>
-    <telecom>
-      <system value="url"/>
-      <value value="http://www.servicewell.se"/>
-    </telecom>
-    <telecom>
-      <system value="email"/>
-      <value value="kontakt@servicewell.se"/>
-    </telecom>
-  </contact>
+  <date value="2021-06-22T14:11:11+02:00"/>
   <description value="Implementation Guide for ITB"/>
   <packageId value="portal.wof.purified.link"/>
   <license value="CC0-1.0"/>
@@ -194,10 +182,43 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ITBActivityDefinition"/>
+      </reference>
+      <name value="ITB ActivityDefinition"/>
+      <description value="ITBActivityDefinition is used to handle  .."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ITBAppointment"/>
       </reference>
       <name value="ITB Appointment"/>
       <description value="ITBAppointment is used to handle  .."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ITBAppointmentResponse"/>
+      </reference>
+      <name value="ITB AppointmentResponse"/>
+      <description value="ITBAppointmentResponse is used to handle  .."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ITBEndpoint"/>
+      </reference>
+      <name value="ITB Endpoint"/>
+      <description value="ITB Endpoint is used to handle  .."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -240,6 +261,7 @@
         <reference value="StructureDefinition/ITBPractitionerRole"/>
       </reference>
       <name value="ITB PractitionerRole"/>
+      <description value="PractitionerRole is an actor in Patient Portal and can become a bookable entity"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -297,6 +319,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extListReference"/>
+      </reference>
+      <name value="ITB List Reference Extension"/>
+      <description value="Extension used to be able to add lists"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extPriceDefinition"/>
+      </reference>
+      <name value="ITB Price Definition Extension"/>
+      <description value="Extension used to be able to define prices"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extOpusBookingCategory"/>
+      </reference>
+      <name value="Opus Booking Category Extension"/>
+      <description value="Sets the BookingCategory in OpusDental. Maps to ValuSet vsOpusBookingCategory"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extOpusCryptobookingText"/>
+      </reference>
+      <name value="OpusCryptobookingText Extension"/>
+      <description value="Special cryptated text for OpusDental Booking description. Maps to ValueSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -344,7 +410,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/itb-servicetypes"/>
+        <reference value="CodeSystem/csServiceType"/>
       </reference>
       <name value="ITB Service Types"/>
       <description value="ITB Service Types"/>
@@ -359,6 +425,17 @@
       </reference>
       <name value="ITB Booking Categories"/>
       <description value="ITB Booking Categories"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ITBCapabilityStatement"/>
+      </reference>
+      <name value="ITBCapabilityStatement"/>
+      <description value="This is the FHIR capability statement for the ITB interface"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

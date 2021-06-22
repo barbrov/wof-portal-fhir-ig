@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="ITBCapabilityStatement"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ITB</h2><div><p>This is the FHIR capability statement for the ITB interface</p>
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Main FHIR endpoint for ITB</p>
+</div></td></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>ActivityDefinition</td><td><a href="http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416">http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416</a></td><td></td><td></td><td></td><td></td></tr></table></div>
+  </text>
+  <url value="http://portal.wof.purified.link/fhir/CapabilityStatement"/>
+  <version value="0.1.0"/>
+  <name value="ITB"/>
+  <title value="ITB capability statement"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-06-22"/>
+  <publisher value="Service Well"/>
+  <contact>
+    <name value="System Administrator"/>
+    <telecom>
+      <system value="email"/>
+      <value value="kontakt@servicewell.se"/>
+    </telecom>
+  </contact>
+  <description value="This is the FHIR capability statement for the ITB interface"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="focus"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/variant-state"/>
+        <code value="positive"/>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <purpose value="ITB capability statement, published for contracting and operational support"/>
+  <copyright value="Copyright &#xA9; Service Well AB"/>
+  <kind value="instance"/>
+  <instantiates value="http://ihe.org/fhir/CapabilityStatement/pixm-client"/>
+  <software>
+    <name value="ITB"/>
+    <version value="0.0.0"/>
+    <releaseDate value="2021-09-01"/>
+  </software>
+  <implementation>
+    <description value="WOF"/>
+  </implementation>
+  <fhirVersion value="4.0.1"/>
+  <format value="json"/>
+  <patchFormat value="application/json-patch+json"/>
+  <implementationGuide value="https://build.fhir.org/ig/barbrov/wof-portal-fhir-ig/"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="Main FHIR endpoint for ITB"/>
+    <security>
+      <cors value="true"/>
+      <service>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+          <code value="SMART-on-FHIR"/>
+        </coding>
+      </service>
+      <description value="See Smart on FHIR documentation"/>
+    </security>
+    <resource>
+      <type value="ActivityDefinition"/>
+      <profile value="http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416"/>
+      <supportedProfile value="http://registry.fhir.org/r4/StructureDefinition/00ab9e7a-06c7-4f77-9234-4154ca1e3347"/>
+      <documentation value="This server does not let the clients create identities."/>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="Organization"/>
+      <searchRevInclude value="Person"/>
+      <searchParam>
+        <name value="general-practitioner"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Patient-general-practitioner"/>
+        <type value="reference"/>
+        <documentation value="Only supports search by institution MRN"/>
+      </searchParam>
+    </resource>
+    <interaction>
+      <code value="transaction"/>
+    </interaction>
+    <compartment value="http://hl7.org/fhir/CompartmentDefinition/patient"/>
+  </rest>
+  <messaging>
+    <endpoint>
+      <protocol>
+        <system value="http://terminology.hl7.org/CodeSystem/message-transport"/>
+        <code value="mllp"/>
+      </protocol>
+      <address value="mllp:10.1.1.10:9234"/>
+    </endpoint>
+    <reliableCache value="30"/>
+    <documentation value="ADT A08 equivalent for external system notifications"/>
+    <supportedMessage>
+      <mode value="receiver"/>
+      <definition value="MessageDefinition/example"/>
+    </supportedMessage>
+  </messaging>
+  <document>
+    <mode value="consumer"/>
+    <documentation value="Basic rules for all documents in the EHR system"/>
+    <profile value="http://fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796"/>
+  </document>
+</CapabilityStatement>

@@ -12,28 +12,7 @@
   <sch:pattern>
     <sch:title>f:HealthcareService</sch:title>
     <sch:rule context="f:HealthcareService">
-      <sch:assert test="count(f:meta) &lt;= 0">meta: maximum cardinality of 'meta' is 0</sch:assert>
-      <sch:assert test="count(f:implicitRules) &lt;= 0">implicitRules: maximum cardinality of 'implicitRules' is 0</sch:assert>
-      <sch:assert test="count(f:language) &lt;= 0">language: maximum cardinality of 'language' is 0</sch:assert>
-      <sch:assert test="count(f:text) &lt;= 0">text: maximum cardinality of 'text' is 0</sch:assert>
-      <sch:assert test="count(f:extension) &lt;= 0">extension: maximum cardinality of 'extension' is 0</sch:assert>
-      <sch:assert test="count(f:modifierExtension) &lt;= 0">modifierExtension: maximum cardinality of 'modifierExtension' is 0</sch:assert>
-      <sch:assert test="count(f:providedBy) &lt;= 0">providedBy: maximum cardinality of 'providedBy' is 0</sch:assert>
-      <sch:assert test="count(f:category) &lt;= 0">category: maximum cardinality of 'category' is 0</sch:assert>
-      <sch:assert test="count(f:specialty) &lt;= 0">specialty: maximum cardinality of 'specialty' is 0</sch:assert>
-      <sch:assert test="count(f:extraDetails) &lt;= 0">extraDetails: maximum cardinality of 'extraDetails' is 0</sch:assert>
-      <sch:assert test="count(f:photo) &lt;= 0">photo: maximum cardinality of 'photo' is 0</sch:assert>
-      <sch:assert test="count(f:coverageArea) &lt;= 0">coverageArea: maximum cardinality of 'coverageArea' is 0</sch:assert>
-      <sch:assert test="count(f:serviceProvisionCode) &lt;= 0">serviceProvisionCode: maximum cardinality of 'serviceProvisionCode' is 0</sch:assert>
-      <sch:assert test="count(f:eligibility) &lt;= 0">eligibility: maximum cardinality of 'eligibility' is 0</sch:assert>
-      <sch:assert test="count(f:program) &lt;= 0">program: maximum cardinality of 'program' is 0</sch:assert>
-      <sch:assert test="count(f:characteristic) &lt;= 0">characteristic: maximum cardinality of 'characteristic' is 0</sch:assert>
-      <sch:assert test="count(f:communication) &lt;= 0">communication: maximum cardinality of 'communication' is 0</sch:assert>
-      <sch:assert test="count(f:referralMethod) &lt;= 0">referralMethod: maximum cardinality of 'referralMethod' is 0</sch:assert>
-      <sch:assert test="count(f:appointmentRequired) &lt;= 0">appointmentRequired: maximum cardinality of 'appointmentRequired' is 0</sch:assert>
-      <sch:assert test="count(f:availableTime) &lt;= 0">availableTime: maximum cardinality of 'availableTime' is 0</sch:assert>
-      <sch:assert test="count(f:notAvailable) &lt;= 0">notAvailable: maximum cardinality of 'notAvailable' is 0</sch:assert>
-      <sch:assert test="count(f:availabilityExceptions) &lt;= 0">availabilityExceptions: maximum cardinality of 'availabilityExceptions' is 0</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://portal.wof.purified.link/fhir/StructureDefinition/extListReference']) &lt;= 1">extension with URL = 'http://portal.wof.purified.link/fhir/StructureDefinition/extListReference': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -75,6 +54,10 @@
     <sch:rule context="f:HealthcareService/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -151,8 +134,56 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:HealthcareService/f:telecom</sch:title>
+    <sch:rule context="f:HealthcareService/f:telecom">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
+      <sch:assert test="count(f:rank) &lt;= 1">rank: maximum cardinality of 'rank' is 1</sch:assert>
+      <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>HealthcareService.telecom</sch:title>
     <sch:rule context="f:HealthcareService/f:telecom">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>HealthcareService.telecom.extension</sch:title>
+    <sch:rule context="f:HealthcareService/f:telecom/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>HealthcareService.telecom.system</sch:title>
+    <sch:rule context="f:HealthcareService/f:telecom/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>HealthcareService.telecom.value</sch:title>
+    <sch:rule context="f:HealthcareService/f:telecom/f:value">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>HealthcareService.telecom.use</sch:title>
+    <sch:rule context="f:HealthcareService/f:telecom/f:use">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>HealthcareService.telecom.rank</sch:title>
+    <sch:rule context="f:HealthcareService/f:telecom/f:rank">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>HealthcareService.telecom.period</sch:title>
+    <sch:rule context="f:HealthcareService/f:telecom/f:period">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -313,8 +344,49 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:HealthcareService/f:endpoint</sch:title>
+    <sch:rule context="f:HealthcareService/f:endpoint">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
+      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>HealthcareService.endpoint</sch:title>
     <sch:rule context="f:HealthcareService/f:endpoint">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>HealthcareService.endpoint.extension</sch:title>
+    <sch:rule context="f:HealthcareService/f:endpoint/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>HealthcareService.endpoint.reference</sch:title>
+    <sch:rule context="f:HealthcareService/f:endpoint/f:reference">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>HealthcareService.endpoint.type</sch:title>
+    <sch:rule context="f:HealthcareService/f:endpoint/f:type">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>HealthcareService.endpoint.identifier</sch:title>
+    <sch:rule context="f:HealthcareService/f:endpoint/f:identifier">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>HealthcareService.endpoint.display</sch:title>
+    <sch:rule context="f:HealthcareService/f:endpoint/f:display">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

@@ -13,23 +13,11 @@
     <valueCode value="patient"/>
   </extension>
   <url value="http://portal.wof.purified.link/fhir/StructureDefinition/NoITBPatient"/>
-  <version value="0.1.1"/>
+  <version value="0.1.0"/>
   <name value="NoITBPatient"/>
   <title value="Norweigan ITB Patient"/>
   <status value="active"/>
-  <date value="2021-04-23T17:11:57+02:00"/>
-  <publisher value="Service Well AB"/>
-  <contact>
-    <name value="Service Well AB"/>
-    <telecom>
-      <system value="url"/>
-      <value value="http://www.servicewell.se"/>
-    </telecom>
-    <telecom>
-      <system value="email"/>
-      <value value="kontakt@servicewell.se"/>
-    </telecom>
-  </contact>
+  <date value="2021-06-22T14:11:11+02:00"/>
   <description value="Patient based on Norweigan basis patient"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
