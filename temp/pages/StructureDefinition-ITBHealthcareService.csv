@@ -19,7 +19,7 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "HealthcareService.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"Y","","","Location {[]} {[]}
 List {[]} {[]}","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"HealthcareService.extension","","","",0,*,"","","","Extension {[]} {[]}
+"HealthcareService.extension","","","",1,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -28,6 +28,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "HealthcareService.extension","ExtListReference","","",0,1,"","","","Extension {[CanonicalType[http://portal.wof.purified.link/fhir/StructureDefinition/extListReference]]} {[]}
+","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"HealthcareService.extension","ExtUrlPlaceholder","","",1,1,"","","","Extension {[CanonicalType[http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
@@ -61,7 +65,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Location(s) where service may be provided","The location(s) where this healthcare service may be provided.","","","","","","","","","",,,,,"",,,,"HealthcareService.location",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".location.role[classCode=SDLOC]","FiveWs.where[x]"
 "HealthcareService.name","","","",0,1,"Y","","Y","string {[]} {[]}
-","Name or Display name","Further description of the service as it would be presented to a consumer while searching.","","","","","","","","","",,,,,"",,,,"HealthcareService.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Name visible in GUI","Further description of the service as it would be presented to a consumer while searching.","","","","","","","","","",,,,,"",,,,"HealthcareService.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".name"
 "HealthcareService.comment","","","",0,1,"","","Y","string {[]} {[]}
 ","Additional description and/or any specific issues not covered elsewhere","Any additional description of the service and/or any specific issues not covered by the other attributes, which can be displayed as further detail under the serviceName.","Would expect that a user would not see this information on a search results, and it would only be available when viewing the complete details of the service.","","","","","","","","",,,,,"",,,,"HealthcareService.comment",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

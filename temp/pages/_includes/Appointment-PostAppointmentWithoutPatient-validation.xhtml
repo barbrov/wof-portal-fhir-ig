@@ -1,0 +1,11 @@
+{% raw %}<table class="grid">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>invalid</td><td>Appointment/PostAppointmentWithoutPatient: Appointment.text.div</td><td>The URL is not valid because '(URL contains Invalid Characters ([{, }]))' : HealthcareService/{{healthCareServiceID}} </td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>Appointment/PostAppointmentWithoutPatient: Appointment.text.div</td><td>The URL is not valid because '(URL contains Invalid Characters ([{, }]))' : PractitionerRole/{{practitionerRoleId}} </td><td></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>Appointment/PostAppointmentWithoutPatient: Appointment.serviceType[0].coding[0]</td><td>Unknown Code http://portal.wof.purified.link/fhir/CodeSystem/csServiceType#{{serviceTypeCode}} in http://portal.wof.purified.link/fhir/CodeSystem/csServiceType for 'http://portal.wof.purified.link/fhir/CodeSystem/csServiceType#{{serviceTypeCode}}'</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Appointment/PostAppointmentWithoutPatient: Appointment.participant[0].actor</td><td>Unable to resolve resource 'HealthcareService/{{healthCareServiceID}}'</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Appointment/PostAppointmentWithoutPatient: Appointment.participant[1].actor</td><td>Unable to resolve resource 'Patient/649'</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Appointment/PostAppointmentWithoutPatient: Appointment.participant[2].actor</td><td>Unable to resolve resource 'PractitionerRole/{{practitionerRoleId}}'</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>Appointment/PostAppointmentWithoutPatient: Appointment</td><td>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Appointment</td><td></td></tr>
+</table>
+{% endraw %}

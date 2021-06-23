@@ -9,6 +9,16 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "26042002"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Dental hygienist",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -28,10 +38,11 @@ v: {
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
+  "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:b3d96421-014d-427a-8a53-e848b0f0ab32",
-    "timestamp" : "2021-04-23T14:59:45.782Z",
+    "identifier" : "urn:uuid:9cf51916-e9c6-4213-93e7-8e93e5ce32e9",
+    "timestamp" : "2021-06-22T14:41:03.184Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -43,12 +54,12 @@ e: {
     "contains" : [{
       "system" : "http://snomed.info/sct",
       "code" : "106289002",
-      "display" : "tandläkare"
+      "display" : "Dentist"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "26042002",
-      "display" : "tandhygienist"
+      "display" : "Dental hygienist"
     }]
   }
 },

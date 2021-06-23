@@ -10,6 +10,9 @@ ITBPriceDefinition named ExtPriceDefinition 0..*
 * extension contains
 ITBListReference named ExtListReference 0..1
 
+* extension contains
+ITBUrlPlaceholder named ExtUrlPlaceholder 1..1
+
 * id 0..1 MS
 * id ^short = "HealthCareService Id"
 
@@ -24,7 +27,7 @@ ITBListReference named ExtListReference 0..1
 //* contained.list.entry.item ^short = "current | retired | entered-in-error"
 
 * name 0..1 MS
-* name ^short = "Name or Display name"
+* name ^short = "Name visible in GUI"
 
 * endpoint 0..* MS
 * endpoint ^short = "TBD"
@@ -34,7 +37,6 @@ ITBListReference named ExtListReference 0..1
 * active 0..1 MS
 * active ^short = ""
 
-// displayName - what is this. Different from name?
 
 * location 0..* MS
 * location only Reference(Location)

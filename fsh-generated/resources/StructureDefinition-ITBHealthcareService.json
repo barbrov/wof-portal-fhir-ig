@@ -69,7 +69,8 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "HealthcareService.extension:ExtPriceDefinition",
@@ -102,6 +103,21 @@
         ]
       },
       {
+        "id": "HealthcareService.extension:ExtUrlPlaceholder",
+        "path": "HealthcareService.extension",
+        "sliceName": "ExtUrlPlaceholder",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder"
+            ]
+          }
+        ]
+      },
+      {
         "id": "HealthcareService.active",
         "path": "HealthcareService.active",
         "short": "",
@@ -115,7 +131,7 @@
       {
         "id": "HealthcareService.name",
         "path": "HealthcareService.name",
-        "short": "Name or Display name",
+        "short": "Name visible in GUI",
         "mustSupport": true
       },
       {

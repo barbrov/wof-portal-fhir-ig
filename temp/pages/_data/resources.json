@@ -7,7 +7,7 @@
     "name": "ITBImplementationGuide",
     "title": "ITB Implementatoin Guide",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colsd",
       "status": "Draft"
@@ -21,7 +21,7 @@
     "name": "ITBActivityDefinition",
     "title": "ITB ActivityDefinition",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -35,7 +35,7 @@
     "name": "ITBAppointment",
     "title": "ITB Appointment",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -49,7 +49,7 @@
     "name": "ITBAppointmentResponse",
     "title": "ITB AppointmentResponse",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -63,7 +63,7 @@
     "name": "ITBEndpoint",
     "title": "ITB Endpoint",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -77,7 +77,7 @@
     "name": "ITBHealthcareService",
     "title": "ITB HealthcareService",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -91,7 +91,7 @@
     "name": "ITBOrganization",
     "title": "ITB Organization",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -105,7 +105,7 @@
     "name": "ITBPatient",
     "title": "ITB Patient",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -119,7 +119,7 @@
     "name": "ITBPractitionerRole",
     "title": "ITB PractitionerRole",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -133,7 +133,7 @@
     "name": "ITBSchedule",
     "title": "ITB Schedule",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -147,7 +147,7 @@
     "name": "ITBSlot",
     "title": "ITB Slot",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -161,7 +161,7 @@
     "name": "NoITBPatient",
     "title": "Norweigan ITB Patient",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -175,7 +175,7 @@
     "name": "SEITBPatient",
     "title": "Swedish ITB Patient",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -189,7 +189,7 @@
     "name": "ITBBinaryReference",
     "title": "ITB Binary Reference Extension",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -203,7 +203,7 @@
     "name": "ITBListReference",
     "title": "ITB List Reference Extension",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -217,7 +217,21 @@
     "name": "ITBPriceDefinition",
     "title": "ITB Price Definition Extension",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
+    "status": {
+      "class": "colstu",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/extUrlPlaceholder": {
+    "history": false,
+    "index": 16,
+    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-extUrlPlaceholder.json",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder",
+    "name": "ITBUrlPlaceholder",
+    "title": "ITB Url Placeholder Extension",
+    "version": "0.1.1",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -225,13 +239,13 @@
   },
   "StructureDefinition/extOpusBookingCategory": {
     "history": false,
-    "index": 16,
+    "index": 17,
     "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-extOpusBookingCategory.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory",
     "name": "OpusBookingCategory",
     "title": "Opus Booking Category Extension",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -239,13 +253,13 @@
   },
   "StructureDefinition/extOpusCryptobookingText": {
     "history": false,
-    "index": 17,
+    "index": 18,
     "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-extOpusCryptobookingText.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText",
     "name": "OpusCryptobookingText",
     "title": "OpusCryptobookingText Extension",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -253,13 +267,13 @@
   },
   "ValueSet/role-codes": {
     "history": false,
-    "index": 18,
+    "index": 19,
     "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\valueset-role-codes.json",
     "url": "http://portal.wof.purified.link/fhir/ValueSet/role-codes",
     "name": "ITBRoleCodes",
     "title": "ITB Role Codes",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -267,13 +281,13 @@
   },
   "ValueSet/service-types": {
     "history": false,
-    "index": 19,
+    "index": 20,
     "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\valueset-service-types.json",
     "url": "http://portal.wof.purified.link/fhir/ValueSet/service-types",
     "name": "ITBServiceTypes",
     "title": "ITB Service Types",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -281,13 +295,13 @@
   },
   "ValueSet/speciality-codes": {
     "history": false,
-    "index": 20,
+    "index": 21,
     "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\valueset-speciality-codes.json",
     "url": "http://portal.wof.purified.link/fhir/ValueSet/speciality-codes",
     "name": "ITBSpecialityCodes",
     "title": "ITB Speciality Codes",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -295,13 +309,13 @@
   },
   "CodeSystem/itb-booking-categories": {
     "history": false,
-    "index": 21,
+    "index": 22,
     "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\codesystem-itb-booking-categories.json",
     "url": "http://portal.wof.purified.link/fhir/CodeSystem/itb-booking-categories",
     "name": "ITBBookingCategories",
     "title": "ITB Booking Categories",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -309,13 +323,13 @@
   },
   "CodeSystem/csServiceType": {
     "history": false,
-    "index": 22,
+    "index": 23,
     "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\codesystem-csServiceType.json",
     "url": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
     "name": "ITBServiceTypes",
     "title": "ITB Service Types",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -323,13 +337,13 @@
   },
   "CodeSystem/practitioner-role-codes": {
     "history": false,
-    "index": 23,
+    "index": 24,
     "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\codesystem-practitioner-role-codes.json",
     "url": "http://portal.wof.purified.link/fhir/CodeSystem/practitioner-role-codes",
     "name": "PractitionerRoleCodes",
     "title": "ITB Booking Categories",
     "version": "0.1.1",
-    "date": "2021-06-22T14:36:07+02:00",
+    "date": "2021-06-23T15:38:14+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -337,7 +351,7 @@
   },
   "CapabilityStatement/ITBCapabilityStatement": {
     "history": false,
-    "index": 24,
+    "index": 25,
     "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\capabilitystatement-ITBCapabilityStatement.json",
     "url": "http://portal.wof.purified.link/fhir/CapabilityStatement",
     "name": "ITB",
@@ -349,5 +363,10 @@
       "owner": "Service Well",
       "status": "Draft"
     }
+  },
+  "Appointment/PostAppointmentWithoutPatient": {
+    "history": false,
+    "index": 26,
+    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\appointment-PostAppointmentWithoutPatient.json"
   }
 }

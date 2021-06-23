@@ -122,8 +122,8 @@
          fhir:index 0;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "general-practitioner" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://hl7.org/fhir/SearchParameter/Patient-general-practitioner";
-           fhir:link <http://hl7.org/fhir/SearchParameter/Patient-general-practitioner>
+           fhir:value "http://hl7.org/fhir/SearchParameter/Patient-identifier";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Patient-identifier>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Only supports search by institution MRN" ]

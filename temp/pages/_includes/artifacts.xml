@@ -19,6 +19,9 @@
       <li>
          <a href="#5">Terminology: Code Systems</a>
       </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
    </ul>
 </div>
 <div xmlns:html="http://www.w3.org/1999/xhtml"
@@ -185,6 +188,14 @@
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-extUrlPlaceholder.html"
+                     title="StructureDefinition/extUrlPlaceholder">ITB Url Placeholder Extension</a>
+               </td>
+               <td>{% capture desc %}Used in URL's for linking to this instance. Should be short and url-friendly{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-extOpusBookingCategory.html"
                      title="StructureDefinition/extOpusBookingCategory">Opus Booking Category Extension</a>
                </td>
@@ -264,6 +275,23 @@
                </td>
                <td>{% capture desc %}ITB Booking Categories{% endcapture %}
 {{ desc | markdownify}}</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>{% capture grouping_desc %}These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like{% endcapture %}
+    {{ grouping_desc | markdownify}}</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Appointment-PostAppointmentWithoutPatient.html"
+                     title="Appointment/PostAppointmentWithoutPatient">PostAppointmentWithoutPatient</a>
+               </td>
             </tr>
          </tbody>
       </table>

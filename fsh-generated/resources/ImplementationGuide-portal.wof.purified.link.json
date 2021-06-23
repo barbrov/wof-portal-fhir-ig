@@ -133,6 +133,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/extUrlPlaceholder"
+        },
+        "name": "ITB Url Placeholder Extension",
+        "description": "Used in URL's for linking to this instance. Should be short and url-friendly",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/extOpusBookingCategory"
         },
         "name": "Opus Booking Category Extension",
@@ -201,6 +209,13 @@
         },
         "name": "ITBCapabilityStatement",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Appointment/PostAppointmentWithoutPatient"
+        },
+        "name": "PostAppointmentWithoutPatient",
+        "exampleBoolean": true
       }
     ],
     "page": {

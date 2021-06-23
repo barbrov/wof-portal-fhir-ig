@@ -80,7 +80,7 @@
       <searchRevInclude value="Person"/>
       <searchParam>
         <name value="general-practitioner"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Patient-general-practitioner"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Patient-identifier"/>
         <type value="reference"/>
         <documentation value="Only supports search by institution MRN"/>
       </searchParam>

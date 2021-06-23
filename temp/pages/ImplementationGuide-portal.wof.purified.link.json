@@ -10,7 +10,7 @@
   "name": "ITBImplementationGuide",
   "title": "ITB Implementatoin Guide",
   "status": "draft",
-  "date": "2021-06-22T14:36:07+02:00",
+  "date": "2021-06-23T15:38:14+02:00",
   "description": "Implementation Guide for ITB",
   "packageId": "portal.wof.purified.link",
   "license": "CC0-1.0",
@@ -496,6 +496,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/extUrlPlaceholder"
+        },
+        "name": "ITB Url Placeholder Extension",
+        "description": "Used in URL's for linking to this instance. Should be short and url-friendly",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/extOpusBookingCategory"
         },
         "name": "Opus Booking Category Extension",
@@ -613,6 +627,19 @@
         "name": "ITBCapabilityStatement",
         "description": "This is the FHIR capability statement for the ITB interface",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Appointment"
+          }
+        ],
+        "reference": {
+          "reference": "Appointment/PostAppointmentWithoutPatient"
+        },
+        "name": "PostAppointmentWithoutPatient",
+        "exampleBoolean": true
       }
     ],
     "page": {

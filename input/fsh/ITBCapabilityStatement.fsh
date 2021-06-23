@@ -64,7 +64,7 @@ Usage: #definition
 * rest.resource.searchParam.type = #token
 * rest.resource.searchParam.documentation = "Only supports search by institution MRN"
 * rest.resource.searchParam.name = "general-practitioner"
-* rest.resource.searchParam.definition = "http://hl7.org/fhir/SearchParameter/Patient-general-practitioner"
+//* rest.resource.searchParam .definition = "http://hl7.org/fhir/SearchParameter/Patient-general-practitioner"
 * rest.resource.searchParam.type = #reference
 * rest.interaction[0].code = #transaction
 //* rest.interaction[+].code = #history-system

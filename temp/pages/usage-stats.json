@@ -40,6 +40,14 @@
         "string",
         "string"
       ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder",
+      "title": "ITB Url Placeholder Extension",
+      "types": [
+        "string",
+        "string"
+      ]
     }
   ],
   "profiles": {
@@ -161,6 +169,9 @@
       "ActivityDefinition"
     ],
     "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition": [
+      "HealthcareService"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder": [
       "HealthcareService"
     ]
   }

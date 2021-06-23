@@ -17,7 +17,7 @@
    <name value="ITBImplementationGuide"/>
    <title value="ITB Implementatoin Guide"/>
    <status value="draft"/>
-   <date value="2021-06-22T14:36:07+02:00"/>
+   <date value="2021-06-23T15:38:14+02:00"/>
    <description value="Implementation Guide for ITB"/>
    <packageId value="portal.wof.purified.link"/>
    <license value="CC0-1.0"/>
@@ -59,7 +59,10 @@
 
 
 
-
+      <grouping id="-ex-example">
+         <name value="Example: Example Instances"/>
+         <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like"/>
+      </grouping>
 
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -288,6 +291,21 @@
             <valueString value="StructureDefinition:extension"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-extUrlPlaceholder.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/extUrlPlaceholder"/>
+         </reference>
+         <name value="ITB Url Placeholder Extension"/>
+         <description value="Used in URL's for linking to this instance. Should be short and url-friendly"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-extOpusBookingCategory.html"/>
          </extension>
          <reference>
@@ -418,6 +436,20 @@
          <exampleBoolean value="false"/>
          <groupingId value="-dyn-capabilitystatement"/>
       </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Appointment"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Appointment-PostAppointmentWithoutPatient.html"/>
+         </extension>
+         <reference>
+            <reference value="Appointment/PostAppointmentWithoutPatient"/>
+         </reference>
+         <name value="PostAppointmentWithoutPatient"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
       <page>
          <nameUrl value="toc.html"/>
          <title value="Table of Contents"/>
@@ -532,6 +564,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-extUrlPlaceholder.html"/>
+               <title value="ITB Url Placeholder Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-extOpusBookingCategory.html"/>
                <title value="Opus Booking Category Extension"/>
                <generation value="generated"/>
@@ -569,6 +606,11 @@
             <page>
                <nameUrl value="CodeSystem-practitioner-role-codes.html"/>
                <title value="ITB Booking Categories"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Appointment-PostAppointmentWithoutPatient.html"/>
+               <title value="PostAppointmentWithoutPatient"/>
                <generation value="generated"/>
             </page>
          </page>

@@ -24,10 +24,11 @@ v: {
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
+  "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:cba22a58-b825-435a-9737-ecce5b127d35",
-    "timestamp" : "2021-04-23T14:59:46.876Z",
+    "identifier" : "urn:uuid:dc8fd91f-9d56-40be-a084-4d40f053d029",
+    "timestamp" : "2021-06-22T14:41:04.044Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -43,7 +44,7 @@ e: {
       }],
       "system" : "http://terminology.hl7.org/CodeSystem/service-type",
       "code" : "88",
-      "display" : "General dental"
+      "display" : "General Dental"
     }]
   }
 },

@@ -107,7 +107,7 @@
           "searchParam": [
             {
               "name": "general-practitioner",
-              "definition": "http://hl7.org/fhir/SearchParameter/Patient-general-practitioner",
+              "definition": "http://hl7.org/fhir/SearchParameter/Patient-identifier",
               "type": "reference",
               "documentation": "Only supports search by institution MRN"
             }

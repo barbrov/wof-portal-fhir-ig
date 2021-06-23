@@ -33,7 +33,7 @@ OpusCryptobookingText named OpusCryptobookingTextExtension 0..*
 * description ^short = " Natural language description of the activity definition"
 
 * code 1..1 MS
-* code ^short = "ServiceTypeCode"
+* code ^short = "ServiceTypeCode used as a source code in a dynamic Code System. Used in url:s for linking to this service from external webpages"
 * code.coding.system = "http://portal.wof.purified.link/fhir/CodeSystem/cs-servicetypes"
 * code.coding from ITBServiceTypes
 

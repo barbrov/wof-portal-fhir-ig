@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ITBListReference"];
   fhir:StructureDefinition.title [ fhir:value "ITB List Reference Extension"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-22T14:36:07+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-23T15:38:14+02:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "Extension used to be able to add lists"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [

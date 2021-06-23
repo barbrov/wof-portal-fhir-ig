@@ -154,6 +154,13 @@
     "name": "ITBPriceDefinition"
   },
   {
+    "id": "extUrlPlaceholder",
+    "type": "StructureDefinition",
+    "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder",
+    "version": "0.1.1",
+    "name": "ITBUrlPlaceholder"
+  },
+  {
     "id": "role-codes",
     "type": "ValueSet",
     "url": "http://portal.wof.purified.link/fhir/ValueSet/role-codes",
