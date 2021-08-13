@@ -1,6 +1,6 @@
 {
   "package": "portal.wof.purified.link",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -36,6 +36,14 @@
     {
       "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
       "title": "ITB Price Definition Extension",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder",
+      "title": "ITB Url Placeholder Extension",
       "types": [
         "string",
         "string"
@@ -161,6 +169,10 @@
       "ActivityDefinition"
     ],
     "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition": [
+      "HealthcareService",
+      "HealthcareService.contained.entry"
+    ],
+    "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder": [
       "HealthcareService"
     ]
   }

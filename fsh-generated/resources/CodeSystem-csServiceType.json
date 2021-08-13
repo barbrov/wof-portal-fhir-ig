@@ -6,6 +6,6 @@
   "id": "csServiceType",
   "title": "ITB Service Types",
   "description": "ITB Service Types",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "url": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"
 }

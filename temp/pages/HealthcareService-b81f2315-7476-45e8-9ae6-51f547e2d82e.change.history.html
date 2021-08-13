@@ -1,0 +1,21 @@
+---
+---
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='HealthcareService' id='b81f2315-7476-45e8-9ae6-51f547e2d82e' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{type}}: colosseum-nationaltheatret - Change History</h2>
+  <p>History of changes for b81f2315-7476-45e8-9ae6-51f547e2d82e {{type | downcase}}.</p>
+
+  {%include HealthcareService-b81f2315-7476-45e8-9ae6-51f547e2d82e-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

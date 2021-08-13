@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/csServiceType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr></table></div>
   </text>
   <url value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
-  <version value="0.1.1"/>
+  <version value="0.1.0"/>
   <name value="ITBServiceTypes"/>
   <title value="ITB Service Types"/>
   <status value="active"/>
-  <date value="2021-06-23T15:38:14+02:00"/>
+  <date value="2021-08-13T09:50:07+02:00"/>
   <description value="ITB Service Types"/>
   <content value="complete"/>
 </CodeSystem>

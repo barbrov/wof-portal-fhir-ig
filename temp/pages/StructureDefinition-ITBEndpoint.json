@@ -16,11 +16,11 @@
     }
   ],
   "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "name": "ITBEndpoint",
   "title": "ITB Endpoint",
   "status": "active",
-  "date": "2021-06-23T15:38:14+02:00",
+  "date": "2021-08-13T09:50:07+02:00",
   "description": "ITB Endpoint is used to handle  ..",
   "fhirVersion": "4.0.1",
   "mapping": [

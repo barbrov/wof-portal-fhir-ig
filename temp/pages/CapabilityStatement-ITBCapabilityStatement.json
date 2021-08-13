@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ITB</h2><div><p>This is the FHIR capability statement for the ITB interface</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Main FHIR endpoint for ITB</p>\n</div></td></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>ActivityDefinition</td><td><a href=\"http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416\">http://registry.fhir.org/r4/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416</a></td><td></td><td></td><td></td><td></td></tr></table></div>"
   },
   "url": "http://portal.wof.purified.link/fhir/CapabilityStatement",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "name": "ITB",
   "title": "ITB capability statement",
   "status": "draft",

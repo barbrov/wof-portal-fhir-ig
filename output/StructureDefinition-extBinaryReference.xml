@@ -10,11 +10,11 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference"/>
-  <version value="0.1.1"/>
+  <version value="0.1.0"/>
   <name value="ITBBinaryReference"/>
   <title value="ITB Binary Reference Extension"/>
   <status value="active"/>
-  <date value="2021-06-22T14:36:07+02:00"/>
+  <date value="2021-08-13T09:50:07+02:00"/>
   <description value="Extension used to be able to inlude binaries in the resource"/>
   <fhirVersion value="4.0.1"/>
   <mapping>

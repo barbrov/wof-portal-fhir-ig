@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "name": "ITBEndpoint",
   "title": "ITB Endpoint",
   "status": "active",

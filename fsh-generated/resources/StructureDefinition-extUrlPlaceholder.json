@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "extUrlPlaceholder",
   "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "name": "ITBUrlPlaceholder",
   "title": "ITB Url Placeholder Extension",
   "status": "active",

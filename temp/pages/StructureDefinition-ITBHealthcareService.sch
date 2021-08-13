@@ -13,7 +13,6 @@
     <sch:title>f:HealthcareService</sch:title>
     <sch:rule context="f:HealthcareService">
       <sch:assert test="count(f:extension[@url = 'http://portal.wof.purified.link/fhir/StructureDefinition/extListReference']) &lt;= 1">extension with URL = 'http://portal.wof.purified.link/fhir/StructureDefinition/extListReference': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder']) &gt;= 1">extension with URL = 'http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder']) &lt;= 1">extension with URL = 'http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

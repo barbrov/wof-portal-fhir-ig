@@ -6,7 +6,7 @@
   "id": "itb-booking-categories",
   "title": "ITB Booking Categories",
   "description": "ITB Booking Categories",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "url": "http://portal.wof.purified.link/fhir/CodeSystem/itb-booking-categories",
   "concept": [
     {

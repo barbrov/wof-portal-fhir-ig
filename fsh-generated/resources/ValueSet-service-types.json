@@ -5,7 +5,7 @@
   "id": "service-types",
   "title": "ITB Service Types",
   "description": "This value set defines service types",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "url": "http://portal.wof.purified.link/fhir/ValueSet/service-types",
   "compose": {
     "include": [

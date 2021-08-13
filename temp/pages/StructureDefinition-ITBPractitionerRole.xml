@@ -32,11 +32,11 @@
     <valueCode value="individual"/>
   </extension>
   <url value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitionerRole"/>
-  <version value="0.1.1"/>
+  <version value="0.1.0"/>
   <name value="ITBPractitionerRole"/>
   <title value="ITB PractitionerRole"/>
   <status value="active"/>
-  <date value="2021-06-23T15:38:14+02:00"/>
+  <date value="2021-08-13T09:50:07+02:00"/>
   <description value="PractitionerRole is an actor in Patient Portal and can become a bookable entity"/>
   <fhirVersion value="4.0.1"/>
   <mapping>

@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "name": "ITBAppointmentResponse",
   "title": "ITB AppointmentResponse",
   "status": "active",

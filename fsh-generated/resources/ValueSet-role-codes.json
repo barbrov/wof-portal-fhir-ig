@@ -5,7 +5,7 @@
   "id": "role-codes",
   "title": "ITB Role Codes",
   "description": "This value set defines role codes",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "url": "http://portal.wof.purified.link/fhir/ValueSet/role-codes",
   "compose": {
     "include": [

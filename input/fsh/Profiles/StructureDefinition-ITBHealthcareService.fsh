@@ -11,7 +11,9 @@ ITBPriceDefinition named ExtPriceDefinition 0..*
 ITBListReference named ExtListReference 0..1
 
 * extension contains
-ITBUrlPlaceholder named ExtUrlPlaceholder 1..1
+// TOOD - revert this
+//ITBUrlPlaceholder named ExtUrlPlaceholder 1..1
+ITBUrlPlaceholder named ExtUrlPlaceholder 0..1
 
 * id 0..1 MS
 * id ^short = "HealthCareService Id"

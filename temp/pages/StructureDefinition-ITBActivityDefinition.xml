@@ -30,11 +30,11 @@
     <valueCode value="anonymous"/>
   </extension>
   <url value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition"/>
-  <version value="0.1.1"/>
+  <version value="0.1.0"/>
   <name value="ITBActivityDefinition"/>
   <title value="ITB ActivityDefinition"/>
   <status value="active"/>
-  <date value="2021-06-23T15:38:14+02:00"/>
+  <date value="2021-08-13T09:50:07+02:00"/>
   <description value="ITBActivityDefinition is used to handle  .."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

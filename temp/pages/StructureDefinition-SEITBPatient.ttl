@@ -22,11 +22,11 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://portal.wof.purified.link/fhir/StructureDefinition/SEITBPatient"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.1"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "SEITBPatient"];
   fhir:StructureDefinition.title [ fhir:value "Swedish ITB Patient"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-23T15:38:14+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-13T09:50:07+02:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "Patient based on Swedish base profile"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [

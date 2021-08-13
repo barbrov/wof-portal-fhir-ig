@@ -31,6 +31,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"HealthcareService.extension","ExtUrlPlaceholder","","",0,1,"","","","Extension {[CanonicalType[http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder]]} {[]}
+","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "HealthcareService.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -61,7 +65,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Location(s) where service may be provided","The location(s) where this healthcare service may be provided.","","","","","","","","","",,,,,"",,,,"HealthcareService.location",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".location.role[classCode=SDLOC]","FiveWs.where[x]"
 "HealthcareService.name","","","",0,1,"Y","","Y","string {[]} {[]}
-","Name or Display name","Further description of the service as it would be presented to a consumer while searching.","","","","","","","","","",,,,,"",,,,"HealthcareService.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Name visible in GUI","Further description of the service as it would be presented to a consumer while searching.","","","","","","","","","",,,,,"",,,,"HealthcareService.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".name"
 "HealthcareService.comment","","","",0,1,"","","Y","string {[]} {[]}
 ","Additional description and/or any specific issues not covered elsewhere","Any additional description of the service and/or any specific issues not covered by the other attributes, which can be displayed as further detail under the serviceName.","Would expect that a user would not see this information on a search results, and it would only be available when viewing the complete details of the service.","","","","","","","","",,,,,"",,,,"HealthcareService.comment",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

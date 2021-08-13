@@ -5,9 +5,9 @@
     "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\ImplementationGuide-portal.wof.purified.link.json",
     "url": "http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link",
     "name": "ITBImplementationGuide",
-    "title": "ITB Implementatoin Guide",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "title": "ITB Implementation Guide",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colsd",
       "status": "Draft"
@@ -20,8 +20,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition",
     "name": "ITBActivityDefinition",
     "title": "ITB ActivityDefinition",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -34,8 +34,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment",
     "name": "ITBAppointment",
     "title": "ITB Appointment",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -48,8 +48,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse",
     "name": "ITBAppointmentResponse",
     "title": "ITB AppointmentResponse",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -62,8 +62,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint",
     "name": "ITBEndpoint",
     "title": "ITB Endpoint",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -76,8 +76,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService",
     "name": "ITBHealthcareService",
     "title": "ITB HealthcareService",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -90,8 +90,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization",
     "name": "ITBOrganization",
     "title": "ITB Organization",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -104,8 +104,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient",
     "name": "ITBPatient",
     "title": "ITB Patient",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -118,8 +118,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitionerRole",
     "name": "ITBPractitionerRole",
     "title": "ITB PractitionerRole",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -132,8 +132,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule",
     "name": "ITBSchedule",
     "title": "ITB Schedule",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -146,8 +146,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot",
     "name": "ITBSlot",
     "title": "ITB Slot",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -160,8 +160,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/NoITBPatient",
     "name": "NoITBPatient",
     "title": "Norweigan ITB Patient",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -174,8 +174,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/SEITBPatient",
     "name": "SEITBPatient",
     "title": "Swedish ITB Patient",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -188,8 +188,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference",
     "name": "ITBBinaryReference",
     "title": "ITB Binary Reference Extension",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -202,8 +202,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference",
     "name": "ITBListReference",
     "title": "ITB List Reference Extension",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -216,8 +216,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
     "name": "ITBPriceDefinition",
     "title": "ITB Price Definition Extension",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -230,8 +230,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder",
     "name": "ITBUrlPlaceholder",
     "title": "ITB Url Placeholder Extension",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -244,8 +244,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory",
     "name": "OpusBookingCategory",
     "title": "Opus Booking Category Extension",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -258,8 +258,8 @@
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText",
     "name": "OpusCryptobookingText",
     "title": "OpusCryptobookingText Extension",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -272,8 +272,8 @@
     "url": "http://portal.wof.purified.link/fhir/ValueSet/role-codes",
     "name": "ITBRoleCodes",
     "title": "ITB Role Codes",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -286,8 +286,8 @@
     "url": "http://portal.wof.purified.link/fhir/ValueSet/service-types",
     "name": "ITBServiceTypes",
     "title": "ITB Service Types",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -300,8 +300,8 @@
     "url": "http://portal.wof.purified.link/fhir/ValueSet/speciality-codes",
     "name": "ITBSpecialityCodes",
     "title": "ITB Speciality Codes",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -314,8 +314,8 @@
     "url": "http://portal.wof.purified.link/fhir/CodeSystem/itb-booking-categories",
     "name": "ITBBookingCategories",
     "title": "ITB Booking Categories",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -328,8 +328,8 @@
     "url": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
     "name": "ITBServiceTypes",
     "title": "ITB Service Types",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -342,8 +342,8 @@
     "url": "http://portal.wof.purified.link/fhir/CodeSystem/practitioner-role-codes",
     "name": "PractitionerRoleCodes",
     "title": "ITB Booking Categories",
-    "version": "0.1.1",
-    "date": "2021-06-23T15:38:14+02:00",
+    "version": "0.1.0",
+    "date": "2021-08-13T09:50:07+02:00",
     "status": {
       "class": "colstu",
       "status": "Active"
@@ -356,7 +356,7 @@
     "url": "http://portal.wof.purified.link/fhir/CapabilityStatement",
     "name": "ITB",
     "title": "ITB capability statement",
-    "version": "0.1.1",
+    "version": "0.1.0",
     "date": "2021-06-22",
     "status": {
       "class": "colsd",
@@ -364,9 +364,14 @@
       "status": "Draft"
     }
   },
-  "Appointment/PostAppointmentWithoutPatient": {
+  "HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e": {
     "history": false,
     "index": 26,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\appointment-PostAppointmentWithoutPatient.json"
+    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\healthcareservice-b81f2315-7476-45e8-9ae6-51f547e2d82e.json"
+  },
+  "Appointment/PostAppointmentWithoutPatient": {
+    "history": false,
+    "index": 27,
+    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\input\\examples\\appointment-PostAppointmentWithoutPatient.json"
   }
 }
