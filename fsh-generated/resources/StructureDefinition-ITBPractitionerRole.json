@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitionerRole",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "ITBPractitionerRole",
   "title": "ITB PractitionerRole",
   "status": "active",

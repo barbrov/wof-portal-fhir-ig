@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "extOpusCryptobookingText",
   "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "OpusCryptobookingText",
   "title": "OpusCryptobookingText Extension",
   "status": "active",

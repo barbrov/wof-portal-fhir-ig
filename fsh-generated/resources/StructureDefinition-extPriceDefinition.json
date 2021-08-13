@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "extPriceDefinition",
   "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "ITBPriceDefinition",
   "title": "ITB Price Definition Extension",
   "status": "active",
