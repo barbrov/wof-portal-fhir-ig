@@ -1,0 +1,109 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ITBList",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Management"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBList",
+  "version": "0.1.0",
+  "name": "ITBList",
+  "title": "ITB List",
+  "status": "active",
+  "description": "ITBList is used to hold PriceDefinitions...",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "List",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/List",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "List.id",
+        "path": "List.id",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "List.extension",
+        "path": "List.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "List.extension:ExtPriceDefinition",
+        "path": "List.extension",
+        "sliceName": "ExtPriceDefinition",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "List.status",
+        "path": "List.status",
+        "mustSupport": true
+      },
+      {
+        "id": "List.entry",
+        "path": "List.entry",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "List.entry.item",
+        "path": "List.entry.item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "List.entry.item.display",
+        "path": "List.entry.item.display",
+        "short": "Activity display name",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

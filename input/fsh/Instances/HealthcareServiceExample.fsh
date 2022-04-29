@@ -1,4 +1,4 @@
-Instance: b81f2315-7476-45e8-9ae6-51f547e2d82e
+Instance: ITBHealthcareServiceExample
 InstanceOf: ITBHealthcareService
 Usage: #example
 * contained[0] = adressId

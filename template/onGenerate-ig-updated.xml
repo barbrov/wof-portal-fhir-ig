@@ -13,11 +13,23 @@
       </div>
    </text>
    <url value="http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link"/>
-   <version value="0.1.0"/>
+   <version value="0.1.1"/>
    <name value="ITBImplementationGuide"/>
    <title value="ITB Implementation Guide"/>
    <status value="draft"/>
-   <date value="2021-08-13T09:50:07+02:00"/>
+   <date value="2021-08-13T11:28:11+02:00"/>
+   <publisher value="Service Well AB"/>
+   <contact>
+      <name value="Service Well AB"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.servicewell.se"/>
+      </telecom>
+      <telecom>
+         <system value="email"/>
+         <value value="kontakt@servicewell.se"/>
+      </telecom>
+   </contact>
    <description value="Implementation Guide for ITB"/>
    <packageId value="portal.wof.purified.link"/>
    <license value="CC0-1.0"/>
@@ -441,12 +453,12 @@
             <valueString value="HealthcareService"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="HealthcareService-b81f2315-7476-45e8-9ae6-51f547e2d82e.html"/>
+            <valueUri value="HealthcareService-ITBHealthcareServiceExample.html"/>
          </extension>
          <reference>
-            <reference value="HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e"/>
+            <reference value="HealthcareService/ITBHealthcareServiceExample"/>
          </reference>
-         <name value="b81f2315-7476-45e8-9ae6-51f547e2d82e"/>
+         <name value="ITBHealthcareServiceExample"/>
          <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -462,6 +474,20 @@
          </reference>
          <name value="PostAppointmentWithoutPatient"/>
          <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Appointment"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Appointment-PostAppointmentWithoutPatientExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Appointment/PostAppointmentWithoutPatientExample"/>
+         </reference>
+         <name value="PostAppointmentWithoutPatientExample"/>
+         <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"/>
          <groupingId value="-ex-example"/>
       </resource>
       <page>
@@ -623,13 +649,18 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="HealthcareService-b81f2315-7476-45e8-9ae6-51f547e2d82e.html"/>
-               <title value="b81f2315-7476-45e8-9ae6-51f547e2d82e"/>
+               <nameUrl value="HealthcareService-ITBHealthcareServiceExample.html"/>
+               <title value="ITBHealthcareServiceExample"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="Appointment-PostAppointmentWithoutPatient.html"/>
                <title value="PostAppointmentWithoutPatient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Appointment-PostAppointmentWithoutPatientExample.html"/>
+               <title value="PostAppointmentWithoutPatientExample"/>
                <generation value="generated"/>
             </page>
          </page>

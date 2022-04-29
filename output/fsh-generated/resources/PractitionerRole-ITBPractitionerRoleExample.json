@@ -1,0 +1,69 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "ITBPractitionerRoleExample",
+  "contained": [
+    {
+      "resourceType": "Binary",
+      "id": "dceda771-ab94-43da-b2a1-de3941bd76f7",
+      "contentType": "image/bmp",
+      "securityContext": {
+        "reference": "6c5e67e6-1ee6-4e46-bd6f-560c9ddfaa42"
+      },
+      "data": "dGVzdHRlc3Q="
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference",
+      "valueReference": {
+        "reference": "#dceda771-ab94-43da-b2a1-de3941bd76f7"
+      }
+    }
+  ],
+  "active": true,
+  "period": {
+    "start": "2021-01-01T10:23:00+01:00"
+  },
+  "practitioner": {
+    "reference": "Practitioner/1234567",
+    "display": "Tandläkar Nils Nilsson"
+  },
+  "organization": {
+    "reference": "Organization/1234567",
+    "display": "Nils Nilsson AB"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "code": "106289002",
+          "system": "http://snomed.info/sct"
+        }
+      ],
+      "text": "tandläkare"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "code": "106289002",
+          "system": "http://snomed.info/sct"
+        }
+      ],
+      "text": "tandläkare"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/1234567",
+      "display": "My Healthcare servicecenter"
+    }
+  ],
+  "endpoint": [
+    {
+      "reference": "http://fhir.link/jdjdjdj",
+      "display": "OpusDatabas"
+    }
+  ]
+}

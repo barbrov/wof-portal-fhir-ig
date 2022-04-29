@@ -1,0 +1,94 @@
+{
+  "resourceType": "Practitioner",
+  "id": "ITBPractitioner",
+  "meta": {
+    "lastUpdated": "2021-02-03T10:02:00+01:00",
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "PractitionerRole",
+      "id": "Inline-Instance-for-470-1",
+      "active": false,
+      "organization": {
+        "reference": "Organization/559"
+      },
+      "code": [
+        {
+          "text": "WorksAt"
+        }
+      ],
+      "specialty": [
+        {
+          "coding": [
+            {
+              "code": "dentist",
+              "system": "http://opusdental.purified.link/fhir/CodeSystem/csPractitionerQualification"
+            }
+          ],
+          "text": "Dentist"
+        }
+      ],
+      "endpoint": [
+        {
+          "reference": "http://fhir.link/jdjdjdj",
+          "display": "OpusDatabas"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:1.3.6.1.4.1.2428.90.1.5",
+      "value": "12121212345"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "employeeId",
+            "system": "http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier"
+          }
+        ]
+      },
+      "system": "itbDev-colosseum-opus-nationaltheatret",
+      "value": "470"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "employeeNo",
+            "system": "http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier"
+          }
+        ]
+      },
+      "system": "itbDev-colosseum-opus-nationaltheatret",
+      "value": "2"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "employeeLicenseId",
+            "system": "http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier"
+          }
+        ]
+      },
+      "system": "itbDev-colosseum-opus-nationaltheatret",
+      "value": "2046"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "text": "Tannlege Kurt Karlsson",
+      "family": "Lyngtest",
+      "given": [
+        "Kenth"
+      ]
+    }
+  ]
+}

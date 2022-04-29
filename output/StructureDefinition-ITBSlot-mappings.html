@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.11"}
-    h3,h4,h5,h6{--heading-prefix:"6.11"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.14"}
+    h3,h4,h5,h6{--heading-prefix:"6.14"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         <div id="direkttest-nav">
@@ -150,6 +150,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-ITBSlot-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -190,6 +200,15 @@
  <tr><td>Slot</td><td>Entity. Role, or Act, n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;schedule</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reference</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>N/A</td> </tr>
 </table>
 <a name="ical"> </a><h3>Mappings for iCalendar (http://ietf.org/rfc/2445)</h3><table class="grid">
  <tr><td colspan="3"><b>ITBSlot</b></td></tr>
@@ -202,7 +221,10 @@
  <tr><td colspan="3"><b>ITBSlot</b></td></tr>
  <tr><td>Slot</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;serviceCategory</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;serviceType</td><td>FiveWs.class</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;specialty</td><td>FiveWs.class</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;appointmentType</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;start</td><td>FiveWs.planned</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;end</td><td>FiveWs.planned</td> </tr>
 </table>
@@ -258,8 +280,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="4b607410-d289-4d47-a6e7-e7163cfb4345">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package portal.wof.purified.link#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 13, 2021 09:50+0200">2021-08-13</span>
+        <p><a name="l540">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package portal.wof.purified.link#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 10, 2021 13:56+0100">2021-12-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

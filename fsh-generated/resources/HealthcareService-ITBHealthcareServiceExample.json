@@ -1,0 +1,105 @@
+{
+  "resourceType": "HealthcareService",
+  "id": "ITBHealthcareServiceExample",
+  "meta": {
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Location",
+      "id": "adressId",
+      "address": {
+        "use": "work",
+        "text": "Stortingsgata 30",
+        "city": "Oslo"
+      },
+      "position": {
+        "longitude": 10.729501,
+        "latitude": 59.91475
+      }
+    },
+    {
+      "resourceType": "List",
+      "id": "listId",
+      "entry": [
+        {
+          "extension": [
+            {
+              "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
+              "valueString": "2.000 SEK"
+            }
+          ],
+          "item": {
+            "reference": "ActivityDefinition/5e54aeb0-339d-49ed-af21-386f6ce0c730",
+            "display": "D�rlig �nde"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
+              "valueString": "850 NOK"
+            }
+          ],
+          "item": {
+            "reference": "ActivityDefinition/bcfafc6d-98df-4985-97ea-5ddd75fe858f",
+            "display": "Tannlegeskrekk"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
+              "valueString": "5 dollahs"
+            }
+          ],
+          "item": {
+            "reference": "ActivityDefinition/30491f7e-786e-4f48-a555-982ee5828641",
+            "display": "Tannrens"
+          }
+        }
+      ],
+      "status": "current",
+      "mode": "working"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference",
+      "valueReference": {
+        "reference": "#listId"
+      }
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder",
+      "valueString": "http://portal.wof"
+    }
+  ],
+  "identifier": [
+    {
+      "value": "Colosseum Tannlege Nationaltheatret"
+    }
+  ],
+  "active": true,
+  "location": [
+    {
+      "reference": "#adressId"
+    }
+  ],
+  "name": "colosseum-nationaltheatret",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+4712345678",
+      "use": "work"
+    }
+  ],
+  "endpoint": [
+    {
+      "reference": "Endpoint/fc580e7c-7fd8-4acd-92e9-42cb052763d4",
+      "display": "itbDev-colosseum-opus-nationaltheatret"
+    }
+  ]
+}

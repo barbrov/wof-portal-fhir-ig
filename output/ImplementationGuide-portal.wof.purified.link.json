@@ -10,7 +10,7 @@
   "name": "ITBImplementationGuide",
   "title": "ITB Implementation Guide",
   "status": "draft",
-  "date": "2021-08-13T09:50:07+02:00",
+  "date": "2021-12-10T13:56:52+01:00",
   "description": "Implementation Guide for ITB",
   "packageId": "portal.wof.purified.link",
   "license": "CC0-1.0",
@@ -359,6 +359,34 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/ITBList"
+        },
+        "name": "ITB List",
+        "description": "ITBList is used to hold PriceDefinitions...",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ITBLocation"
+        },
+        "name": "ITB Location",
+        "description": "ITBLocation is used to handle adress and position, for example used in ITBHealthCareService",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/ITBOrganization"
         },
         "name": "ITB Organization",
@@ -376,6 +404,20 @@
           "reference": "StructureDefinition/ITBPatient"
         },
         "name": "ITB Patient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ITBPractitioner"
+        },
+        "name": "ITB Practitioner",
+        "description": "Practitioner is.. TBD",
         "exampleBoolean": false
       },
       {
@@ -426,24 +468,24 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NoITBPatient"
+          "reference": "StructureDefinition/PortalPerson"
         },
-        "name": "Norweigan ITB Patient",
-        "description": "Patient based on Norweigan basis patient",
+        "name": "Portal Person",
+        "description": "This resource can be used to handle for example related persons, patients and practitioners",
         "exampleBoolean": false
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "StructureDefinition:extension"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/SEITBPatient"
+          "reference": "StructureDefinition/extConsentToMarketing"
         },
-        "name": "Swedish ITB Patient",
-        "description": "Patient based on Swedish base profile",
+        "name": "Consent to marketing Extension",
+        "description": "Used to handle consent to marketing",
         "exampleBoolean": false
       },
       {
@@ -496,6 +538,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/extSourceSystemUserId"
+        },
+        "name": "ITB Source System User Id Extension",
+        "description": "Extension used to handle Source System User Id",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/extUrlPlaceholder"
         },
         "name": "ITB Url Placeholder Extension",
@@ -534,6 +590,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extCreated"
+        },
+        "name": "Portal Created Extension",
+        "description": "Used in meta to specify date create",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -552,7 +622,7 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/service-types"
+          "reference": "ValueSet/service-type"
         },
         "name": "ITB Service Types",
         "description": "This value set defines service types",
@@ -570,6 +640,20 @@
         },
         "name": "ITB Speciality Codes",
         "description": "This value set defines speciality code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/opus-identifiers"
+        },
+        "name": "Opus Identifiers",
+        "description": "This value set defines Opus identifiers",
         "exampleBoolean": false
       },
       {
@@ -608,11 +692,78 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/practitioner-role-codes"
+          "reference": "CodeSystem/csOpusIdentifier"
         },
-        "name": "ITB Booking Categories",
-        "description": "ITB Booking Categories",
+        "name": "Opus Identifiers",
+        "description": "Opus Identifiers",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/practitioner-role-code"
+        },
+        "name": "ITB Practitioner Role Codes",
+        "description": "ITB Practitioner Role Codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AppointmentResponse"
+          }
+        ],
+        "reference": {
+          "reference": "AppointmentResponse/AppointmentResponseExample"
+        },
+        "name": "AppointmentResponseExample",
+        "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ActivityDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ActivityDefinition/ITBActivityDefinition"
+        },
+        "name": "ITBActivityDefinition",
+        "description": "Desc",
+        "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Appointment"
+          }
+        ],
+        "reference": {
+          "reference": "Appointment/ITBAppointment"
+        },
+        "name": "ITBAppointment",
+        "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Appointment"
+          }
+        ],
+        "reference": {
+          "reference": "Appointment/ITBAppointmentAvailableForReschedule"
+        },
+        "name": "ITBAppointmentAvailableForReschedule",
+        "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"
       },
       {
         "extension": [
@@ -636,10 +787,88 @@
           }
         ],
         "reference": {
-          "reference": "HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e"
+          "reference": "HealthcareService/ITBHealthcareService"
         },
-        "name": "b81f2315-7476-45e8-9ae6-51f547e2d82e",
+        "name": "ITBHealthcareService",
         "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/ITBPractitioner"
+        },
+        "name": "ITBPractitioner",
+        "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/ITBPractitionerRoleExample"
+        },
+        "name": "ITBPractitionerRoleExample",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Schedule"
+          }
+        ],
+        "reference": {
+          "reference": "Schedule/ITBScheduleExample"
+        },
+        "name": "ITBScheduleExample",
+        "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Slot"
+          }
+        ],
+        "reference": {
+          "reference": "Slot/ITBSlot"
+        },
+        "name": "ITBSlot",
+        "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Endpoint"
+          }
+        ],
+        "reference": {
+          "reference": "Endpoint/OpusEndpointExample"
+        },
+        "name": "OpusEndpointExample",
+        "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/PatientExample"
+        },
+        "name": "PatientExample",
+        "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient"
       },
       {
         "extension": [
@@ -652,7 +881,7 @@
           "reference": "Appointment/PostAppointmentWithoutPatient"
         },
         "name": "PostAppointmentWithoutPatient",
-        "exampleBoolean": true
+        "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"
       }
     ],
     "page": {

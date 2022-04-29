@@ -1,0 +1,48 @@
+{% raw %}<pre class="json"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment">resourceType</a>" : "Appointment",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.id">id</a>" : "PostAppointmentWithoutPatientExample",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: proposed&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceType&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://portal.wof.purified.link/fhir/CodeSystem/csServiceType {{serviceTypeCode}}}\&quot;&gt;{{serviceTypeCode}}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;start&lt;/b&gt;: May 14, 2021 8:30:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;end&lt;/b&gt;: May 14, 2021 9:00:00 AM&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=\&quot;HealthcareService/{{healthCareServiceID}}\&quot;&gt;HealthcareService/{{healthCareServiceID}}&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=\&quot;Patient/649\&quot;&gt;Patient/649&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=\&quot;PractitionerRole/{{practitionerRoleId}}\&quot;&gt;PractitionerRole/{{practitionerRoleId}}&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.status">status</a>" : "proposed",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.serviceType">serviceType</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "{{serviceTypeCode}}"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.start">start</a>" : "2021-05-14T06:30:00+00:00",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.end">end</a>" : "2021-05-14T07:00:00+00:00",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant">participant</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.actor">actor</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "HealthcareService/{{healthCareServiceID}}"
+      },
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.status">status</a>" : "accepted"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.actor">actor</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/649"
+      },
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.status">status</a>" : "accepted"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.actor">actor</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "PractitionerRole/{{practitionerRoleId}}"
+      },
+      "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.status">status</a>" : "accepted"
+    }
+  ]
+}</code></pre>
+{% endraw %}

@@ -1,0 +1,250 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PortalPerson",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/PortalPerson",
+  "version": "0.1.0",
+  "name": "PortalPerson",
+  "title": "Portal Person",
+  "status": "active",
+  "description": "This resource can be used to handle for example related persons, patients and practitioners",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Person",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Person",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Person.id",
+        "path": "Person.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.meta.lastUpdated",
+        "path": "Person.meta.lastUpdated",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.meta.profile",
+        "path": "Person.meta.profile",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.extension",
+        "path": "Person.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Person.extension:ExtCreated",
+        "path": "Person.extension",
+        "sliceName": "ExtCreated",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://portal.wof.purified.link/fhir/StructureDefinition/extCreated"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Person.extension:ExtConsentToMarketing",
+        "path": "Person.extension",
+        "sliceName": "ExtConsentToMarketing",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://portal.wof.purified.link/fhir/StructureDefinition/extConsentToMarketing"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Person.identifier",
+        "path": "Person.identifier",
+        "short": "Extern identifierare. Svenskt personnumer men även andra identifierare",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.identifier.type",
+        "path": "Person.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.identifier.type.coding.system",
+        "path": "Person.identifier.type.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.identifier.type.coding.code",
+        "path": "Person.identifier.type.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.identifier.system",
+        "path": "Person.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.identifier.value",
+        "path": "Person.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.identifier.assigner",
+        "path": "Person.identifier.assigner",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.name",
+        "path": "Person.name",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.name.text",
+        "path": "Person.name.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.name.family",
+        "path": "Person.name.family",
+        "short": "Efternamn",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.name.given",
+        "path": "Person.name.given",
+        "short": "Förnamn",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.telecom",
+        "path": "Person.telecom",
+        "short": "List of contacts related to this specific healthcare service.",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.telecom.system",
+        "path": "Person.telecom.system",
+        "short": "phone | email",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.telecom.value",
+        "path": "Person.telecom.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.telecom.use",
+        "path": "Person.telecom.use",
+        "short": "mobile | home",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.birthDate",
+        "path": "Person.birthDate",
+        "short": "Födelsedatum",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.managingOrganization",
+        "path": "Person.managingOrganization",
+        "short": "Organization that is the custodian of the patient record. Ej viktig men kan bra i ett längre perspektiv.",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.active",
+        "path": "Person.active",
+        "short": "Här finns möjligheter att signalera om en patient får boka eller inte.",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link",
+        "path": "Person.link",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link.target",
+        "path": "Person.link.target",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link.target.type",
+        "path": "Person.link.target.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link.target.identifier.system",
+        "path": "Person.link.target.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link.target.identifier.value",
+        "path": "Person.link.target.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link.target.identifier.assigner",
+        "path": "Person.link.target.identifier.assigner",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link.target.identifier.assigner.reference",
+        "path": "Person.link.target.identifier.assigner.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link.assurance",
+        "path": "Person.link.assurance",
+        "mustSupport": true
+      }
+    ]
+  }
+}

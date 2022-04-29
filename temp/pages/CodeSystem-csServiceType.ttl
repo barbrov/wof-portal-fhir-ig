@@ -13,11 +13,25 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/csServiceType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"];
-  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.version [ fhir:value "0.1.1"];
   fhir:CodeSystem.name [ fhir:value "ITBServiceTypes"];
   fhir:CodeSystem.title [ fhir:value "ITB Service Types"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-08-13T09:50:07+02:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-08-13T11:28:11+02:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Service Well AB"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Service Well AB" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.servicewell.se" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "kontakt@servicewell.se" ]
+     ]
+  ];
   fhir:CodeSystem.description [ fhir:value "ITB Service Types"];
   fhir:CodeSystem.content [ fhir:value "complete"] .
 

@@ -1,0 +1,11 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "PractitionerRoleCode",
+  "id": "practitioner-role-code",
+  "title": "ITB Practitioner Role Codes",
+  "description": "ITB Practitioner Role Codes",
+  "version": "0.1.0",
+  "url": "http://portal.wof.purified.link/fhir/CodeSystem/practitioner-role-code"
+}

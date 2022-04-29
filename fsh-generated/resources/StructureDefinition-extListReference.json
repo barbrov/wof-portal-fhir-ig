@@ -29,6 +29,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ITB List Reference Extension",
+        "definition": "Extension used to be able to add lists"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

@@ -6,11 +6,27 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ITBImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link</pre><div><p>Implementation Guide for ITB</p>\n</div></div>"
   },
   "url": "http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "ITBImplementationGuide",
   "title": "ITB Implementation Guide",
   "status": "draft",
-  "date": "2021-08-13T09:50:07+02:00",
+  "date": "2021-08-13T11:28:11+02:00",
+  "publisher": "Service Well AB",
+  "contact": [
+    {
+      "name": "Service Well AB",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.servicewell.se"
+        },
+        {
+          "system": "email",
+          "value": "kontakt@servicewell.se"
+        }
+      ]
+    }
+  ],
   "description": "Implementation Guide for ITB",
   "packageId": "portal.wof.purified.link",
   "license": "CC0-1.0",
@@ -636,9 +652,9 @@
           }
         ],
         "reference": {
-          "reference": "HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e"
+          "reference": "HealthcareService/ITBHealthcareServiceExample"
         },
-        "name": "b81f2315-7476-45e8-9ae6-51f547e2d82e",
+        "name": "ITBHealthcareServiceExample",
         "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService"
       },
       {
@@ -653,6 +669,19 @@
         },
         "name": "PostAppointmentWithoutPatient",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Appointment"
+          }
+        ],
+        "reference": {
+          "reference": "Appointment/PostAppointmentWithoutPatientExample"
+        },
+        "name": "PostAppointmentWithoutPatientExample",
+        "exampleCanonical": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"
       }
     ],
     "page": {

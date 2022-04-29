@@ -11,7 +11,7 @@
   <name value="ITBImplementationGuide"/>
   <title value="ITB Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-08-13T09:50:07+02:00"/>
+  <date value="2021-12-10T13:56:52+01:00"/>
   <description value="Implementation Guide for ITB"/>
   <packageId value="portal.wof.purified.link"/>
   <license value="CC0-1.0"/>
@@ -237,6 +237,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ITBList"/>
+      </reference>
+      <name value="ITB List"/>
+      <description value="ITBList is used to hold PriceDefinitions..."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ITBLocation"/>
+      </reference>
+      <name value="ITB Location"/>
+      <description value="ITBLocation is used to handle adress and position, for example used in ITBHealthCareService"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ITBOrganization"/>
       </reference>
       <name value="ITB Organization"/>
@@ -251,6 +273,17 @@
         <reference value="StructureDefinition/ITBPatient"/>
       </reference>
       <name value="ITB Patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ITBPractitioner"/>
+      </reference>
+      <name value="ITB Practitioner"/>
+      <description value="Practitioner is.. TBD"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -289,21 +322,21 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NoITBPatient"/>
+        <reference value="StructureDefinition/PortalPerson"/>
       </reference>
-      <name value="Norweigan ITB Patient"/>
-      <description value="Patient based on Norweigan basis patient"/>
+      <name value="Portal Person"/>
+      <description value="This resource can be used to handle for example related persons, patients and practitioners"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/SEITBPatient"/>
+        <reference value="StructureDefinition/extConsentToMarketing"/>
       </reference>
-      <name value="Swedish ITB Patient"/>
-      <description value="Patient based on Swedish base profile"/>
+      <name value="Consent to marketing Extension"/>
+      <description value="Used to handle consent to marketing"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -344,6 +377,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/extSourceSystemUserId"/>
+      </reference>
+      <name value="ITB Source System User Id Extension"/>
+      <description value="Extension used to handle Source System User Id"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/extUrlPlaceholder"/>
       </reference>
       <name value="ITB Url Placeholder Extension"/>
@@ -374,6 +418,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extCreated"/>
+      </reference>
+      <name value="Portal Created Extension"/>
+      <description value="Used in meta to specify date create"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -388,7 +443,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/service-types"/>
+        <reference value="ValueSet/service-type"/>
       </reference>
       <name value="ITB Service Types"/>
       <description value="This value set defines service types"/>
@@ -403,6 +458,17 @@
       </reference>
       <name value="ITB Speciality Codes"/>
       <description value="This value set defines speciality code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/opus-identifiers"/>
+      </reference>
+      <name value="Opus Identifiers"/>
+      <description value="This value set defines Opus identifiers"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -432,11 +498,63 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/practitioner-role-codes"/>
+        <reference value="CodeSystem/csOpusIdentifier"/>
       </reference>
-      <name value="ITB Booking Categories"/>
-      <description value="ITB Booking Categories"/>
+      <name value="Opus Identifiers"/>
+      <description value="Opus Identifiers"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/practitioner-role-code"/>
+      </reference>
+      <name value="ITB Practitioner Role Codes"/>
+      <description value="ITB Practitioner Role Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AppointmentResponse"/>
+      </extension>
+      <reference>
+        <reference value="AppointmentResponse/AppointmentResponseExample"/>
+      </reference>
+      <name value="AppointmentResponseExample"/>
+      <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/ITBActivityDefinition"/>
+      </reference>
+      <name value="ITBActivityDefinition"/>
+      <description value="Desc"/>
+      <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/ITBAppointment"/>
+      </reference>
+      <name value="ITBAppointment"/>
+      <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/ITBAppointmentAvailableForReschedule"/>
+      </reference>
+      <name value="ITBAppointmentAvailableForReschedule"/>
+      <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -454,10 +572,70 @@
         <valueString value="HealthcareService"/>
       </extension>
       <reference>
-        <reference value="HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e"/>
+        <reference value="HealthcareService/ITBHealthcareService"/>
       </reference>
-      <name value="b81f2315-7476-45e8-9ae6-51f547e2d82e"/>
+      <name value="ITBHealthcareService"/>
       <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/ITBPractitioner"/>
+      </reference>
+      <name value="ITBPractitioner"/>
+      <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/ITBPractitionerRoleExample"/>
+      </reference>
+      <name value="ITBPractitionerRoleExample"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Schedule"/>
+      </extension>
+      <reference>
+        <reference value="Schedule/ITBScheduleExample"/>
+      </reference>
+      <name value="ITBScheduleExample"/>
+      <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Slot"/>
+      </extension>
+      <reference>
+        <reference value="Slot/ITBSlot"/>
+      </reference>
+      <name value="ITBSlot"/>
+      <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/OpusEndpointExample"/>
+      </reference>
+      <name value="OpusEndpointExample"/>
+      <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientExample"/>
+      </reference>
+      <name value="PatientExample"/>
+      <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -467,7 +645,7 @@
         <reference value="Appointment/PostAppointmentWithoutPatient"/>
       </reference>
       <name value="PostAppointmentWithoutPatient"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

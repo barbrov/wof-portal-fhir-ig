@@ -1,0 +1,65 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "json"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:13"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "json",
+  "code" : "json",
+  "system" : "urn:ietf:bcp:13"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/json-patch+json"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:13"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "application/json-patch+json",
+  "code" : "application/json-patch+json",
+  "system" : "urn:ietf:bcp:13"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "image/bmp"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:13"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "image/bmp",
+  "code" : "image/bmp",
+  "system" : "urn:ietf:bcp:13"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/fhir+xml"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:13"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "application/fhir+xml",
+  "code" : "application/fhir+xml",
+  "system" : "urn:ietf:bcp:13"
+}
+-------------------------------------------------------------------------------------

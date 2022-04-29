@@ -2,376 +2,432 @@
   "ImplementationGuide/portal.wof.purified.link": {
     "history": false,
     "index": 0,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\ImplementationGuide-portal.wof.purified.link.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\ImplementationGuide-portal.wof.purified.link.json",
     "url": "http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link",
     "name": "ITBImplementationGuide",
     "title": "ITB Implementation Guide",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colsd",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Draft"
     }
   },
   "StructureDefinition/ITBActivityDefinition": {
     "history": false,
     "index": 1,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-ITBActivityDefinition.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-ITBActivityDefinition.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition",
     "name": "ITBActivityDefinition",
     "title": "ITB ActivityDefinition",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/ITBAppointment": {
     "history": false,
     "index": 2,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-ITBAppointment.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-ITBAppointment.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment",
     "name": "ITBAppointment",
     "title": "ITB Appointment",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/ITBAppointmentResponse": {
     "history": false,
     "index": 3,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-ITBAppointmentResponse.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-ITBAppointmentResponse.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointmentResponse",
     "name": "ITBAppointmentResponse",
     "title": "ITB AppointmentResponse",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/ITBEndpoint": {
     "history": false,
     "index": 4,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-ITBEndpoint.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-ITBEndpoint.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint",
     "name": "ITBEndpoint",
     "title": "ITB Endpoint",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/ITBHealthcareService": {
     "history": false,
     "index": 5,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-ITBHealthcareService.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-ITBHealthcareService.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBHealthcareService",
     "name": "ITBHealthcareService",
     "title": "ITB HealthcareService",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/ITBOrganization": {
     "history": false,
     "index": 6,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-ITBOrganization.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-ITBOrganization.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBOrganization",
     "name": "ITBOrganization",
     "title": "ITB Organization",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/ITBPatient": {
     "history": false,
     "index": 7,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-ITBPatient.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-ITBPatient.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient",
     "name": "ITBPatient",
     "title": "ITB Patient",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/ITBPractitionerRole": {
     "history": false,
     "index": 8,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-ITBPractitionerRole.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-ITBPractitionerRole.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitionerRole",
     "name": "ITBPractitionerRole",
     "title": "ITB PractitionerRole",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/ITBSchedule": {
     "history": false,
     "index": 9,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-ITBSchedule.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-ITBSchedule.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule",
     "name": "ITBSchedule",
     "title": "ITB Schedule",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/ITBSlot": {
     "history": false,
     "index": 10,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-ITBSlot.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-ITBSlot.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSlot",
     "name": "ITBSlot",
     "title": "ITB Slot",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/NoITBPatient": {
     "history": false,
     "index": 11,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-NoITBPatient.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-NoITBPatient.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/NoITBPatient",
     "name": "NoITBPatient",
     "title": "Norweigan ITB Patient",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/SEITBPatient": {
     "history": false,
     "index": 12,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-SEITBPatient.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-SEITBPatient.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/SEITBPatient",
     "name": "SEITBPatient",
     "title": "Swedish ITB Patient",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/extBinaryReference": {
     "history": false,
     "index": 13,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-extBinaryReference.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-extBinaryReference.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extBinaryReference",
     "name": "ITBBinaryReference",
     "title": "ITB Binary Reference Extension",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/extListReference": {
     "history": false,
     "index": 14,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-extListReference.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-extListReference.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference",
     "name": "ITBListReference",
     "title": "ITB List Reference Extension",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/extPriceDefinition": {
     "history": false,
     "index": 15,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-extPriceDefinition.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-extPriceDefinition.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extPriceDefinition",
     "name": "ITBPriceDefinition",
     "title": "ITB Price Definition Extension",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/extUrlPlaceholder": {
     "history": false,
     "index": 16,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-extUrlPlaceholder.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-extUrlPlaceholder.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extUrlPlaceholder",
     "name": "ITBUrlPlaceholder",
     "title": "ITB Url Placeholder Extension",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/extOpusBookingCategory": {
     "history": false,
     "index": 17,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-extOpusBookingCategory.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-extOpusBookingCategory.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory",
     "name": "OpusBookingCategory",
     "title": "Opus Booking Category Extension",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "StructureDefinition/extOpusCryptobookingText": {
     "history": false,
     "index": 18,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\structuredefinition-extOpusCryptobookingText.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\structuredefinition-extOpusCryptobookingText.json",
     "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText",
     "name": "OpusCryptobookingText",
     "title": "OpusCryptobookingText Extension",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "ValueSet/role-codes": {
     "history": false,
     "index": 19,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\valueset-role-codes.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\valueset-role-codes.json",
     "url": "http://portal.wof.purified.link/fhir/ValueSet/role-codes",
     "name": "ITBRoleCodes",
     "title": "ITB Role Codes",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "ValueSet/service-types": {
     "history": false,
     "index": 20,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\valueset-service-types.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\valueset-service-types.json",
     "url": "http://portal.wof.purified.link/fhir/ValueSet/service-types",
     "name": "ITBServiceTypes",
     "title": "ITB Service Types",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "ValueSet/speciality-codes": {
     "history": false,
     "index": 21,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\valueset-speciality-codes.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\valueset-speciality-codes.json",
     "url": "http://portal.wof.purified.link/fhir/ValueSet/speciality-codes",
     "name": "ITBSpecialityCodes",
     "title": "ITB Speciality Codes",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "CodeSystem/itb-booking-categories": {
     "history": false,
     "index": 22,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\codesystem-itb-booking-categories.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\codesystem-itb-booking-categories.json",
     "url": "http://portal.wof.purified.link/fhir/CodeSystem/itb-booking-categories",
     "name": "ITBBookingCategories",
     "title": "ITB Booking Categories",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "CodeSystem/csServiceType": {
     "history": false,
     "index": 23,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\codesystem-csServiceType.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\codesystem-csServiceType.json",
     "url": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
     "name": "ITBServiceTypes",
     "title": "ITB Service Types",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "CodeSystem/practitioner-role-codes": {
     "history": false,
     "index": 24,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\codesystem-practitioner-role-codes.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\codesystem-practitioner-role-codes.json",
     "url": "http://portal.wof.purified.link/fhir/CodeSystem/practitioner-role-codes",
     "name": "PractitionerRoleCodes",
     "title": "ITB Booking Categories",
-    "version": "0.1.0",
-    "date": "2021-08-13T09:50:07+02:00",
+    "version": "0.1.1",
+    "date": "2021-08-13T11:28:11+02:00",
     "status": {
       "class": "colstu",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Active"
     }
   },
   "CapabilityStatement/ITBCapabilityStatement": {
     "history": false,
     "index": 25,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\capabilitystatement-ITBCapabilityStatement.json",
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\capabilitystatement-ITBCapabilityStatement.json",
     "url": "http://portal.wof.purified.link/fhir/CapabilityStatement",
     "name": "ITB",
     "title": "ITB capability statement",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "date": "2021-06-22",
     "status": {
       "class": "colsd",
-      "owner": "Service Well",
+      "owner": "Service Well AB",
+      "link": "http://www.servicewell.se",
       "status": "Draft"
     }
   },
-  "HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e": {
+  "HealthcareService/ITBHealthcareServiceExample": {
     "history": false,
     "index": 26,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\fsh-generated\\resources\\healthcareservice-b81f2315-7476-45e8-9ae6-51f547e2d82e.json"
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\healthcareservice-ITBHealthcareServiceExample.json"
   },
   "Appointment/PostAppointmentWithoutPatient": {
     "history": false,
     "index": 27,
-    "source": "C:\\repos\\devops\\wof-portal-fhir-implementation-guide\\input\\examples\\appointment-PostAppointmentWithoutPatient.json"
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\appointment-PostAppointmentWithoutPatient.json"
+  },
+  "Appointment/PostAppointmentWithoutPatientExample": {
+    "history": false,
+    "index": 28,
+    "source": "C:\\repos\\wof-portal-fhir-ig\\fsh-generated\\resources\\appointment-PostAppointmentWithoutPatientExample.json"
   }
 }

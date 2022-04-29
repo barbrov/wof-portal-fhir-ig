@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ITBServiceType",
+  "id": "csServiceType",
+  "title": "ITB Service Types",
+  "description": "ITB Service Types",
+  "version": "0.1.0",
+  "url": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Profylax"
+    },
+    {
+      "code": "2",
+      "display": "Undersökning"
+    },
+    {
+      "code": "3",
+      "display": "Akut"
+    },
+    {
+      "code": "0",
+      "display": "Revision ospecificerad behandling"
+    },
+    {
+      "code": "123",
+      "display": "TdlUS60"
+    }
+  ],
+  "count": 5
+}

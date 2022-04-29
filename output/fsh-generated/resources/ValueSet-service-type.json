@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ITBServiceType",
+  "id": "service-type",
+  "title": "ITB Service Types",
+  "description": "This value set defines service types",
+  "version": "0.1.0",
+  "url": "http://portal.wof.purified.link/fhir/ValueSet/service-type",
+  "compose": {
+    "include": [
+      {
+        "system": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Profylax"
+          },
+          {
+            "code": "2",
+            "display": "Undersökning"
+          },
+          {
+            "code": "3",
+            "display": "Akut"
+          },
+          {
+            "code": "0",
+            "display": "Revision ospecificerad behandling"
+          },
+          {
+            "code": "123",
+            "display": "Prima Service"
+          }
+        ]
+      }
+    ]
+  }
+}

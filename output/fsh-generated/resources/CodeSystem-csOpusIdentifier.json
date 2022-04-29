@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "OpusIdentifier",
+  "id": "csOpusIdentifier",
+  "title": "Opus Identifiers",
+  "description": "Opus Identifiers",
+  "version": "0.1.0",
+  "url": "http://portal.wof.purified.link/fhir/CodeSystem/csOpusIdentifier",
+  "concept": [
+    {
+      "code": "1",
+      "display": "patientId"
+    }
+  ],
+  "count": 1
+}

@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.27"}
-    h3,h4,h5,h6{--heading-prefix:"6.27"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.44"}
+    h3,h4,h5,h6{--heading-prefix:"6.44"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         <div id="direkttest-nav">
@@ -170,9 +170,14 @@
 {
   "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment">resourceType</a>" : "Appointment",
   "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.id">id</a>" : "PostAppointmentWithoutPatient",
+  "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"
+    ]
+  },
   "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: proposed&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceType&lt;/b&gt;: &lt;span title=\"Codes: {http://portal.wof.purified.link/fhir/CodeSystem/csServiceType {{serviceTypeCode}}}\"&gt;{{serviceTypeCode}}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;start&lt;/b&gt;: May 14, 2021 8:30:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;end&lt;/b&gt;: May 14, 2021 9:00:00 AM&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=\"HealthcareService/{{healthCareServiceID}}\"&gt;HealthcareService/{{healthCareServiceID}}&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=\"Patient/649\"&gt;Patient/649&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=\"PractitionerRole/{{practitionerRoleId}}\"&gt;PractitionerRole/{{practitionerRoleId}}&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: proposed&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceType&lt;/b&gt;: &lt;span title=\"Codes: {http://portal.wof.purified.link/fhir/CodeSystem/csServiceType servicetype1}\"&gt;Servicetyp 1&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;start&lt;/b&gt;: May 14, 2021 8:30:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;end&lt;/b&gt;: May 14, 2021 9:00:00 AM&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=\"HealthcareService/{{healthCareServiceID}}\"&gt;HealthcareService/{{healthCareServiceID}}&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=\"Patient/649\"&gt;Patient/649&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=\"PractitionerRole/{{practitionerRoleId}}\"&gt;PractitionerRole/{{practitionerRoleId}}&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.status">status</a>" : "proposed",
   "<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.serviceType">serviceType</a>" : [
@@ -180,7 +185,7 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "{{serviceTypeCode}}"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "servicetype1"
         }
       ]
     }
@@ -236,8 +241,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="cf3c9074-265c-4040-bee2-e6c70b7e2509">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package portal.wof.purified.link#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 13, 2021 09:50+0200">2021-08-13</span>
+        <p><a name="l395">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package portal.wof.purified.link#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 10, 2021 13:56+0100">2021-12-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -3,14 +3,51 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="csServiceType"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/csServiceType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/csServiceType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="csServiceType-1"> </a></td><td>Profylax</td></tr><tr><td style="white-space:nowrap">2<a name="csServiceType-2"> </a></td><td>Undersökning</td></tr><tr><td style="white-space:nowrap">3<a name="csServiceType-3"> </a></td><td>Akut</td></tr><tr><td style="white-space:nowrap">0<a name="csServiceType-0"> </a></td><td>Revision ospecificerad behandling</td></tr><tr><td style="white-space:nowrap">123<a name="csServiceType-123"> </a></td><td>TdlUS60</td></tr><tr><td style="white-space:nowrap">examination<a name="csServiceType-examination"> </a></td><td>Examination</td></tr><tr><td style="white-space:nowrap">itb-not-defined<a name="csServiceType-itb-not-defined"> </a></td><td>Booket besøk online</td></tr><tr><td style="white-space:nowrap">blek-kampanje<a name="csServiceType-blek-kampanje"> </a></td><td>Blek-kampanje</td></tr><tr><td style="white-space:nowrap">servicetype1<a name="csServiceType-servicetype1"> </a></td><td>Servicetyp 1</td></tr></table></div>
   </text>
   <url value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
   <version value="0.1.0"/>
-  <name value="ITBServiceTypes"/>
+  <name value="ITBServiceType"/>
   <title value="ITB Service Types"/>
   <status value="active"/>
-  <date value="2021-08-13T09:50:07+02:00"/>
+  <date value="2021-12-10T13:56:52+01:00"/>
   <description value="ITB Service Types"/>
   <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="1"/>
+    <display value="Profylax"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Undersökning"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Akut"/>
+  </concept>
+  <concept>
+    <code value="0"/>
+    <display value="Revision ospecificerad behandling"/>
+  </concept>
+  <concept>
+    <code value="123"/>
+    <display value="TdlUS60"/>
+  </concept>
+  <concept>
+    <code value="examination"/>
+    <display value="Examination"/>
+  </concept>
+  <concept>
+    <code value="itb-not-defined"/>
+    <display value="Booket besøk online"/>
+  </concept>
+  <concept>
+    <code value="blek-kampanje"/>
+    <display value="Blek-kampanje"/>
+  </concept>
+  <concept>
+    <code value="servicetype1"/>
+    <display value="Servicetyp 1"/>
+  </concept>
 </CodeSystem>

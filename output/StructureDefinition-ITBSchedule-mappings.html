@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.10"}
-    h3,h4,h5,h6{--heading-prefix:"6.10"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.13"}
+    h3,h4,h5,h6{--heading-prefix:"6.13"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         <div id="direkttest-nav">
@@ -150,6 +150,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-ITBSchedule-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -190,6 +200,20 @@
  <tr><td>Schedule</td><td>Entity. Role, or Act, n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;actor</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reference</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;planningHorizon</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>./low</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>./high</td> </tr>
 </table>
 <a name="ical"> </a><h3>Mappings for iCalendar (http://ietf.org/rfc/2445)</h3><table class="grid">
  <tr><td colspan="3"><b>ITBSchedule</b></td></tr>
@@ -198,12 +222,16 @@
  <tr><td>&nbsp;&nbsp;&nbsp;serviceType</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;actor</td><td>ATTENDEE:MAILTO:john_public@host2.com This can be populated with a value from the referenced resource</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;planningHorizon</td><td>DTSTART:20131201T003000Z DTEND:2014030101T003000Z</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;comment</td><td>COMMENT:(comment) If there is no comment, then the line can be excluded from the iCalendar entry</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
  <tr><td colspan="3"><b>ITBSchedule</b></td></tr>
  <tr><td>Schedule</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>FiveWs.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;serviceCategory</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;serviceType</td><td>FiveWs.class</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;specialty</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;actor</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;planningHorizon</td><td>FiveWs.planned</td> </tr>
 </table>
@@ -259,8 +287,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="c5a4649d-04c0-4985-9756-cde2d362c990">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package portal.wof.purified.link#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 13, 2021 09:50+0200">2021-08-13</span>
+        <p><a name="l588">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package portal.wof.purified.link#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 10, 2021 13:56+0100">2021-12-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

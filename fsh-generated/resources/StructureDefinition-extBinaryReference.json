@@ -29,6 +29,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ITB Binary Reference Extension",
+        "definition": "Extension used to be able to inlude binaries in the resource"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

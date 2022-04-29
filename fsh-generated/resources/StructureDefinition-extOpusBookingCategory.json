@@ -29,6 +29,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Opus Booking Category Extension",
+        "definition": "Sets the BookingCategory in OpusDental. Maps to ValuSet vsOpusBookingCategory"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

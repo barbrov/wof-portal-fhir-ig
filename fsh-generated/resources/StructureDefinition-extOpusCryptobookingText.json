@@ -29,6 +29,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "OpusCryptobookingText Extension",
+        "definition": "Special cryptated text for OpusDental Booking description. Maps to ValueSet"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

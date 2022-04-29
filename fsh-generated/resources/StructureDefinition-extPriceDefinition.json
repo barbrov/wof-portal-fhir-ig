@@ -29,6 +29,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ITB Price Definition Extension",
+        "definition": "Extension used to be able to define prices"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a6d05551-5157-429a-94ea-504ac5c7d0ad"/>
+  <id value="9b8380e5-d7cc-43f3-8aea-807368969c72"/>
   <meta>
-    <lastUpdated value="2021-08-13T09:50:07.821+02:00"/>
+    <lastUpdated value="2021-12-10T13:56:52.501+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,9 +14,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
-            <p>All codes from system 
-              <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
               </a>
             </p>
@@ -53,15 +53,15 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:effd9a4c-2305-4134-b180-6910027a298f"/>
-          <timestamp value="2021-08-13T07:43:58.879Z"/>
+          <identifier value="urn:uuid:e382201d-4ab7-4467-8cd9-3fdf15b0d2d3"/>
+          <timestamp value="2021-12-10T12:01:08.441Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -78,17 +78,20 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://portal.wof.purified.link/fhir/ValueSet/service-type"/>
     <resource>
       <ValueSet>
-        <language value="en"/>
+        <id value="service-type"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on http://terminology.hl7.org/CodeSystem/service-type version 4.0.1</p>
-            <p>All codes from system 
-              <a href="http://terminology.hl7.org/2.0.0/CodeSystem-service-type.html">
-                <code>http://terminology.hl7.org/CodeSystem/service-type</code>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-csServiceType.html">ITB Service Types v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-csServiceType.html">
+                <code>http://portal.wof.purified.link/fhir/CodeSystem/csServiceType</code>
               </a>
             </p>
             <table class="codes">
@@ -105,33 +108,90 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-service-type-88"> </a>88
+                  <a name="http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-1"> </a>
+                  <a href="CodeSystem-csServiceType.html#csServiceType-1">1</a>
                 </td>
-                <td>General Dental</td>
-                <td>General dental</td>
+                <td>Profylax</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-2"> </a>
+                  <a href="CodeSystem-csServiceType.html#csServiceType-2">2</a>
+                </td>
+                <td>Undersökning</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-3"> </a>
+                  <a href="CodeSystem-csServiceType.html#csServiceType-3">3</a>
+                </td>
+                <td>Akut</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-0"> </a>
+                  <a href="CodeSystem-csServiceType.html#csServiceType-0">0</a>
+                </td>
+                <td>Revision ospecificerad behandling</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-123"> </a>
+                  <a href="CodeSystem-csServiceType.html#csServiceType-123">123</a>
+                </td>
+                <td>Prima Service</td>
+                <td/>
               </tr>
             </table>
           </div>
         </text>
+        <url value="http://portal.wof.purified.link/fhir/ValueSet/service-type"/>
+        <version value="0.1.0"/>
+        <name value="ITBServiceType"/>
+        <title value="ITB Service Types"/>
         <status value="active"/>
+        <date value="2021-12-10T13:56:52+01:00"/>
+        <description value="This value set defines service types"/>
         <expansion>
-          <identifier value="urn:uuid:93ac6b13-a8bd-480c-bc89-b6bb567f574d"/>
-          <timestamp value="2021-08-13T07:43:59.676Z"/>
+          <identifier value="urn:uuid:4c7f812a-1254-4e05-8420-7f35af67c2c7"/>
+          <timestamp value="2021-12-10T13:57:17+01:00"/>
+          <total value="5"/>
           <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://terminology.hl7.org/CodeSystem/service-type|4.0.1"/>
+            <valueUri value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType|0.1.0"/>
           </parameter>
           <contains>
-            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-definition">
-              <valueString value="General dental"/>
-            </extension>
-            <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
-            <code value="88"/>
-            <display value="General Dental"/>
+            <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+            <code value="1"/>
+            <display value="Profylax"/>
+          </contains>
+          <contains>
+            <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+            <code value="2"/>
+            <display value="Undersökning"/>
+          </contains>
+          <contains>
+            <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+            <code value="3"/>
+            <display value="Akut"/>
+          </contains>
+          <contains>
+            <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+            <code value="0"/>
+            <display value="Revision ospecificerad behandling"/>
+          </contains>
+          <contains>
+            <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+            <code value="123"/>
+            <display value="Prima Service"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -145,9 +205,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
-            <p>All codes from system 
-              <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
               </a>
             </p>
@@ -184,15 +244,15 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:effd9a4c-2305-4134-b180-6910027a298f"/>
-          <timestamp value="2021-08-13T07:43:58.879Z"/>
+          <identifier value="urn:uuid:e382201d-4ab7-4467-8cd9-3fdf15b0d2d3"/>
+          <timestamp value="2021-12-10T12:01:08.441Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>

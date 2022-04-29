@@ -1,0 +1,49 @@
+{
+  "resourceType": "Patient",
+  "id": "PatientExample",
+  "meta": {
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPatient"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.578.1.12.4.1.4.1",
+      "value": "110384-98330"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "patientId",
+            "system": "http://opusdental.purified.link/fhir/CodeSystem/csOpusIdentifier"
+          }
+        ]
+      },
+      "system": "itbDev-colosseum-opus-nationaltheatret/fhir/NamingSystem/nspatientId",
+      "value": "649"
+    }
+  ],
+  "name": [
+    {
+      "text": "Johansen Øyvind Petter",
+      "family": "Johansen",
+      "given": [
+        "Øyvind Petter"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "test@fhir.link",
+      "use": "home"
+    },
+    {
+      "system": "phone",
+      "value": "0708664086",
+      "use": "mobile"
+    }
+  ],
+  "birthDate": "1984-03-11"
+}

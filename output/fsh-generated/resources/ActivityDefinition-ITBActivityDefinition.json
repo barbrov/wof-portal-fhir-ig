@@ -1,0 +1,55 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "ITBActivityDefinition",
+  "meta": {
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBActivityDefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusCryptobookingText",
+      "valueString": "XYÅZÅÄA"
+    },
+    {
+      "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extOpusBookingCategory",
+      "valueString": "3"
+    }
+  ],
+  "name": "TdlUS60",
+  "title": "Undersökning tandläkare",
+  "subtitle": "Här får du dina tänder undersökta av en utbildad tandläkare",
+  "status": "active",
+  "date": "2021-09-06",
+  "description": "Desc",
+  "kind": "Appointment",
+  "code": {
+    "coding": [
+      {
+        "code": "123",
+        "system": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+        "display": "Bra Service"
+      }
+    ],
+    "text": "Desc"
+  },
+  "timingDuration": {
+    "value": 60,
+    "unit": "min"
+  },
+  "participant": [
+    {
+      "type": "practitioner",
+      "role": {
+        "coding": [
+          {
+            "code": "106289002",
+            "system": "http://snomed.info/sct",
+            "display": "dentist"
+          }
+        ],
+        "text": "Tandläkare"
+      }
+    }
+  ]
+}

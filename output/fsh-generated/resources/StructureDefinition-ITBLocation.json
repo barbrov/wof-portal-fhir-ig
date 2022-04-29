@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ITBLocation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Entities"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBLocation",
+  "version": "0.1.0",
+  "name": "ITBLocation",
+  "title": "ITB Location",
+  "status": "active",
+  "description": "ITBLocation is used to handle adress and position, for example used in ITBHealthCareService",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.id",
+        "path": "Location.id",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Location.address",
+        "path": "Location.address",
+        "short": "TBD",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Location.address.use",
+        "path": "Location.address.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Location.address.text",
+        "path": "Location.address.text",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Location.address.city",
+        "path": "Location.address.city",
+        "short": "Text representation of the address",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Location.position",
+        "path": "Location.position",
+        "short": "",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Location.position.longitude",
+        "path": "Location.position.longitude",
+        "short": "",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.position.latitude",
+        "path": "Location.position.latitude",
+        "short": "",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -138,10 +138,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#itb-implementation-guide" id="markdown-toc-itb-implementation-guide">ITB Implementation Guide</a>    <ul>
       <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+      <li><a href="#getting-started" id="markdown-toc-getting-started">Getting started</a></li>
+      <li><a href="#fhir-endpoints" id="markdown-toc-fhir-endpoints">FHIR Endpoints</a></li>
       <li><a href="#api-url-convention" id="markdown-toc-api-url-convention">API URL Convention</a></li>
+      <li><a href="#usage-scenarios" id="markdown-toc-usage-scenarios">Usage scenarios</a></li>
       <li><a href="#servers" id="markdown-toc-servers">Servers</a></li>
       <li><a href="#patient-test-data" id="markdown-toc-patient-test-data">Patient test data</a></li>
-      <li><a href="#getting-started" id="markdown-toc-getting-started">Getting started</a></li>
       <li><a href="#references" id="markdown-toc-references">References</a></li>
     </ul>
   </li>
@@ -152,18 +154,198 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="introduction">Introduction</h3>
 
+<p>Welcome to the Implementation Guide for WOF-PORTAL and ITB</p>
+
+<p>This guide describes all the included elements and how they can be used to build an Internet Time Booking application.</p>
+
+<h3 id="getting-started">Getting started</h3>
+
+<h4 id="steps-to-show-available-time-slots">Steps to show available time slots</h4>
+
+<ol>
+  <li>
+    <p>Get the <strong>HealthCareService</strong>s</p>
+  </li>
+  <li>
+    <p>Get the <strong>ActivityDefinition</strong>s</p>
+  </li>
+  <li>
+    <p>Get the <strong>PractitionerRole</strong>s for specified HealthCareService</p>
+  </li>
+  <li>
+    <p>Get the <strong>Schedule</strong>s for specified actor and service-type</p>
+  </li>
+  <li>
+    <p>Get the <strong>Slot</strong>s by service-type, start-time and duration</p>
+  </li>
+</ol>
+
+<h4 id="steps-to-edit-and-reschedule-a-booking">Steps to edit and reschedule a booking</h4>
+
+<p>Pre-requisites: User has logged in</p>
+
+<ol>
+  <li>Get the <strong>HealthCareService</strong>s</li>
+</ol>
+
+<p>*This is a search operation that returns a Bundle of HealthCareServices. Both active and inactive are returned.</p>
+
+<ol>
+  <li>
+    <p>Get the <strong>ActivityDefinition</strong>s</p>
+  </li>
+  <li>
+    <p>Display the clinics</p>
+  </li>
+  <li>
+    <p><em>Select clinic</em></p>
+  </li>
+  <li>
+    <p>Get the <strong>Appointment</strong>s for the specified HealthCareService</p>
+  </li>
+  <li>
+    <p>Get the <strong>PractitionerRole</strong>s for the specified HealthCareService</p>
+  </li>
+  <li>
+    <p><em>What are the PractitionerRoles used for here?</em></p>
+  </li>
+  <li>
+    <p>Get <strong>Patient</strong>  <em>What is the patient(s) used for here?</em></p>
+  </li>
+  <li>
+    <p><em>After the previous step information about the appointments in the selected clinic can be displayed</em></p>
+  </li>
+  <li>
+    <p><em>Select appointment to be rescheduled</em></p>
+  </li>
+  <li>
+    <p>Get the <strong>Schedule</strong>s for specified actor and PractitionerRole</p>
+  </li>
+  <li>
+    <p>Get the <strong>HealthCareService</strong>s</p>
+  </li>
+  <li>
+    <p>Get the <strong>Appointment</strong>s</p>
+  </li>
+  <li>
+    <p>Get <strong>Slot</strong> for specified <strong>Schedule</strong> and <strong>Appointment</strong></p>
+  </li>
+  <li>
+    <p><em>Select a new date and time</em></p>
+  </li>
+  <li>
+    <p>Put <strong>Appointment</strong>.</p>
+  </li>
+  <li>
+    <p>Get the <strong>HealthCareService</strong>s</p>
+  </li>
+  <li>
+    <p>Get the <strong>Appointment</strong>s for the specified HealthCareService</p>
+  </li>
+  <li>Get the <strong>PractitionerRole</strong>s for the specified HealthCareService</li>
+  <li>Get <strong>Patient</strong>  <em>What is the patient(s) used for here?</em></li>
+</ol>
+
+<hr/>
+<ol>
+  <li>Get <strong>Schedule</strong> by Id</li>
+</ol>
+
+<hr/>
+
+<h3 id="fhir-endpoints">FHIR Endpoints</h3>
+
+<h4 id="healthcareservice">HealthCareService</h4>
+<ul>
+  <li>
+    <p>GET {url}/HealthcareService</p>
+
+    <p><strong>Example:</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> GET http://localhost:5017/portal/fhir/PractitionerRole?service=HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="activitydefinition">ActivityDefinition</h4>
+<ul>
+  <li>
+    <p>GET {url}/ActivityDefinition</p>
+
+    <p><strong>Example:</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> GET http://localhost:5017/cof-portal/fhir/ActivityDefinition
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="3-practitionerrole">3. PractitionerRole</h4>
+<ul>
+  <li>
+    <p>GET {url}/PractitionerRole</p>
+
+    <p><strong>Search params:</strong></p>
+    <ul>
+      <li><em>service</em> - a reference to a HealthCareService (HealthCareService/identifier)</li>
+    </ul>
+
+    <p><strong>Example:</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  GET http://localhost:5017/portal/fhir/PractitionerRole?service=HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="schedule">Schedule</h4>
+<ul>
+  <li>
+    <p>GET {url}/Schedule</p>
+
+    <p><strong>Search params:</strong></p>
+
+    <ul>
+      <li><em>actor</em> - a reference to a HealthCareService</li>
+      <li><em>service-type</em> - a code from csServiceTypes</li>
+    </ul>
+
+    <p><strong>Example:</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  GET http://localhost:5017/fc580e7c-7fd8-4acd-92e9-42cb052763d4/fhir/Schedule?actor=HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e&amp;service-type=examination
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="slot">Slot</h4>
+<ul>
+  <li>
+    <p>GET {}/Slot</p>
+
+    <p><strong>Search params:</strong></p>
+    <ul>
+      <li><em>schedule</em> - an identifier</li>
+      <li><em>service-type</em> - a code from <a href="https://build.fhir.org/ig/servicewell/wof-portal-fhir-ig/CodeSystem-csServiceType.html">csServiceTypes</a></li>
+      <li><em>duration</em> - in minutes</li>
+      <li><em>start</em> - a date</li>
+    </ul>
+
+    <p><strong>Example:</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  GET http://localhost:5017/fc580e7c-7fd8-4acd-92e9-42cb052763d4/fhir/Slot?schedule=a17f8424-9c11-4421-9523-b67631a67e7c&amp;service-type=examination&amp;duration=30,0&amp;start=gt2021-09-13T00:00&amp;start=lt2021-10-01T00:0
+</code></pre></div>    </div>
+  </li>
+</ul>
+
 <h3 id="api-url-convention">API URL Convention</h3>
 
 <p><code class="language-plaintext highlighter-rouge">https://url/{resourceType}/{id} ?{params}</code></p>
+
+<h3 id="usage-scenarios">Usage scenarios</h3>
 
 <h3 id="servers">Servers</h3>
 
 <h3 id="patient-test-data">Patient test data</h3>
 
-<h3 id="getting-started">Getting started</h3>
-
 <h3 id="references">References</h3>
-
 
 
 
@@ -188,8 +370,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="00d6deac-8ec7-4a5f-91b7-176b322154e3">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package portal.wof.purified.link#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 13, 2021 09:50+0200">2021-08-13</span>
+        <p><a name="l780">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package portal.wof.purified.link#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 10, 2021 13:56+0100">2021-12-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

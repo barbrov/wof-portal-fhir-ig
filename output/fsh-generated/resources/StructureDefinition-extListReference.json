@@ -1,0 +1,63 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extListReference",
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference",
+  "version": "0.1.0",
+  "name": "ITBListReference",
+  "title": "ITB List Reference Extension",
+  "status": "active",
+  "description": "Extension used to be able to add lists",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ITB List Reference Extension",
+        "definition": "Extension used to be able to add lists"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://portal.wof.purified.link/fhir/StructureDefinition/extListReference",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Reference to a List",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/List"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

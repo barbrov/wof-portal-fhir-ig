@@ -3,14 +3,53 @@
   "id": "csServiceType",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/csServiceType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://portal.wof.purified.link/fhir/CodeSystem/csServiceType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"csServiceType-1\"> </a></td><td>Profylax</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"csServiceType-2\"> </a></td><td>Undersökning</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"csServiceType-3\"> </a></td><td>Akut</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"csServiceType-0\"> </a></td><td>Revision ospecificerad behandling</td></tr><tr><td style=\"white-space:nowrap\">123<a name=\"csServiceType-123\"> </a></td><td>TdlUS60</td></tr><tr><td style=\"white-space:nowrap\">examination<a name=\"csServiceType-examination\"> </a></td><td>Examination</td></tr><tr><td style=\"white-space:nowrap\">itb-not-defined<a name=\"csServiceType-itb-not-defined\"> </a></td><td>Booket besøk online</td></tr><tr><td style=\"white-space:nowrap\">blek-kampanje<a name=\"csServiceType-blek-kampanje\"> </a></td><td>Blek-kampanje</td></tr><tr><td style=\"white-space:nowrap\">servicetype1<a name=\"csServiceType-servicetype1\"> </a></td><td>Servicetyp 1</td></tr></table></div>"
   },
   "url": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
   "version": "0.1.0",
-  "name": "ITBServiceTypes",
+  "name": "ITBServiceType",
   "title": "ITB Service Types",
   "status": "active",
-  "date": "2021-08-13T09:50:07+02:00",
+  "date": "2021-12-10T13:56:52+01:00",
   "description": "ITB Service Types",
-  "content": "complete"
+  "content": "complete",
+  "count": 9,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Profylax"
+    },
+    {
+      "code": "2",
+      "display": "Undersökning"
+    },
+    {
+      "code": "3",
+      "display": "Akut"
+    },
+    {
+      "code": "0",
+      "display": "Revision ospecificerad behandling"
+    },
+    {
+      "code": "123",
+      "display": "TdlUS60"
+    },
+    {
+      "code": "examination",
+      "display": "Examination"
+    },
+    {
+      "code": "itb-not-defined",
+      "display": "Booket besøk online"
+    },
+    {
+      "code": "blek-kampanje",
+      "display": "Blek-kampanje"
+    },
+    {
+      "code": "servicetype1",
+      "display": "Servicetyp 1"
+    }
+  ]
 }

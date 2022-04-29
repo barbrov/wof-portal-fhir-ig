@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ITBEndpoint",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Entities"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBEndpoint",
+  "version": "0.1.0",
+  "name": "ITBEndpoint",
+  "title": "ITB Endpoint",
+  "status": "active",
+  "description": "ITB Endpoint is used to handle  ..",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Endpoint",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Endpoint",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Endpoint.id",
+        "path": "Endpoint.id",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.extension",
+        "path": "Endpoint.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Endpoint.extension:extSourceSystemUserId",
+        "path": "Endpoint.extension",
+        "sliceName": "extSourceSystemUserId",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://portal.wof.purified.link/fhir/StructureDefinition/extSourceSystemUserId"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.status",
+        "path": "Endpoint.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.connectionType",
+        "path": "Endpoint.connectionType",
+        "short": "",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.name",
+        "path": "Endpoint.name",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.payloadType",
+        "path": "Endpoint.payloadType",
+        "short": "",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.payloadMimeType",
+        "path": "Endpoint.payloadMimeType",
+        "short": "",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.address",
+        "path": "Endpoint.address",
+        "short": "",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.header",
+        "path": "Endpoint.header",
+        "short": "",
+        "mustSupport": true
+      }
+    ]
+  }
+}

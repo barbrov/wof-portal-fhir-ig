@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="b9ae324d-39bd-45cf-850f-826d4f83b31f"/>
+  <meta>
+    <lastUpdated value="2021-12-10T12:59:28.942+01:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="role-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-106289002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002">106289002</a>
+                </td>
+                <td>Dentist</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-26042002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002">26042002</a>
+                </td>
+                <td>Dental hygienist</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
+        <version value="0.1.0"/>
+        <name value="ITBRoleCodes"/>
+        <title value="ITB Role Codes"/>
+        <status value="active"/>
+        <date value="2021-12-10T12:59:28+01:00"/>
+        <description value="This value set defines role codes"/>
+        <expansion>
+          <identifier value="urn:uuid:865c1906-0f1d-4791-991a-5dbbfc77964b"/>
+          <timestamp value="2021-12-10T13:00:28+01:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106289002"/>
+            <display value="Dentist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="26042002"/>
+            <display value="Dental hygienist"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://portal.wof.purified.link/fhir/ValueSet/service-type"/>
+    <resource>
+      <ValueSet>
+        <id value="service-type"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-csServiceType.html">ITB Service Types v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-csServiceType.html">
+                <code>http://portal.wof.purified.link/fhir/CodeSystem/csServiceType</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-1"> </a>
+                  <a href="CodeSystem-csServiceType.html#csServiceType-1">1</a>
+                </td>
+                <td>Profylax</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-2"> </a>
+                  <a href="CodeSystem-csServiceType.html#csServiceType-2">2</a>
+                </td>
+                <td>Undersökning</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-3"> </a>
+                  <a href="CodeSystem-csServiceType.html#csServiceType-3">3</a>
+                </td>
+                <td>Akut</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-0"> </a>
+                  <a href="CodeSystem-csServiceType.html#csServiceType-0">0</a>
+                </td>
+                <td>Revision ospecificerad behandling</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-123"> </a>
+                  <a href="CodeSystem-csServiceType.html#csServiceType-123">123</a>
+                </td>
+                <td>Prima Service</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://portal.wof.purified.link/fhir/ValueSet/service-type"/>
+        <version value="0.1.0"/>
+        <name value="ITBServiceType"/>
+        <title value="ITB Service Types"/>
+        <status value="active"/>
+        <date value="2021-12-10T12:59:28+01:00"/>
+        <description value="This value set defines service types"/>
+        <expansion>
+          <identifier value="urn:uuid:ea78acc6-0598-44b0-b834-0600b299ab49"/>
+          <timestamp value="2021-12-10T13:00:31+01:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+            <code value="1"/>
+            <display value="Profylax"/>
+          </contains>
+          <contains>
+            <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+            <code value="2"/>
+            <display value="Undersökning"/>
+          </contains>
+          <contains>
+            <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+            <code value="3"/>
+            <display value="Akut"/>
+          </contains>
+          <contains>
+            <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+            <code value="0"/>
+            <display value="Revision ospecificerad behandling"/>
+          </contains>
+          <contains>
+            <system value="http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"/>
+            <code value="123"/>
+            <display value="Prima Service"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="role-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-106289002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002">106289002</a>
+                </td>
+                <td>Dentist</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-26042002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002">26042002</a>
+                </td>
+                <td>Dental hygienist</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://portal.wof.purified.link/fhir/ValueSet/role-codes"/>
+        <version value="0.1.0"/>
+        <name value="ITBRoleCodes"/>
+        <title value="ITB Role Codes"/>
+        <status value="active"/>
+        <date value="2021-12-10T12:59:28+01:00"/>
+        <description value="This value set defines role codes"/>
+        <expansion>
+          <identifier value="urn:uuid:865c1906-0f1d-4791-991a-5dbbfc77964b"/>
+          <timestamp value="2021-12-10T13:00:28+01:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106289002"/>
+            <display value="Dentist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="26042002"/>
+            <display value="Dental hygienist"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

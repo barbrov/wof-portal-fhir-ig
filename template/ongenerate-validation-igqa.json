@@ -5,7 +5,9 @@
 ,
 {"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITBSlot.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[9]"]}
 ,
-{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[25]"]}
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/ITBHealthcareServiceExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[25]"]}
 ,
 {"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Appointment/PostAppointmentWithoutPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[26]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource Appointment/PostAppointmentWithoutPatientExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[27]"]}
 ,

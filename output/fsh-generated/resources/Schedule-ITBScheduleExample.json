@@ -1,0 +1,40 @@
+{
+  "resourceType": "Schedule",
+  "id": "ITBScheduleExample",
+  "meta": {
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBSchedule"
+    ]
+  },
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "code": "blek-kampanje",
+          "system": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"
+        }
+      ]
+    }
+  ],
+  "actor": [
+    {
+      "reference": "HealthcareService/939970ef-5e09-4597-977c-d6ae56ac81c5",
+      "display": "My clinic"
+    },
+    {
+      "reference": "itbDev-colosseum-opus-sandvika/fhir/Practitioner/505",
+      "display": "Tannpleier Anna Andersson"
+    },
+    {
+      "reference": "itbDev-colosseum-opus-sandvika/fhir/Organization/578"
+    },
+    {
+      "reference": "PractitionerRole/6194e8d0-2873-4569-915f-0ae8e4047854",
+      "display": "Tannpleier Anna Andersson"
+    }
+  ],
+  "planningHorizon": {
+    "start": "2021-04-13T22:00:00+00:00",
+    "end": "2021-05-18T22:00:00+00:00"
+  }
+}

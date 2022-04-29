@@ -1,0 +1,63 @@
+{
+  "resourceType": "Appointment",
+  "id": "ITBAppointmentAvailableForReschedule",
+  "meta": {
+    "tag": [
+      {
+        "code": "false",
+        "system": "http://portal.wof.purified.link/fhir/CodeSystem/csAvailableForCancellation"
+      },
+      {
+        "code": "true",
+        "system": "http://portal.wof.purified.link/fhir/CodeSystem/csAvailableForReschedule"
+      }
+    ],
+    "profile": [
+      "http://portal.wof.purified.link/fhir/StructureDefinition/ITBAppointment"
+    ]
+  },
+  "status": "booked",
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "code": "examination",
+          "system": "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType"
+        }
+      ]
+    }
+  ],
+  "start": "2021-05-07T08:00:00+00:00",
+  "end": "2021-05-07T08:30:00+00:00",
+  "minutesDuration": 30,
+  "participant": [
+    {
+      "actor": {
+        "reference": "Patient/649",
+        "display": "Patient"
+      },
+      "status": "accepted"
+    },
+    {
+      "actor": {
+        "reference": "PractitionerRole/53248079-fd9b-4de5-8d22-d93068542def",
+        "display": "Tannpleier Sara Larsson"
+      },
+      "status": "accepted"
+    },
+    {
+      "actor": {
+        "reference": "HealthcareService/b81f2315-7476-45e8-9ae6-51f547e2d82e",
+        "display": "En sjov gutt clinic"
+      },
+      "status": "accepted"
+    },
+    {
+      "actor": {
+        "reference": "Device/4",
+        "display": "Device"
+      },
+      "status": "accepted"
+    }
+  ]
+}

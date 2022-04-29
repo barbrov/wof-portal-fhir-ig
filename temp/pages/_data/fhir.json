@@ -4,28 +4,38 @@
   "igId": "portal.wof.purified.link",
   "igName": "ITBImplementationGuide",
   "packageId": "portal.wof.purified.link",
-  "igVer": "0.1.0",
-  "errorCount": 14,
+  "igVer": "0.1.1",
+  "errorCount": 20,
   "version": "4.0.1",
   "revision": "a53ec6ee1b",
   "versionFull": "4.0.1-a53ec6ee1b",
-  "toolingVersion": "4.6.0",
+  "toolingVersion": "4.5.0",
   "toolingRevision": "3",
-  "toolingVersionFull": "4.6.0 (3)",
-  "totalFiles": 28,
-  "processedFiles": 40,
-  "genDate": "Fri, Aug 13, 2021 09:50+0200",
+  "toolingVersionFull": "4.5.0 (3)",
+  "totalFiles": 29,
+  "processedFiles": 41,
+  "genDate": "Fri, Aug 13, 2021 11:28+0200",
   "genDay": "13/08/2021",
   "ig": {
     "id": "portal.wof.purified.link",
     "name": "ITBImplementationGuide",
     "title": "ITB Implementation Guide",
     "url": "http://portal.wof.purified.link/fhir/ImplementationGuide/portal.wof.purified.link",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "status": "draft",
     "experimental": false,
-    "gitstatus": "CapabilityStatement",
-    "date": "2021-08-13T09:50:07+02:00",
+    "publisher": "Service Well AB",
+    "gitstatus": "master",
+    "contact": [
+      {
+        "name": "Service Well AB",
+        "telecom": [
+          "http://www.servicewell.se",
+          "kontakt@servicewell.se"
+        ]
+      }
+    ],
+    "date": "2021-08-13T11:28:11+02:00",
     "description": "Implementation Guide for ITB",
     "fhirVersion": "4.0.1"
   }

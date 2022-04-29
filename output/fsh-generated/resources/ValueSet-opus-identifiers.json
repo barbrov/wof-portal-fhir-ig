@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "OpusIdentifiers",
+  "id": "opus-identifiers",
+  "title": "Opus Identifiers",
+  "description": "This value set defines Opus identifiers",
+  "version": "0.1.0",
+  "url": "http://portal.wof.purified.link/fhir/ValueSet/opus-identifiers",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/opus-identifiers",
+        "concept": [
+          {
+            "code": "1",
+            "display": "patientId"
+          }
+        ]
+      }
+    ]
+  }
+}

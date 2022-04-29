@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a6d05551-5157-429a-94ea-504ac5c7d0ad",
+  "id" : "9b8380e5-d7cc-43f3-8aea-807368969c72",
   "meta" : {
-    "lastUpdated" : "2021-08-13T09:50:07.821+02:00"
+    "lastUpdated" : "2021-12-10T13:56:52.501+01:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,19 +11,19 @@
       "language" : "en",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-106289002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002\">106289002</a></td><td>Dentist</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26042002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002\">26042002</a></td><td>Dental hygienist</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-106289002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002\">106289002</a></td><td>Dentist</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26042002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002\">26042002</a></td><td>Dental hygienist</td><td/></tr></table></div>"
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:effd9a4c-2305-4134-b180-6910027a298f",
-        "timestamp" : "2021-08-13T07:43:58.879Z",
+        "identifier" : "urn:uuid:e382201d-4ab7-4467-8cd9-3fdf15b0d2d3",
+        "timestamp" : "2021-12-10T12:01:08.441Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },
         {
           "name" : "version",
-          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -39,33 +39,57 @@
     }
   },
   {
+    "fullUrl" : "http://portal.wof.purified.link/fhir/ValueSet/service-type",
     "resource" : {
       "resourceType" : "ValueSet",
-      "language" : "en",
+      "id" : "service-type",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on http://terminology.hl7.org/CodeSystem/service-type version 4.0.1</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-service-type.html\"><code>http://terminology.hl7.org/CodeSystem/service-type</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-service-type-88\"> </a>88</td><td>General Dental</td><td>General dental</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-csServiceType.html\">ITB Service Types v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-csServiceType.html\"><code>http://portal.wof.purified.link/fhir/CodeSystem/csServiceType</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-1\"> </a><a href=\"CodeSystem-csServiceType.html#csServiceType-1\">1</a></td><td>Profylax</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-2\"> </a><a href=\"CodeSystem-csServiceType.html#csServiceType-2\">2</a></td><td>Undersökning</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-3\"> </a><a href=\"CodeSystem-csServiceType.html#csServiceType-3\">3</a></td><td>Akut</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-0\"> </a><a href=\"CodeSystem-csServiceType.html#csServiceType-0\">0</a></td><td>Revision ospecificerad behandling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---portal.wof.purified.link-fhir-CodeSystem-csServiceType-123\"> </a><a href=\"CodeSystem-csServiceType.html#csServiceType-123\">123</a></td><td>Prima Service</td><td/></tr></table></div>"
       },
+      "url" : "http://portal.wof.purified.link/fhir/ValueSet/service-type",
+      "version" : "0.1.0",
+      "name" : "ITBServiceType",
+      "title" : "ITB Service Types",
       "status" : "active",
+      "date" : "2021-12-10T13:56:52+01:00",
+      "description" : "This value set defines service types",
       "expansion" : {
-        "identifier" : "urn:uuid:93ac6b13-a8bd-480c-bc89-b6bb567f574d",
-        "timestamp" : "2021-08-13T07:43:59.676Z",
+        "identifier" : "urn:uuid:4c7f812a-1254-4e05-8420-7f35af67c2c7",
+        "timestamp" : "2021-12-10T13:57:17+01:00",
+        "total" : 5,
         "parameter" : [{
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
+          "name" : "excludeNested",
+          "valueBoolean" : false
         },
         {
           "name" : "version",
-          "valueString" : "http://terminology.hl7.org/CodeSystem/service-type|4.0.1"
+          "valueUri" : "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType|0.1.0"
         }],
         "contains" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
-            "valueString" : "General dental"
-          }],
-          "system" : "http://terminology.hl7.org/CodeSystem/service-type",
-          "code" : "88",
-          "display" : "General Dental"
+          "system" : "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+          "code" : "1",
+          "display" : "Profylax"
+        },
+        {
+          "system" : "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+          "code" : "2",
+          "display" : "Undersökning"
+        },
+        {
+          "system" : "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+          "code" : "3",
+          "display" : "Akut"
+        },
+        {
+          "system" : "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+          "code" : "0",
+          "display" : "Revision ospecificerad behandling"
+        },
+        {
+          "system" : "http://portal.wof.purified.link/fhir/CodeSystem/csServiceType",
+          "code" : "123",
+          "display" : "Prima Service"
         }]
       }
     }
@@ -76,19 +100,19 @@
       "language" : "en",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-106289002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002\">106289002</a></td><td>Dentist</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26042002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002\">26042002</a></td><td>Dental hygienist</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-106289002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=106289002\">106289002</a></td><td>Dentist</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26042002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26042002\">26042002</a></td><td>Dental hygienist</td><td/></tr></table></div>"
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:effd9a4c-2305-4134-b180-6910027a298f",
-        "timestamp" : "2021-08-13T07:43:58.879Z",
+        "identifier" : "urn:uuid:e382201d-4ab7-4467-8cd9-3fdf15b0d2d3",
+        "timestamp" : "2021-12-10T12:01:08.441Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },
         {
           "name" : "version",
-          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",

@@ -1,0 +1,139 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ITBPractitioner",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "individual"
+    }
+  ],
+  "url": "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitioner",
+  "version": "0.1.0",
+  "name": "ITBPractitioner",
+  "title": "ITB Practitioner",
+  "status": "active",
+  "description": "Practitioner is.. TBD",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.id",
+        "path": "Practitioner.id",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.meta.lastUpdated",
+        "path": "Practitioner.meta.lastUpdated",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.contained",
+        "path": "Practitioner.contained",
+        "short": "TBD",
+        "max": "1",
+        "type": [
+          {
+            "code": "PractitionerRole",
+            "profile": [
+              "http://portal.wof.purified.link/fhir/StructureDefinition/ITBPractitionerRole"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "short": "Extern identifiering.",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.type",
+        "path": "Practitioner.identifier.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.system",
+        "path": "Practitioner.identifier.type.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.code",
+        "path": "Practitioner.identifier.type.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.value",
+        "path": "Practitioner.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "definition": "Indicates if this role is active and bookable at the HealthcareService",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "short": "A name associated with the individual. Krävs mellannamn? Finns en extension för detta.",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.text",
+        "path": "Practitioner.name.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.family",
+        "path": "Practitioner.name.family",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.given",
+        "path": "Practitioner.name.given",
+        "max": "1",
+        "mustSupport": true
+      }
+    ]
+  }
+}

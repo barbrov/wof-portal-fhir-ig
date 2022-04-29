@@ -29,6 +29,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ITB Url Placeholder Extension",
+        "definition": "Used in URL's for linking to this instance. Should be short and url-friendly"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"
